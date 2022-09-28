@@ -281,6 +281,7 @@ p:last-child {
 
 .tm-company-img-container img {
   width: 400px;
+  object-fit: cover;
   height: auto;
 }
 

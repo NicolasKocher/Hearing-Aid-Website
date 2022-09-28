@@ -24,14 +24,20 @@
   align-items: flex-start;
 }
 .tm-feature-block {
-  transition: box-shadow 0.3s ;
+  transition: box-shadow 0.3s, border-color 0.3s, border-style 0.3s ;
   padding: 30px;
   border-radius: 10px;
   z-index: 200;
+  margin-top: 0;
+  border: none;
+  border-color: #D8B358;
 }
 
 .tm-feature-block:hover {
   box-shadow: 5px 5px 5px 5px rgba(216, 179, 88, 0.3);
+  border-width: 2px;
+  border-style: solid;
+  border-color: #D8B358;
 }
 .leistungen-paragraph {
   text-align: justify;
@@ -43,6 +49,12 @@
   margin-top: 50px;
   font-size: 50px;
   z-index: 300;
+  border: solid;
+  padding: 30px;
+  border-color: #D8B358;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 0;
 }
 .termin-button {
   background-color: #D8B358;
@@ -77,6 +89,11 @@
   justify-content: center;
   margin-top: -50px;
   margin-bottom: 30px;
+  border: solid;
+  border-color: #D8B358;
+  padding: 20px;
+  border-right: none;
+  border-left: none;
 }
 .termin-text-main {
   font-size: 34px;
@@ -181,13 +198,23 @@
   background-color: #D8B358;
   color: white;
 }
+.ueber-uns-text {
+  margin-bottom: 25px;
+}
 .tm-company-img-container {
   display: flex;
   flex-direction: row;
 }
+.daniel-text {
+  margin-bottom: -3px;
+  color: #D8B358;
+}
 .fachausweis-text {
-  margin-bottom: 12px;
-  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  margin-left: 3px;
+  text-align:justify;
 }
 /*
 .container {
