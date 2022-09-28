@@ -27,9 +27,176 @@
   transition: box-shadow 0.3s ;
   padding: 30px;
   border-radius: 10px;
+  z-index: 200;
 }
 
 .tm-feature-block:hover {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  
+  box-shadow: 5px 5px 5px 5px rgba(216, 179, 88, 0.3);
 }
+.leistungen-paragraph {
+  text-align: justify;
+}
+.title-top {
+  text-align: center;
+  padding: auto;
+  font-weight: bold;
+  margin-top: 50px;
+  font-size: 50px;
+  z-index: 300;
+}
+.termin-button {
+  background-color: #D8B358;
+  color: white;
+  padding: 20px 35px 20px 35px;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+.termin-button:hover {
+  background-color: #d1a943;
+}
+.hoergeraet-block {
+  display: flex;
+  border-style: solid;
+  border-color: #D8B358;
+  border-width: 2px;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.title-hinter-ohr {
+  color: #D8B358;
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+.termin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -50px;
+  margin-bottom: 30px;
+}
+.termin-text-main {
+  font-size: 34px;
+  align-items: center;
+  justify-content: center;
+  color: #D8B358;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.termin-button-main {
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #D8B358;
+  padding: 17px 24px 17px 24px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+.termin-button-main:hover {
+  background-color: #d1a943;
+}
+.termin-button-main{
+  position: relative;
+  background-color: #D8B358;
+  border-radius: 4em;
+  font-size: 16px;
+  color: white;
+  padding: 0.8em 1.8em;
+  cursor:pointer;
+  user-select:none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  border: none;
+}
+
+.termin-button-main:hover {
+  transition-duration: 0.1s;
+  background-color: #d3bb7e;
+  border: none;
+}
+
+.termin-button-main:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px #D8B358;
+  border: none;
+}
+
+.termin-button-main:active:after {
+  box-shadow: 0 0 0 0 #D8B358;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  opacity: 1;
+  transition: 0s;
+  border: none;
+}
+
+.termin-button-main:active {
+  top: 1px;
+  border: none;
+}
+.google-maps-location {
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.kontakt-text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.kontakt-title {
+  font-size: 30px;
+  color: #D8B358;
+}
+.kontakt-text {
+  font-size: 30px;
+  color: #D8B358;
+}
+.send-button {
+  padding: 10px 23px 10px 23px;
+  background-color: white;
+  color: #D8B358;
+  border: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.send-button:hover {
+  background-color: #D8B358;
+  color: white;
+}
+.tm-company-img-container {
+  display: flex;
+  flex-direction: row;
+}
+.fachausweis-text {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+/*
+.container {
+  z-index: 200;
+}
+.tm-nav-section {
+  z-index: 200;
+}
+.tm-banner-section {
+  z-index: 200;
+}
+*/
