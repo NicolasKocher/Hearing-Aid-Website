@@ -1,0 +1,19 @@
+p {
+  margin-bottom: 0;
+}
+.datenschutzerklaerung-text {
+  width: 1100px;
+  justify-content: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.hinweis-text {
+  width: 1100px;
+  text-align: start;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}

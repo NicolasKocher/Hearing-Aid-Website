@@ -6,7 +6,6 @@
 }
 .tm-page-header {
   margin-bottom: 50px;
-  
 }
 .right-side-title {
   font-family: Helveitca, Arial;
@@ -200,10 +199,25 @@
 }
 .ueber-uns-text {
   margin-bottom: 25px;
+  border: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-color: #D8B358;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  padding: 20px;
+  margin-bottom: 40px;
 }
 .tm-company-img-container {
   display: flex;
   flex-direction: row;
+  margin-bottom: 40px;
+}
+.text-block-container {
+  margin-top: 0px;
 }
 .daniel-text {
   margin-bottom: -3px;
@@ -215,6 +229,84 @@
   font-size: 18px;
   margin-left: 3px;
   text-align:justify;
+}
+.quali-text {
+  margin-top: 25px;
+}
+.text-decoration {
+  color: #D8B358;
+  font-weight: bold;
+}
+.text-block-container2 {
+  margin-top: 55px;
+}
+.text-block-container3 {
+  margin-top: 55px;
+}
+.individuell-text {
+  margin-top: 20px;
+}
+.infos {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.icon-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.brand-container {
+  padding: 30px;
+  display: flex;
+}
+.brand-img {
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.widex-img {
+  margin-left: -40px;
+}
+.widex-container {
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.datenschutz-link {
+  margin-right: 30px;
+}
+.kontakt-daten {
+  display: flex;
+}
+.oeffungszeiten,
+.adresse {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  font-size: 19px;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.tel {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+}
+.samstag {
+  margin-left: -20px;
 }
 /*
 .container {

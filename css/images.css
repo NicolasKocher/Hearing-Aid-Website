@@ -61,4 +61,14 @@
   border-radius: 20px;
   margin-right: 20px;
 }
+.room-img {
+  height: 300px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.tisch-img {
+  height: 500px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
 

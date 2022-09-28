@@ -190,6 +190,7 @@ p:last-child {
 
 .tm-feature-h {
   font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .tm-feature-icon {
