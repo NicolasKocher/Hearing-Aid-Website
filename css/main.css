@@ -1,3 +1,4 @@
+
 .title-firma {
   font-family: Helveitca, Arial;
   font-weight: bold;
@@ -45,7 +46,7 @@
   text-align: center;
   padding: auto;
   font-weight: bold;
-  margin-top: 50px;
+  margin-top: 80px;
   font-size: 50px;
   z-index: 300;
   border: solid;
@@ -251,6 +252,12 @@
   top: 20px;
   left: 20px;
 }
+@media (max-width: 1100px) {
+  .infos,
+  .social-media {
+    opacity: 0;
+  }
+}
 .icon-container {
   display: flex;
   text-align: center;
@@ -308,6 +315,59 @@
 .samstag {
   margin-left: -20px;
 }
+.vier-schritte-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 200px;
+  padding-right: 200px;
+
+}
+.vier-schritte-sub-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 23px;
+  padding-right: 23px;
+}
+.vier-schritte-sub-container h2 {
+  font-size: 30px;
+}
+.vier-schritte-icons {
+  height: 80px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+@media (max-width: 1100px) {
+  .vier-schritte-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .vier-schritte-icons {
+    height: 50px ;
+  }
+  .vier-schritte-sub-container h2 {
+    font-size: 20px;
+  }
+}
+.vier-schritte-gut-hoeren {
+  display: flex;
+  flex: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+  color: #D8B358;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
 /*
 .container {
   z-index: 200;
