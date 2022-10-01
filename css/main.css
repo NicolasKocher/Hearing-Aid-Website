@@ -1,4 +1,3 @@
-
 .title-firma {
   font-family: Helveitca, Arial;
   font-weight: bold;
@@ -8,13 +7,44 @@
 .tm-page-header {
   margin-bottom: 50px;
 }
+.werbung-video-img {
+  height: 750px;
+  position: absolute;
+  bottom: -250px;
+  right: -100px;
+  z-index: 1100;
+}
+.horgen-img {
+  height: 70px;
+  position: absolute;
+  top: 30px;
+  right: -1400px;
+  -webkit-transform:rotate(12deg);
+  -moz-transform: rotate(12deg);
+  -ms-transform: rotate(12deg);
+  -o-transform: rotate(12deg);
+  transform: rotate(12deg);
+}
+
+@media (max-width: 1700px) {
+  .werbung-video-img {
+    opacity: 0;
+  }
+  .horgen-img {
+    opacity: 0;
+  }
+}
+@media (min-width:2000px) {
+  .horgen-img {
+    opacity: 0;
+  }
+}
 .right-side-title {
   font-family: Helveitca, Arial;
   display: flex;
   flex-direction: column;
   font-weight: bold;
   align-items: flex-start;
-  
 }
 .mass-text {
   font-size: 20px;
@@ -387,7 +417,7 @@
   .im-ohr-img,
   .hinter-ohr-img {
     height: 90px;
-    padding: 0;
+    margin-top: 0;
   }
   .im-ohr-img {
     margin-bottom: 10px;
@@ -403,8 +433,11 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .title-zubehoer {
+    font-size: 27px;
+  }
   .tm-company-img-container img {
-    display: block;
+    display: inline-block;
     height: 300px;
     margin-bottom: 30px;
     align-items: center;
@@ -414,12 +447,13 @@
     margin-right: auto;
   }
   .tm-company-img-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   .text-block-container,
   .text-block-container2,
   .text-block-container3 {
-    width: 400px;
+    width: 350px;
     justify-items: justify;
     align-items: center;
     justify-content: center;
@@ -457,7 +491,12 @@
     margin-left: auto;
     margin-right: auto;
   }
-
+  .daniel-text {
+    font-size: 35px;
+  }
+  .fachausweis-text {
+    font-size: 18px;
+  }
   .kontakt-daten {
     display: flex;
     flex-direction: column;
@@ -472,6 +511,123 @@
     font-size: 16px;
   }
 
+  @media (max-width: 500px) {
+    .vier-schritte-container {
+      display: inline-block;
+      padding: 10px;
+    }
+    .tm-feature-block {
+      width: auto;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    .termin-text-main {
+      text-align: center;
+    }
+    .hoergeraet-block {
+      display: block;
+    }
+    .im-ohr-img,
+    .hinter-ohr-img {
+      height: 90px;
+      padding: 0;
+    }
+    .im-ohr-img {
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+    .brand-img {
+      height: 110px;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .widex-img {
+      height: 110px;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .tm-company-img-container img {
+      display: block;
+      height: 230px;
+      margin-bottom: 30px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .tm-company-img-container {
+      display: block;
+    }
+    .text-block-container,
+    .text-block-container2,
+    .text-block-container3 {
+      width: 320px;
+      justify-items: justify;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .text-block-container2 {
+      margin-bottom: 10px;
+    }
+    .daniel-text {
+      font-size: 33px;
+    }
+    .fachausweis-text {
+      font-size: 16px;
+    }
+    .quali-text,
+    .individuell-text,
+    .text-im-ohr {
+      text-align: justify;
+    }
+    .tm-contact-form-container,
+    .tm-contact-section {
+      width: 330px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      justify-content: center;
+    }
+    .tm-company-img-container {
+
+    }
+    .tm-contact-header {
+      text-align: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .google-maps-location {
+      height: 350px;
+      width: 350px;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .kontakt-daten {
+      display: flex;
+      flex-direction: column;
+    }
+    .logo-picture {
+      height: 90px;
+    }
+    .title-firma {
+      font-size: 25px;
+    }
+    .mass-text {
+      font-size: 16px;
+    }
+  }
 }
 /*
 .container {

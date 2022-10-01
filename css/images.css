@@ -53,8 +53,11 @@
   height: 150px;
   align-items: center;
   object-fit: cover;
-  margin-top: 20px;
-  margin-left: 20px;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
 }
 .daniel-img {
   height: 500px;
@@ -71,4 +74,12 @@
   border-radius: 20px;
   margin-right: 20px;
 }
-
+@media (max-width: 500px) {
+  .room-img,
+  .tisch-img, 
+  .daniel-img {
+     height: 320px;
+     margin-right: 0;
+     margin: 0;
+  }
+}
