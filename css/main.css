@@ -367,7 +367,112 @@
   font-weight: bold;
   margin-bottom: 40px;
 }
+/* Smartphone */
+@media (max-width: 700px) {
+  .vier-schritte-container {
+    display: inline-block;
+    padding: 10px;
+  }
+  .tm-feature-block {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .termin-text-main {
+    text-align: center;
+  }
+  .hoergeraet-block {
+    display: block;
+  }
+  .im-ohr-img,
+  .hinter-ohr-img {
+    height: 90px;
+    padding: 0;
+  }
+  .im-ohr-img {
+    margin-bottom: 10px;
+  }
+  .brand-img {
+    height: 120px;
+    padding: 10px;
+  }
+  .widex-img {
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tm-company-img-container img {
+    display: block;
+    height: 300px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tm-company-img-container {
+    display: block;
+  }
+  .text-block-container,
+  .text-block-container2,
+  .text-block-container3 {
+    width: 400px;
+    justify-items: justify;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .text-block-container2 {
+    margin-bottom: 10px;
+  }
+  .quali-text,
+  .individuell-text,
+  .text-im-ohr {
+    text-align: justify;
+  }
+  .tm-contact-form-container,
+  .tm-contact-section {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    max-width: 350px;
+  }
+  .tm-contact-header {
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .google-maps-location {
+    height: 350px;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  .kontakt-daten {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-picture {
+    height: 90px;
+  }
+  .title-firma {
+    font-size: 25px;
+  }
+  .mass-text {
+    font-size: 16px;
+  }
+
+}
 /*
 .container {
   z-index: 200;
