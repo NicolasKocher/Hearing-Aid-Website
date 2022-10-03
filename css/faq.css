@@ -56,6 +56,7 @@ html {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
 }
 .title__accordion {
   font-size: 3rem;
@@ -101,12 +102,25 @@ html {
   top: 0;
   left: 15px;
 }
-
+.hoeren-title {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.hno {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
 @media (max-width: 700px) {
-  
-
+  .hoeren-title {
+    font-size: 23px;
+  }
   .answer {
     font-size: 15px;
+  }
+  .hno {
+    font-size: 14px
   }
   .title__question {
     font-size: 17px;
