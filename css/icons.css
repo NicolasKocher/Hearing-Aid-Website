@@ -6,12 +6,12 @@
   height: 100px;
   width: 100px;
   position: absolute;
-  top: 15px;
-  right: 40px;
+  top: 95px;
+  left: 23px;
   display: flex;
 }
 .instagram-icon {
-  height: 50px;
+  height: 30px;
 }
 .instagram-button {
   background-color: white;

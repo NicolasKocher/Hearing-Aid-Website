@@ -10,31 +10,21 @@
 .werbung-video-img {
   height: 750px;
   position: absolute;
-  bottom: -250px;
+  bottom: -150px;
   right: -100px;
   z-index: 1100;
 }
 .horgen-img {
   height: 70px;
   position: absolute;
-  top: 30px;
-  right: -1400px;
-  -webkit-transform:rotate(12deg);
-  -moz-transform: rotate(12deg);
-  -ms-transform: rotate(12deg);
-  -o-transform: rotate(12deg);
-  transform: rotate(12deg);
+  top: 50px;
+  right: -250px;
 }
 
 @media (max-width: 1700px) {
   .werbung-video-img {
     opacity: 0;
   }
-  .horgen-img {
-    opacity: 0;
-  }
-}
-@media (min-width:2000px) {
   .horgen-img {
     opacity: 0;
   }
