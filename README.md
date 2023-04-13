@@ -1,4 +1,4 @@
-# 2111_pro_line
+# Hoerschmiede Boo GmbH
 
 This is a website I am creating for a friend.
 To the website:
