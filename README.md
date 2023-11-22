@@ -19,6 +19,8 @@ Visit the live site: [Hörschmiede Boo GmbH](https://www.hoerschmiede-boo.ch/)
 - **HTML**: For structuring the web content and layout.
 - **CSS**: For styling the website and implementing responsive design features.
 
+I thaught them myself by watching tutorials and little projects.
+
 ## Contact
 
 [Nicolas Kocher](https://www.linkedin.com/in/nicolaskocher/)
