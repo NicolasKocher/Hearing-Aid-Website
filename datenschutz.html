@@ -1,851 +1,422 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Datenschutz</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Pro Line - Bootstrap v4.1.3 Template</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
-    />
-    <!-- https://fonts.google.com/specimen/Open+Sans -->
-    <link rel="stylesheet" href="css/all.min.css" />
-    <!-- https://fontawesome.com/ -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- https://getbootstrap.com/ -->
-    <link rel="stylesheet" href="css/tooplate-style.css" />
-    <link rel="stylesheet" href="css/images.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/icons.css">
-    <link rel="stylesheet" href="css/carousel.css">
-    <title>Hörschmiede Boo GmbH</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/datenschutz.css">
-    <link rel="icon" type="image/png" href="img/FooterUMini.png">
-  </head>
-  <body>
-    <div class="container" id="home">
-      <div class="col-12 text-center">
-        <div class="tm-page-header">
-          <img class="logo-picture" src="img/FooterUMini.png">          
-          <div class="right-side-title">
-            <h1 class="title-firma">HÖRSCHMIEDE BOO</h1>
-            <h2 class="mass-text">Hörsysteme nach Mass</h2>
-          </div>
-        </div>
-      </div>
-      <div class="social-media">
-        <a href="https://www.instagram.com/hoerschmiede_boo/" target="_blank">
-          <button  class="instagram-button">
-            <img class="instagram-icon" src="img/Instagram_icon.png">
-          </button>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datenschutzerklärung | Hörschmiede Boo GmbH</title>
+  <meta name="description" content="Datenschutzerklärung der Hörschmiede Boo GmbH – Informationen zum Schutz Ihrer persönlichen Daten." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://www.hoerschmiede-boo.ch/datenschutz.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/modern.css" />
+  <link rel="icon" type="image/png" href="img/FooterUMini.png" />
+
+  <style>
+    .legal-hero {
+      background: linear-gradient(135deg, var(--dark) 0%, var(--dark-soft) 60%, #3a3558 100%);
+      padding: 120px 0 64px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .legal-hero::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      right: -15%;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(216,179,88,0.12) 0%, transparent 70%);
+    }
+    .legal-hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .legal-hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      color: white;
+      font-weight: 800;
+      margin-bottom: 8px;
+      animation: fadeInUp 0.8s ease-out;
+    }
+    .legal-hero h1 span { color: var(--gold); }
+    .legal-hero p {
+      color: rgba(255,255,255,0.6);
+      font-size: 1rem;
+      animation: fadeInUp 0.8s ease-out 0.2s both;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.9rem;
+      margin-bottom: 24px;
+      transition: color var(--transition);
+    }
+    .back-link:hover { color: var(--gold); }
+    .back-link svg { width: 16px; height: 16px; }
+
+    .legal-content {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .legal-section {
+      margin-bottom: 48px;
+    }
+    .legal-section h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--gold);
+      display: inline-block;
+    }
+    .legal-section h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+    .legal-section p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 12px;
+      text-align: justify;
+    }
+    .legal-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0 16px;
+    }
+    .legal-section ul li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 10px;
+      color: var(--text-light);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    .legal-section ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+    .legal-info-card {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 28px 32px;
+      margin-bottom: 24px;
+    }
+    .legal-info-card p {
+      margin-bottom: 4px;
+    }
+    .legal-info-card strong {
+      color: var(--dark);
+    }
+    .legal-source {
+      text-align: center;
+      color: var(--text-light);
+      font-size: 0.85rem;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 768px) {
+      .legal-hero { padding: 100px 0 48px; }
+      .legal-section h2 { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container-modern top-bar-inner">
+      <div class="top-bar-contact">
+        <a href="tel:+41445943190">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span>044 594 31 90</span>
         </a>
-        <a href="https://www.facebook.com/profile.php?id=100084035448678" target="_blank">
-          <button  class="instagram-button">
-            <img class="instagram-icon" src="img/FaceBook-icon.png">
-          </button>
+        <a href="mailto:info@hoerschmiede-boo.ch">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <span>info@hoerschmiede-boo.ch</span>
         </a>
       </div>
-      <div class="infos">
-        <div class="icon-container">
-          <img class="phone-icon" src="img/icons8-phone-100.png">
-          <div class="phone-number">
-            044 594 31 90
-          </div>
-        </div>
-        <div class="icon-container">
-          <img class="phone-icon" src="img/icons8-mail-100.png">
-          <div class="phone-number">
-            info@hoerschmiede-boo.ch
-          </div>
-        </div>
+      <div class="top-bar-social">
+        <a href="https://www.instagram.com/hoerschmiede_boo/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100084035448678" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
       </div>
     </div>
+  </div>
 
-    <div>
-      
-      <div class="datenschutzerklaerung-text"> 
-        <h1>
-          Datenschutzerklärung
-        </h1>
-        <p>Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der</p>
-        <p>EU-Datenschutzgrundverordnung (DSGVO), ist:</p>
-        <p>Hörschmiede Boo GmbH</p>
-        <p>Daniel Boo</p>
-        <p>Seestrasse 89 & 91</p>
-        <p>8810 Horgen</p>
-        <p>Telefon: 044 594 31 90</p>
-        <p>E-Mail: info@hoerschmiede-boo.ch</p>
-        <p>WebSite: https://www.hoerschmiede-boo.ch/</p>
-      </div>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="img/FooterUMini.png" alt="Hörschmiede Boo Logo" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">HÖRSCHMIEDE BOO</span>
+          <span class="logo-subtitle">Hörsysteme nach Mass</span>
+        </div>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#leistungen">Leistungen</a>
+        <a href="index.html#hoergeraete">Hörgeräte</a>
+        <a href="index.html#ueber-uns">Über uns</a>
+        <a href="index.html#kontakt">Kontakt</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </header>
 
-      <div class="hinweis-text">
-        <h1>Allgemeiner Hinweis</h1>
-        <p>
-          Gestützt auf Artikel 13 der schweizerischen Bundesverfassung und den
-          datenschutzrechtlichen Bestimmungen des Bundes (Datenschutzgesetz,
-          DSG) hat jede Person Anspruch auf Schutz ihrer Privatsphäre sowie auf
-          Schutz vor Missbrauch ihrer persönlichen Daten. Die Betreiber dieser Seiten
-          nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre
-          personenbezogenen Daten vertraulich und entsprechend der gesetzlichen
-          Datenschutzvorschriften sowie dieser Datenschutzerklärung.
-          In Zusammenarbeit mit unseren Hosting-Providern bemühen wir uns, die
-          Datenbanken so gut wie möglich vor fremden Zugriffen, Verlusten, Missbrauch
-          oder vor Fälschung zu schützen.
-        </p>
-        <p>
-          Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der
-          Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser
-          Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
-          Durch die Nutzung dieser Website erklären Sie sich mit der Erhebung,
-          Verarbeitung und Nutzung von Daten gemäss der nachfolgenden
-          Beschreibung einverstanden. Diese Website kann grundsätzlich ohne
-          Registrierung besucht werden. Dabei werden Daten wie beispielsweise
-          aufgerufene Seiten bzw. Namen der abgerufenen Datei, Datum und Uhrzeit zu
-          statistischen Zwecken auf dem Server gespeichert, ohne dass diese Daten
-          unmittelbar auf Ihre Person bezogen werden. Personenbezogene Daten,
-          insbesondere Name, Adresse oder E-Mail-Adresse werden soweit möglich auf
-          freiwilliger Basis erhoben. Ohne Ihre Einwilligung erfolgt keine Weitergabe der
-          Daten an Dritte.
-        </p>
-        <p>
-          Bearbeitung von Personendaten
-        </p>
-        <p>
-          Personendaten sind alle Angaben, die sich auf eine bestimmte oder
-          bestimmbare Person beziehen. Eine betroffene Person ist eine Person, über
-          die Personendaten bearbeitet werden. Bearbeiten umfasst jeden Umgang mit
-          Personendaten, unabhängig von den angewandten Mitteln und Verfahren,
-          insbesondere das Aufbewahren, Bekanntgeben, Beschaffen, Löschen,
-          Speichern, Verändern, Vernichten und Verwenden von Personendaten.
-          Wir bearbeiten Personendaten im Einklang mit dem schweizerischen
-          Datenschutzrecht. Im Übrigen bearbeiten wir – soweit und sofern die EUDSGVO anwendbar ist – Personendaten gemäss folgenden Rechtsgrundlagen
-          im Zusammenhang mit Art. 6 Abs. 1 DSGVO:
-        </p>
-        <p>
-          • Einwilligung (Art. 6 Abs. 1 S. 1 lit. a. DSGVO) - Die betroffene Person
-          hat ihre Einwilligung in die Verarbeitung der sie betreffenden
-          personenbezogenen Daten für einen spezifischen Zweck oder mehrere
-          bestimmte Zwecke gegeben.
-        </p>
-        <p>
-          • Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1
-          lit. b. DSGVO) - Die Verarbeitung ist für die Erfüllung eines Vertrags,
-          dessen Vertragspartei die betroffene Person ist, oder zur Durchführung
-          vorvertraglicher Massnahmen erforderlich, die auf Anfrage der
-          betroffenen Person erfolgen.
-        </p>
-        <p>
-          • Rechtliche Verpflichtung (Art. 6 Abs. 1 S. 1 lit. c. DSGVO) - Die
-          Verarbeitung ist zur Erfüllung einer rechtlichen Verpflichtung
-          erforderlich, der der Verantwortliche unterliegt.
-        </p>
-        <p>
-          • Schutz lebenswichtiger Interessen (Art. 6 Abs. 1 S. 1 lit. d.
-          DSGVO) - Die Verarbeitung ist erforderlich, um lebenswichtige
-          Interessen der betroffenen Person oder einer anderen natürlichen
-          Person zu schützen.
-        </p>
-        <p>
-          • Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f. DSGVO) - Die
-          Verarbeitung ist zur Wahrung der berechtigten Interessen des
-          Verantwortlichen oder eines Dritten erforderlich, sofern nicht die
-          Interessen oder Grundrechte und Grundfreiheiten der betroffenen
-          Person, die den Schutz personenbezogener Daten erfordern,
-          überwiegen.
-        </p>
-        <p>
-          • Bewerbungsverfahren als vorvertragliches bzw. vertragliches
-          Verhältnis (Art. 9 Abs. 2 lit. b DSGVO) - Soweit im Rahmen des
-          Bewerbungsverfahrens besondere Kategorien von personenbezogenen
-          Daten im Sinne des Art. 9 Abs. 1 DSGVO (z.B. Gesundheitsdaten, wie
-          Schwerbehinderteneigenschaft oder ethnische Herkunft) bei Bewerbern
-          angefragt werden, damit der Verantwortliche oder die betroffene Person
-          die ihm bzw. ihr aus dem Arbeitsrecht und dem Recht der sozialen
-          Sicherheit und des Sozialschutzes erwachsenden Rechte ausüben und
-          seinen bzw. ihren diesbezüglichen Pflichten nachkommen kann, erfolgt
-          deren Verarbeitung nach Art. 9 Abs. 2 lit. b. DSGVO, im Fall des
-          Schutzes lebenswichtiger Interessen der Bewerber oder anderer
-          Personen gem. Art. 9 Abs. 2 lit. c. DSGVO oder für Zwecke der
-          Gesundheitsvorsorge oder der Arbeitsmedizin, für die Beurteilung der
-          Arbeitsfähigkeit des Beschäftigten, für die medizinische Diagnostik, die
-          Versorgung oder Behandlung im Gesundheits- oder Sozialbereich oder
-          für die Verwaltung von Systemen und Diensten im Gesundheits- oder
-          Sozialbereich gem. Art. 9 Abs. 2 lit. h. DSGVO. Im Fall einer auf
-          freiwilliger Einwilligung beruhenden Mitteilung von besonderen
-          Kategorien von Daten, erfolgt deren Verarbeitung auf Grundlage von
-          Art. 9 Abs. 2 lit. a. DSGVO.
-        </p>
-        <p>
-          Wir bearbeiten Personendaten für jene Dauer, die für den jeweiligen Zweck
-          oder die jeweiligen Zwecke erforderlich ist. Bei länger dauernden
-          Aufbewahrungspflichten aufgrund von gesetzlichen und sonstigen Pflichten,
-          denen wir unterliegen, schränken wir die Bearbeitung entsprechend ein.
-        </p>
-        <p>
-          Massgebliche Rechtsgrundlagen
-        </p>
-        <p>
-          Nach Massgabe des Art. 13 DSGVO teilen wir Ihnen die Rechtsgrundlagen
-          unserer Datenverarbeitungen mit. Sofern die Rechtsgrundlage in der
-          Datenschutzerklärung nicht genannt wird, gilt Folgendes: Die Rechtsgrundlage
-          für die Einholung von Einwilligungen ist Art. 6 Abs. 1 lit. a und Art. 7 DSGVO,
-          die Rechtsgrundlage für die Verarbeitung zur Erfüllung unserer Leistungen
-          und Durchführung vertraglicher Massnahmen sowie Beantwortung von
-          Anfragen ist Art. 6 Abs. 1 lit. b DSGVO, die Rechtsgrundlage für die
-          Verarbeitung zur Erfüllung unserer rechtlichen Verpflichtungen ist Art. 6 Abs. 1
-          lit. c DSGVO, und die Rechtsgrundlage für die Verarbeitung zur Wahrung
-          unserer berechtigten Interessen ist Art. 6 Abs. 1 lit. f DSGVO. Für den Fall,
-          dass lebenswichtige Interessen der betroffenen Person oder einer anderen
-          natürlichen Person eine Verarbeitung personenbezogener Daten erforderlich
-          machen, dient Art. 6 Abs. 1 lit. d DSGVO als Rechtsgrundlage.
-        </p>
-        <p>
-          Sicherheitsmassnahmen
-        </p>
-        <p>
-          Wir treffen nach Massgabe der gesetzlichen Vorgaben unter Berücksichtigung
-          des Stands der Technik, der Implementierungskosten und der Art, des
-          Umfangs, der Umstände und der Zwecke der Verarbeitung sowie der
-          unterschiedlichen Eintrittswahrscheinlichkeiten und des Ausmasses der
-          Bedrohung der Rechte und Freiheiten natürlicher Personen geeignete
-          technische und organisatorische Massnahmen, um ein dem Risiko
-          angemessenes Schutzniveau zu gewährleisten.
-        </p>
-        <p>
-          Zu den Massnahmen gehören insbesondere die Sicherung der Vertraulichkeit,
-          Integrität und Verfügbarkeit von Daten durch Kontrolle des physischen und
-          elektronischen Zugangs zu den Daten als auch des sie betreffenden Zugriffs,
-          der Eingabe, der Weitergabe, der Sicherung der Verfügbarkeit und ihrer
-          Trennung. Des Weiteren haben wir Verfahren eingerichtet, die eine
-          Wahrnehmung von Betroffenenrechten, die Löschung von Daten und
-          Reaktionen auf die Gefährdung der Daten gewährleisten. Ferner
-          berücksichtigen wir den Schutz personenbezogener Daten bereits bei der
-          Entwicklung bzw. Auswahl von Hardware, Software sowie Verfahren
-          entsprechend dem Prinzip des Datenschutzes, durch Technikgestaltung und
-          durch datenschutzfreundliche Voreinstellungen.
-        </p>
-        <p>
-          Übermittlung von personenbezogenen Daten
-        </p>
-        <p>
-          Im Rahmen unserer Verarbeitung von personenbezogenen Daten kommt es
-          vor, dass die Daten an andere Stellen, Unternehmen, rechtlich selbstständige
-          Organisationseinheiten oder Personen übermittelt oder sie ihnen gegenüber
-          offengelegt werden. Zu den Empfängern dieser Daten können z.B. mit ITAufgaben beauftragte Dienstleister oder Anbieter von Diensten und Inhalten,
-          die in eine Webseite eingebunden werden, gehören. In solchen Fall beachten
-          wir die gesetzlichen Vorgaben und schliessen insbesondere entsprechende
-          Verträge bzw. Vereinbarungen, die dem Schutz Ihrer Daten dienen, mit den
-          Empfängern Ihrer Daten ab.
-        </p>
-        <p>
-          Datenverarbeitung in Drittländern
-        </p>
-        <p>
-          Sofern wir Daten in einem Drittland (d.h., ausserhalb der Europäischen Union
-          (EU), des Europäischen Wirtschaftsraums (EWR)) verarbeiten oder die
-          Verarbeitung im Rahmen der Inanspruchnahme von Diensten Dritter oder der
-          Offenlegung bzw. Übermittlung von Daten an andere Personen, Stellen oder
-          Unternehmen stattfindet, erfolgt dies nur im Einklang mit den gesetzlichen
-          Vorgaben.
-          Vorbehaltlich ausdrücklicher Einwilligung oder vertraglich oder gesetzlich
-          erforderlicher Übermittlung, verarbeiten wir die Daten nur in Drittländern mit
-          einem anerkannten Datenschutzniveau, vertraglicher Verpflichtung durch
-          sogenannte Standardschutzklauseln der EU-Kommission, beim Vorliegen von
-          Zertifizierungen oder verbindlichen internen Datenschutzvorschriften (Art. 44
-          bis 49 DSGVO, Informationsseite der EU-Kommission:
-          https://ec.europa.eu/info/law/law-topic/data-protection/international-dimensiondata-protection_de).
-        </p>
-        <p>
-          Datenschutzerklärung für Cookies
-        </p>
-        <p>
-          Diese Website verwendet Cookies. Cookies sind Textdateien, die Daten von
-          besuchten Websites oder Domains enthalten und von einem Browser auf dem
-          Computer des Benutzers gespeichert werden. Ein Cookie dient in erster Linie
-          dazu, die Informationen über einen Benutzer während oder nach seinem
-          Besuch innerhalb eines Onlineangebotes zu speichern. Zu den gespeicherten
-          Angaben können z.B. die Spracheinstellungen auf einer Webseite, der
-          Loginstatus, ein Warenkorb oder die Stelle, an der ein Video geschaut wurde,
-          gehören. Zu dem Begriff der Cookies zählen wir ferner andere Technologien,
-          die die gleichen Funktionen wie Cookies erfüllen (z.B. wenn Angaben der
-          Nutzer anhand pseudonymer Onlinekennzeichnungen gespeichert werden,
-          auch als "Nutzer-IDs" bezeichnet)
-        </p>
-        <p>
-          Die folgenden Cookie-Typen und Funktionen werden unterschieden:
-        </p>
-        <p>
-          • Temporäre Cookies (auch: Session- oder Sitzungs-Cookies):
-          Temporäre Cookies werden spätestens gelöscht, nachdem ein Nutzer
-          ein Online-Angebot verlassen und seinen Browser geschlossen hat.
-        </p>
-        <p>
-          • Permanente Cookies: Permanente Cookies bleiben auch nach dem
-          Schliessen des Browsers gespeichert. So kann beispielsweise der
-          Login-Status gespeichert oder bevorzugte Inhalte direkt angezeigt
-          werden, wenn der Nutzer eine Website erneut besucht. Ebenso können
-          die Interessen von Nutzern, die zur Reichweitenmessung oder zu
-          Marketingzwecken verwendet werden, in einem solchen Cookie
-          gespeichert werden.
-        </p>
-        <p>
-          • First-Party-Cookies: First-Party-Cookies werden von uns selbst
-          gesetzt.
-        </p>
-        <p>
-          • Third-Party-Cookies (auch: Drittanbieter-Cookies): DrittanbieterCookies werden hauptsächlich von Werbetreibenden (sog. Dritten)
-          verwendet, um Benutzerinformationen zu verarbeiten.
-        </p>
-        <p>
-          • Notwendige (auch: essenzielle oder unbedingt erforderliche)
-          Cookies: Cookies können zum einen für den Betrieb einer Webseite
-          unbedingt erforderlich sein (z.B. um Logins oder andere Nutzereingaben
-          zu speichern oder aus Gründen der Sicherheit).
-        </p>
-        <p>
-          • Statistik-, Marketing- und Personalisierung-Cookies: Ferner werden
-          Cookies im Regelfall auch im Rahmen der Reichweitenmessung
-          eingesetzt sowie dann, wenn die Interessen eines Nutzers oder sein
-          Verhalten (z.B. Betrachten bestimmter Inhalte, Nutzen von Funktionen
-          etc.) auf einzelnen Webseiten in einem Nutzerprofil gespeichert werden.
-          Solche Profile dienen dazu, den Nutzern z.B. Inhalte anzuzeigen, die
-          ihren potenziellen Interessen entsprechen. Dieses Verfahren wird auch
-          als "Tracking", d.h., Nachverfolgung der potenziellen Interessen der
-          Nutzer bezeichnet. Soweit wir Cookies oder "Tracking"-Technologien
-          einsetzen, informieren wir Sie gesondert in unserer
-          Datenschutzerklärung oder im Rahmen der Einholung einer
-          Einwilligung.
-        </p>
-        <p>
-          Hinweise zu Rechtsgrundlagen: Auf welcher Rechtsgrundlage wir Ihre
-          personenbezogenen Daten mithilfe von Cookies verarbeiten, hängt davon ab,
-          ob wir Sie um eine Einwilligung bitten. Falls dies zutrifft und Sie in die Nutzung
-          von Cookies einwilligen, ist die Rechtsgrundlage der Verarbeitung Ihrer Daten
-          die erklärte Einwilligung. Andernfalls werden die mithilfe von Cookies
-          verarbeiteten Daten auf Grundlage unserer berechtigten Interessen (z.B. an
-          einem betriebswirtschaftlichen Betrieb unseres Onlineangebotes und dessen
-          Verbesserung) verarbeitet oder, wenn der Einsatz von Cookies erforderlich ist,
-          um unsere vertraglichen Verpflichtungen zu erfüllen.
-          Speicherdauer: Sofern wir Ihnen keine expliziten Angaben zur Speicherdauer
-          von permanenten Cookies mitteilen (z. B. im Rahmen eines sog. Cookie-OptIns), gehen Sie bitte davon aus, dass die Speicherdauer bis zu zwei Jahre
-          betragen kann.
-        </p>
-        <p>
-          Allgemeine Hinweise zum Widerruf und Widerspruch (Opt-Out): Abhängig
-          davon, ob die Verarbeitung auf Grundlage einer Einwilligung oder gesetzlichen
-          Erlaubnis erfolgt, haben Sie jederzeit die Möglichkeit, eine erteilte Einwilligung
-          zu widerrufen oder der Verarbeitung Ihrer Daten durch Cookie-Technologien
-          zu widersprechen (zusammenfassend als "Opt-Out" bezeichnet). Sie können
-          Ihren Widerspruch zunächst mittels der Einstellungen Ihres Browsers erklären,
-          z.B., indem Sie die Nutzung von Cookies deaktivieren (wobei hierdurch auch
-          die Funktionsfähigkeit unseres Onlineangebotes eingeschränkt werden kann).
-          Ein Widerspruch gegen den Einsatz von Cookies zu Zwecken des
-          Onlinemarketings kann auch mittels einer Vielzahl von Diensten, vor allem im
-          Fall des Trackings, über die Webseiten https://optout.aboutads.info und
-          https://www.youronlinechoices.com/ erklärt werden. Daneben können Sie
-          weitere Widerspruchshinweise im Rahmen der Angaben zu den eingesetzten
-          Dienstleistern und Cookies erhalten.
-        </p>
-        <p>
-          Verarbeitung von Cookie-Daten auf Grundlage einer Einwilligung: Wir setzen
-          ein Verfahren zum Cookie-Einwilligungs-Management ein, in dessen Rahmen
-          die Einwilligungen der Nutzer in den Einsatz von Cookies, bzw. der im
-          Rahmen des Cookie-Einwilligungs-Management-Verfahrens genannten
-          Verarbeitungen und Anbieter eingeholt sowie von den Nutzern verwaltet und
-          widerrufen werden können. Hierbei wird die Einwilligungserklärung
-          gespeichert, um deren Abfrage nicht erneut wiederholen zu müssen und die
-          Einwilligung entsprechend der gesetzlichen Verpflichtung nachweisen zu
-          können. Die Speicherung kann serverseitig und/oder in einem Cookie
-          (sogenanntes Opt-In-Cookie, bzw. mithilfe vergleichbarer Technologien)
-          erfolgen, um die Einwilligung einem Nutzer, bzw. dessen Gerät zuordnen zu
-          können. Vorbehaltlich individueller Angaben zu den Anbietern von CookieManagement-Diensten gelten die folgenden Hinweise: Die Dauer der
-          Speicherung der Einwilligung kann bis zu zwei Jahren betragen. Hierbei wird
-          ein pseudonymer Nutzer-Identifikator gebildet und mit dem Zeitpunkt der
-          Einwilligung, Angaben zur Reichweite der Einwilligung (z. B. welche
-          Kategorien von Cookies und/oder Diensteanbieter) sowie dem Browser,
-          System und verwendeten Endgerät gespeichert.
-        </p>
-        <p>
-          • Verarbeitete Datenarten: Nutzungsdaten (z.B. besuchte Webseiten,
-          Interesse an Inhalten, Zugriffszeiten), Meta-/Kommunikationsdaten (z.B.
-          Geräte-Informationen, IP-Adressen).
-        </p>
-        <p>
-          • Betroffene Personen: Nutzer (z.B. Webseitenbesucher, Nutzer von
-          Onlinediensten).
-        </p>
-        <p>
-          • Rechtsgrundlagen: Einwilligung (Art. 6 Abs. 1 S. 1 lit. a. DSGVO),
-          Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f. DSGVO).
-          Datenschutzerklärung für SSL-/TLS-Verschlüsselung
-          Diese Website nutzt aus Gründen der Sicherheit und zum Schutz der
-          Übertragung vertraulicher Inhalte, wie zum Beispiel der Anfragen, die Sie an
-          uns als Seitenbetreiber senden, eine SSL-/TLS-Verschlüsselung. Eine
-          verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des
-          Browsers von "http://" auf "https://" wechselt und an dem Schloss-Symbol in
-          Ihrer Browserzeile.
-        </p>
-        <p>
-          Wenn die SSL bzw. TLS Verschlüsselung aktiviert ist, können die Daten, die
-          Sie an uns übermitteln, nicht von Dritten mitgelesen werden.
-          Datenübertragungssicherheit (ohne SSL)
-          Bitte beachten Sie, dass Daten, die über ein offenes Netz wie das Internet
-          oder einen E-Mail-Dienst ohne SSL-Verschlüsselung übermittelt werden, für
-          jedermann einsehbar sind. Eine unverschlüsselte Verbindung erkennen Sie
-          daran, dass die Adresszeile des Browsers "http://" anzeigt und kein SchlossSymbol in Ihrer Browserzeile angezeigt wird. Informationen die über das
-          Internet übertragen werden und online empfangene Inhalte, können unter
-          Umständen über Netze von Drittanbietern übermittelt werden. Wir können die
-          Vertraulichkeit von Mitteilungen oder Unterlagen, die über solche offenen
-          Netze oder Netze von Drittanbietern übermittelt werden, nicht garantieren.
-          Wenn Sie über ein offenes Netz oder Netze von Drittanbietern
-          personenbezogene Informationen bekannt geben, sollten Sie sich der
-          Tatsache bewusst sein, dass Ihre Daten verloren gehen oder Dritte potenziell
-          auf diese Informationen zugreifen und folglich die Daten ohne Ihre
-          Zustimmung sammeln und nutzen können. Zwar werden in vielen Fällen die
-          einzelnen Datenpakete verschlüsselt übermittelt, nicht aber die Namen des
-          Absenders und des Empfängers. Selbst wenn der Absender und der
-          Empfänger im gleichen Land wohnen, erfolgt die Datenübermittlung über
-          solche Netze häufig und ohne Kontrollen auch über Drittstaaten, d.h. auch
-          über Länder, die nicht das gleiche Datenschutzniveau bieten wie Ihr
-          Domizilland. Wir übernehmen für die Sicherheit Ihrer Daten während der
-          Übermittlung über das Internet keine Verantwortung und lehnen jede Haftung
-          für mittelbare und unmittelbare Verluste ab. Wir bitten Sie, andere
-          Kommunikationsmittel zu benutzen, sollten Sie dies aus Gründen der
-          Sicherheit für notwendig oder vernünftig erachten.
-        </p>
-        <p>
-          Trotz umfangreicher technischer und organisatorischer
-          Sicherungsvorkehrungen, können möglicherweise Daten verloren gehen oder
-          von Unbefugten abgefangen und/oder manipuliert werden. Wir treffen soweit
-          möglich geeignete technische und organisatorische Sicherheitsmassnahmen,
-          um dies innerhalb unseres Systems zu verhindern. Ihr Computer befindet sich
-          indessen ausserhalb des von uns kontrollierbaren Sicherheitsbereichs. Es
-          obliegt Ihnen als Benutzer, sich über die erforderlichen
-          Sicherheitsvorkehrungen zu informieren und diesbezüglich geeignete
-          Massnahmen zu treffen. Als Website-Betreiber haften wir keinesfalls für
-          Schäden, die Ihnen aus Datenverlust oder -manipulation entstehen können.
-          Daten welche Sie in Online-Formularen angeben, können zwecks
-          Auftragsabwicklung an beauftragte Dritte weitergegeben und von diesen
-          eingesehen und allenfalls bearbeitet werden.
-        </p>
-        <p>
-          Datenschutzerklärung für Server-Log-Files
-        </p>
-        <p>
-          Der Provider dieser Website erhebt und speichert automatisch Informationen
-          in so genannten Server-Log Files, die Ihr Browser automatisch an uns
-          übermittelt. Dies sind:
-        </p>
-        <p>
-          • Browsertyp und Browserversion
-        </p>
-        <p>
-          • verwendetes Betriebssystem
-        </p>
-        <p>
-          • Referrer URL
-        </p>
-        <p>
-          • Hostname des zugreifenden Rechners
-        </p>
-        <p>
-          • Uhrzeit der Serveranfrage
-        </p>
-        <p>
-          Diese Daten sind nicht bestimmten Personen zuordenbar. Eine
-          Zusammenführung dieser Daten mit anderen Datenquellen wird nicht
-          vorgenommen. Wir behalten uns vor, diese Daten nachträglich zuprüfen, wenn
-          uns konkrete Anhaltspunkte für eine rechtswidrige Nutzung bekannt werden.
-        </p>
-        <p>
-          Dienste von Dritten
-        </p>
-        <p>
-          Diese Website verwenden allenfalls Google Maps für das Einbetten von
-          Karten, Google Invisible reCAPTCHA für den Schutz gegen Bots und Spam
-          sowie YouTube für das Einbetten von Videos.
-          Diese Dienste der amerikanischen Google LLC verwenden unter anderem
-          Cookies und infolgedessen werden Daten an Google in den USA übertragen,
-          wobei wir davon ausgehen, dass in diesem Rahmen kein personenbezogenes
-          Tracking allein durch die Nutzung unserer Website stattfindet.
-          Google hat sich verpflichtet, einen angemessenen Datenschutz gemäss dem
-          amerikanisch-europäischen und dem amerikanisch-schweizerischen Privacy
-          Shield zu gewährleisten.
-          Weitere Informationen finden sich in der Datenschutzerklärung von Google.
-          Datenschutzerklärung für Kontaktformular
-          Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre
-          Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen
-          Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von
-          Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre
-          Einwilligung weiter.
-        </p>
-        <p>
-          Datenschutzerklärung für Newsletterdaten
-        </p>
-        <p>
-          Wenn Sie den auf dieser Website angebotenen Newsletter beziehen möchten,
-          benötigen wir von Ihnen eine E-Mail-Adresse sowie Informationen, welche uns
-          die Überprüfung gestatten, dass Sie der Inhaber der angegebenen E-MailAdresse sind und mit dem Empfang des Newsletters einverstanden sind.
-          Weitere Daten werden nicht erhoben. Diese Daten verwenden wir
-          ausschliesslich für den Versand der angeforderten Informationen und geben
-          sie nicht an Dritte weiter.
-          Die erteilte Einwilligung zur Speicherung der Daten, der E-Mail-Adresse sowie
-          deren Nutzung zum Versand des Newsletters können Sie jederzeit widerrufen,
-          etwa über den «Austragen-Link» im Newsletter.
-          Datenschutzerklärung für Kommentarfunktion auf
-          dieser Website
-          Für die Kommentarfunktion auf dieser Website werden neben Ihrem
-          Kommentar auch Angaben zum Zeitpunkt der Erstellung des Kommentars,
-          Ihre E-Mail-Adresse und, wenn Sie nicht anonym posten, der von Ihnen
-          gewählte Nutzername gespeichert.
-          Speicherung der IP Adresse
-          Unsere Kommentarfunktion speichert die IP-Adressen der Nutzer, die
-          Kommentare verfassen. Da wir Kommentare auf unserer Seite nicht vor der
-          Freischaltung prüfen, benötigen wir diese Daten, um im Falle von
-          Rechtsverletzungen wie Beleidigungen oder Propaganda gegen den Verfasser
-          vorgehen zu können.
-        </p>
-        <p>
-          Abonnieren von Kommentaren
-        </p>
-        <p>
-          Als Nutzer der Seite können Sie nach einer Anmeldung Kommentare
-abonnieren. Sie erhalten eine Bestätigungsemail, um zu prüfen, ob Sie der
-Inhaber der angegebenen E-Mail-Adresse sind. Sie können diese Funktion
-jederzeit über einen Link in den Info-Mails abbestellen.
-Rechte betroffener Personen
-        </p>
-        <p>
-          Recht auf Bestätigung
-        </p>
-        <p>
-          Jede betroffene Person hat das Recht, vom Betreiber der Website eine
-Bestätigung darüber zu verlangen, ob betroffene Personen betreffende,
-personenbezogene Daten verarbeitet werden. Möchten Sie dieses
-Bestätigungsrecht in Anspruch nehmen, können Sie sich hierzu jederzeit an
-den Datenschutzbeauftragten wenden.
-        </p>
-        <p>
-          Recht auf Auskunft
-        </p>
-        <p>
-          Jede von der Verarbeitung betroffene Person mit personenbezogenen Daten
-          hat das Recht, jederzeit vom Betreiber dieser Website unentgeltliche Auskunft
-          über die zu seiner Person gespeicherten personenbezogenen Daten und eine
-          Kopie dieser Auskunft zu erhalten. Ferner kann gegebenenfalls über folgende
-          Informationen Auskunft gegeben werden:
-        </p>
-        <p>
-          • die Verarbeitungszwecke
-        </p>
-        <p>
-          • die Kategorien personenbezogener Daten, die verarbeitet werden
-        </p>
-        <p>
-          • die Empfänger, gegenüber denen die personenbezogenen Daten
-offengelegt worden sind oder noch offengelegt werden
-        </p>
-        <p>
-          • falls möglich, die geplante Dauer, für die die personenbezogenen Daten
-gespeichert werden, oder, falls dies nicht möglich ist, die Kriterien für die
-Festlegung dieser Dauer
-        </p>
-        <p>
-          • das Bestehen eines Rechts auf Berichtigung oder Löschung der sie
-betreffenden personenbezogenen Daten oder auf Einschränkung der
-Verarbeitung durch den Verantwortlichen oder eines
-Widerspruchsrechts gegen diese Verarbeitung
-        </p>
-        <p>
-          • das Bestehen eines Beschwerderechts bei einer Aufsichtsbehörde
-        </p>
-        <p>
-          • wenn die personenbezogenen Daten nicht bei der betroffenen Person
-erhoben werden: Alle verfügbaren Informationen über die Herkunft der
-Daten
-        </p>
-        <p>
-          Ferner steht der betroffenen Person ein Auskunftsrecht darüber zu, ob
-personenbezogene Daten an ein Drittland oder an eine internationale
-Organisation übermittelt wurden. Sofern dies der Fall ist, so steht der
-betroffenen Person im übrigen das Recht zu, Auskunft über die geeigneten
-Garantien im Zusammenhang mit der übermittlung zu erhalten.
-Möchten Sie dieses Auskunftsrecht in Anspruch nehmen, können Sie sich
-hierzu jederzeit an unseren Datenschutzbeauftragten wenden.
-        </p>
-        <p>
-          Recht auf Berichtigung
-        </p>
-        <p>
-          Jede von der Verarbeitung personenbezogener Daten betroffene Person hat
-das Recht, die unverzügliche Berichtigung sie betreffender unrichtiger
-personenbezogener Daten zu verlangen. Ferner steht der betroffenen Person
-das Recht zu, unter Berücksichtigung der Zwecke der Verarbeitung, die
-Vervollständigung unvollständiger personenbezogener Daten - auch mittels
-einer ergänzenden Erklärung - zu verlangen.
-Möchten Sie dieses Berichtigungsrecht in Anspruch nehmen, können Sie sich
-hierzu jederzeit an unseren Datenschutzbeauftragten wenden.
-Recht auf Löschung (Recht auf Vergessen werden)
-Jede von der Verarbeitung personenbezogener Daten betroffene Person hat
-das Recht, von dem Verantwortlichen dieser Website zu verlangen, dass die
-sie betreffenden personenbezogenen Daten unverzüglich gelöscht werden,
-sofern einer der folgenden Gründe zutrifft und soweit die Verarbeitung nicht
-erforderlich ist:
-        </p>
-        <p>
-          • Die personenbezogenen Daten wurden für solche Zwecke erhoben oder
-auf sonstige Weise verarbeitet, für welche sie nicht mehr notwendig sind
-        </p>
-        <p>
-          • Die betroffene Person widerruft ihre Einwilligung, auf die sich die
-          Verarbeitung stützte, und es fehlt an einer anderweitigen
-          Rechtsgrundlage für die Verarbeitung
-        </p>
-        <p>
-          • Die betroffene Person legt aus Gründen, die sich aus ihrer besonderen
-Situation ergeben, Widerspruch gegen die Verarbeitung ein und es
-liegen keine vorrangigen berechtigten Gründe für die Verarbeitung vor,
-oder die betroffene Person legt im Falle von Direktwerbung und damit
-verbundenem Profiling Widerspruch gegen die Verarbeitung ein
-        </p>
-        <p>
-          • Die personenbezogenen Daten wurden unrechtmässig verarbeitet
-        </p>
-        <p>
-          • Die Löschung der personenbezogenen Daten ist zur Erfüllung einer
-rechtlichen Verpflichtung nach dem Unionsrecht oder dem Recht der
-Mitgliedstaaten erforderlich, dem der Verantwortliche unterliegt
-        </p>
-        <p>
-          • Die personenbezogenen Daten wurden in Bezug auf angebotene
-Dienste der Informationsgesellschaft, die einem Kind direkt gemacht
-wurden, erhoben
+  <!-- HERO -->
+  <section class="legal-hero">
+    <div class="container-modern legal-hero-content">
+      <a href="index.html" class="back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+        Zurück zur Startseite
+      </a>
+      <h1><span>Datenschutz</span>erklärung</h1>
+      <p>Informationen zum Schutz Ihrer persönlichen Daten</p>
+    </div>
+  </section>
 
-        </p>
-        <p>
-          Sofern einer der oben genannten Gründe zutrifft und Sie die Löschung von
-personenbezogenen Daten, die beimBetreiber dieser Website gespeichert
-sind, veranlassen möchten, können Sie sich hierzu jederzeit an unseren
-Datenschutzbeauftragten wenden. Der Datenschutzbeauftragte dieser
-Website wird veranlassen, dass dem Löschverlangen unverzüglich
-nachgekommen wird.
-Recht auf Einschränkung der Verarbeitung
-Jede von der Verarbeitung personenbezogener Daten betroffene Person hat
-das Recht, von dem Verantwortlichen dieser Website die Einschränkung der
-Verarbeitung zu verlangen, wenn eine der folgenden Voraussetzungen
-gegeben ist:
-        </p>
-        <p>
-          • Die Richtigkeit der personenbezogenen Daten wird von der betroffenen
-Person bestritten, und zwar für eine Dauer, die es dem Verantwortlichen
-ermöglicht, die Richtigkeit der personenbezogenen Daten zu überprüfen
-        </p>
-        <p>
-          • Die Verarbeitung ist unrechtmässig, die betroffene Person lehnt die
-Löschung der personenbezogenen Daten ab und verlangt stattdessen
-die Einschränkung der Nutzung der personenbezogenen Daten
-        </p>
-        <p>
-          • Der Verantwortliche benötigt die personenbezogenen Daten für die
-Zwecke der Verarbeitung nicht länger, die betroffene Person benötigt
-sie jedoch zur Geltendmachung, Ausübung oder Verteidigung von
-        </p>
-        <p>
-          Rechtsansprüchen
-        </p>
-        <p>
-          • Die betroffene Person hat aus Gründen, die sich aus ihrer besonderen
-Situation ergeben, Widerspruch gegen die Verarbeitung eingelegt und
-es steht noch nicht fest, ob die berechtigten Gründe des
-Verantwortlichen gegenüber denen der betroffenen Person überwiegen
-Sofern eine der oben genannten Voraussetzungen gegeben ist Sie die
-Einschränkung von personenbezogenen Daten, die beim Betreiber dieser
-Website gespeichert sind, verlangen möchten, können Sie sich hierzu
-jederzeit an unseren Datenschutzbeauftragten wenden. Der
-Datenschutzbeauftragte dieser Website wird die Einschränkung der
-Verarbeitung veranlassen.
-        </p>
-        <p>
-          Recht auf Datenübertragbarkeit
-        </p>
-        <p>
-          Jede von der Verarbeitung personenbezogener Daten betroffene Person hat
-das Recht, die sie betreffenden personenbezogenen Daten in einem
-strukturierten, gängigen und maschinenlesbaren Format zu erhalten. Sie hat
-ausserdem das Recht, dass diese Daten bei Vorliegen der gesetzlichen
-Voraussetzungen einem anderen Verantwortlichen übermittelt werden.
-Ferner hat die betroffene Person das Recht, zu erwirken, dass die
-personenbezogenen Daten direkt von einem Verantwortlichen an einen
-anderen Verantwortlichen übermittelt werden, soweit dies technisch machbar
-ist und sofern hiervon nicht die Rechte und Freiheiten anderer Personen
-beeinträchtigt werden.
-Zur Geltendmachung des Rechts auf Datenübertragbarkeit können Sie sich
-jederzeit an den vom Betreiber dieser Website bestellten
-Datenschutzbeauftragten wenden.
-Recht auf Widerspruch
-Jede von der Verarbeitung personenbezogener Daten betroffene Person hat
-das Recht, aus Gründen, die sich aus ihrer besonderen Situation ergeben,
-jederzeit gegen die Verarbeitung sie betreffender personenbezogener Daten,
-Widerspruch einzulegen.
-Der Betreiber dieser Website verarbeitet die personenbezogenen Daten im
-Falle des Widerspruchs nicht mehr, es sei denn, wir können zwingende
-schutzwürdige Gründe für die Verarbeitung nachweisen, die den Interessen,
-Rechten und Freiheiten der betroffenen Person überwiegen, oder wenn die
-Verarbeitung der Geltendmachung, Ausübung oder Verteidigung von
-Rechtsansprüchen dient.
-        </p>
-        <p>
-          Zur Ausübung des Rechts auf Widerspruch können Sie sich direkt an den
-Datenschutzbeauftragten dieser Website wenden.
-Recht auf Widerruf einer datenschutzrechtlichen Einwilligung
-Jede von der Verarbeitung personenbezogener Daten betroffene Person hat
-das Recht, eine abgegebene Einwilligung zur Verarbeitung
-personenbezogener Daten jederzeit zu widerrufen.
-Möchten Sie Ihr Recht auf Widerruf einer Einwilligung geltend machen,
-können Sie sich hierzu jederzeit an unseren Datenschutzbeauftragten
-wenden.
-Datenschutzerklärung für Widerspruch Werbe-Mails
-Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten
-Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung
-und Informationsmaterialien wird hiermit widersprochen. Die Betreiber der
-Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten
-Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor.
-        </p>
-        <p>
-          Kostenpflichtige Leistungen
-        </p>
-        <p>
-          Zur Erbringung kostenpflichtiger Leistungen werden von uns zusätzliche Daten
-erfragt, wie z.B. Zahlungsangaben, um Ihre Bestellung resp. Ihren Auftrag
-ausführen zu können. Wir speichern diese Daten in unseren Systemen, bis die
-gesetzlichen Aufbewahrungsfristen abgelaufen sind.
-Verwendung von Google Maps
-Diese Website nutzt das Angebot von Google Maps. Dadurch können wir
-Ihnen interaktive Karten direkt in der Website anzeigen und ermöglichen Ihnen
-die komfortable Nutzung der Karten-Funktion. Durch den Besuch auf der
-Website erhält Google die Information, dass Sie die entsprechende Unterseite
-unserer Website aufgerufen haben. Dies erfolgt unabhängig davon, ob Google
-ein Nutzerkonto bereitstellt, über das Sie eingeloggt sind, oder ob kein
-Nutzerkonto besteht. Wenn Sie bei Google eingeloggt sind, werden Ihre Daten
-direkt Ihrem Konto zugeordnet. Wenn Sie die Zuordnung mit Ihrem Profil bei
-Google nicht wünschen, müssen Sie sich vor Aktivierung des Buttons
-ausloggen. Google speichert Ihre Daten als Nutzungsprofile und nutzt sie für
-Zwecke der Werbung, Marktforschung und/oder bedarfsgerechten Gestaltung
-seiner Website. Eine solche Auswertung erfolgt insbesondere (selbst für nicht
-eingeloggte Nutzer) zur Erbringung von bedarfsgerechter Werbung und um
-andere Nutzer des sozialen Netzwerks über Ihre Aktivitäten auf unserer
-Website zu informieren. Ihnen steht ein Widerspruchsrecht zu gegen die
-Bildung dieser Nutzerprofile, wobei Sie sich zur Ausübung dessen an Google
-richten müssen. Weitere Informationen zu Zweck und Umfang der
-Datenerhebung und ihrer Verarbeitung durch Google erhalten Sie neben
-weiteren Informationen zu Ihren diesbezüglichen Rechten und
-Einstellungsmöglichkeiten zum Schutze Ihrer Privatsphäre
-unter: www.google.de/intl/de/policies/privacy.
-        </p>
-        <p>
-          Google Ads
-        </p>
-        <p>
-          Diese Website nutzt das Google Conversion-Tracking. Sind Sie über eine von
-Google geschaltete Anzeige auf unsere WebSite gelangt, wird von Google
-Ads ein Cookie auf Ihrem Rechner gesetzt. Das Cookie für ConversionTracking wird gesetzt, wenn ein Nutzer auf eine von Google geschaltete
-Anzeige klickt. Diese Cookies verlieren nach 30 Tagen ihre Gültigkeit und
-dienen nicht der persönlichen Identifizierung. Besucht der Nutzer bestimmte
-Seiten unserer Website und das Cookie ist noch nicht abgelaufen, können wir
-und Google erkennen, dass der Nutzer auf die Anzeige geklickt hat und zu
-dieser Seite weitergeleitet wurde. Jeder Google Ads-Kunde erhält ein anderes
-Cookie. Cookies können somit nicht über die Websites von Ads-Kunden
-nachverfolgt werden. Die mithilfe des Conversion-Cookies eingeholten
-Informationen dienen dazu, Conversion-Statistiken für Ads-Kunden zu
-erstellen, die sich für Conversion-Tracking entschieden haben. Die Kunden
-erfahren die Gesamtanzahl der Nutzer, die auf ihre Anzeige geklickt haben
-und zu einer mit einem Conversion-Tracking-Tag versehenen Seite
-weitergeleitet wurden. Sie erhalten jedoch keine Informationen, mit denen sich
-Nutzer persönlich identifizieren lassen.
-Möchten Sie nicht am Tracking teilnehmen, können Sie das hierfür
-erforderliche Setzen eines Cookies ablehnen – etwa per Browser-Einstellung,
-die das automatische Setzen von Cookies generell deaktiviert oder Ihren
-Browser so einstellen, dass Cookies von der Domain
-«googleleadservices.com» blockiert werden.
-Bitte beachten Sie, dass Sie die Opt-out-Cookies nicht löschen dürfen,
-solange Sie keine Aufzeichnung von Messdaten wünschen. Haben Sie alle
-Ihre Cookies im Browser gelöscht, müssen Sie das jeweilige Opt-out Cookie
-erneut setzen.
-Datenschutzerklärung für Facebook
-Diese Website verwendet Funktionen von Facebook Inc., 1601 S. California
-Ave, Palo Alto, CA 94304, USA . Bei Aufruf unserer Seiten mit Facebook-PlugIns wird eine Verbindung zwischen Ihrem Browser und den Servern von
-Facebook aufgebaut. Dabei werden bereits Daten an Facebook übertragen.
-Besitzen Sie einen Facebook-Account, können diese Daten damit verknüpft
-werden. Wenn Sie keine Zuordnung dieser Daten zu Ihrem Facebook-Account
-wünschen, loggen Sie sich bitte vor dem Besuch unserer Seite bei Facebook
-aus. Interaktionen, insbesondere das Nutzen einer Kommentarfunktion oder
-das Anklicken eines „Like“- oder „Teilen“-Buttons werden ebenfalls an
-Facebook weitergegeben. Mehr erfahren Sie unter https://dede.facebook.com/about/privacy.
-Datenschutzerklärung für Instagram
-Auf unserer Website sind Funktionen des Dienstes Instagram eingebunden.
-Diese Funktionen werden angeboten durch die Instagram Inc., 1601 Willow
-Road, Menlo Park, CA, 94025, USA integriert. Wenn Sie in Ihrem InstagramAccount eingeloggt sind können Sie durch Anklicken des Instagram-Buttons
-die Inhalte unserer Seiten mit Ihrem Instagram-Profil verlinken. Dadurch kann
-Instagram den Besuch unserer Seiten Ihrem Benutzerkonto zuordnen. Wir
-weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt
-der übermittelten Daten sowie deren Nutzung durch Instagram erhalten.
-Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von
-Instagram: http://instagram.com/about/legal/privacy/
-Urheberrechte
-Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder
-anderen Dateien auf der Website, gehören ausschliesslich dem Betreiber
-dieser Website oder den speziell genannten Rechteinhabern. Für die
-Reproduktion von sämtlichen Dateien, ist die schriftliche Zustimmung des
-Urheberrechtsträgers im Voraus einzuholen.
-Wer ohne Einwilligung des jeweiligen Rechteinhabers eine
-Urheberrechtsverletzung begeht, kann sich strafbar und allenfalls
-schadenersatzpflichtig machen.
-Allgemeiner Haftungsausschluss
-Alle Angaben unseres Internetangebotes wurden sorgfältig geprüft. Wir
-bemühen uns, unser Informationsangebot aktuell, inhaltlich richtig und
-vollständig anzubieten. Trotzdem kann das Auftreten von Fehlern nicht völlig
-ausgeschlossen werden, womit wir keine Garantie für Vollständigkeit,
-Richtigkeit und Aktualität von Informationen auch journalistisch-redaktioneller
-Art übernehmen können. Haftungsansprüche aus Schäden materieller oder
-ideeller Art, die durch die Nutzung der angebotenen Informationen verursacht
-wurden, sind ausgeschlossen, sofern kein nachweislich vorsätzliches oder
-grob fahrlässiges Verschulden vorliegt.
-Der Herausgeber kann nach eigenem Ermessen und ohne Ankündigung Texte
-verändern oder löschen und ist nicht verpflichtet, Inhalte dieser Website zu
-aktualisieren. Die Benutzung bzw. der Zugang zu dieser Website geschieht
-auf eigene Gefahr des Besuchers. Der Herausgeber, seine Auftraggeber oder
-Partner sind nicht verantwortlich für Schäden, wie direkte, indirekte, zufällige,
-vorab konkret zu bestimmende oder Folgeschäden, die angeblich durch den
-Besuch dieser Website entstanden sind und übernehmen hierfür folglich keine
-Haftung.
-Der Herausgeber übernimmt ebenfalls keine Verantwortung und Haftung für
-die Inhalte und die Verfügbarkeit von Website Dritter, die über externe Links
-dieser Website erreichbar sind. Für den Inhalt der verlinkten Seiten sind
-ausschliesslich deren Betreiber verantwortlich. Der Herausgeber distanziert
-sich damit ausdrücklich von allen Inhalten Dritter, die möglicherweise strafoder haftungsrechtlich relevant sind oder gegen die guten Sitten verstossen.
-Änderungen
-Wir können diese Datenschutzerklärung jederzeit ohne Vorankündigung
-anpassen. Es gilt die jeweils aktuelle, auf unserer Website publizierte
-Fassung. Soweit die Datenschutzerklärung Teil einer Vereinbarung mit Ihnen
-ist, werden wir Sie im Falle einer Aktualisierung über die Änderung per E-Mail
-oder auf andere geeignete Weise informieren.
-Fragen an den Datenschutzbeauftragten
-Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail
-oder wenden Sie sich direkt an die für den Datenschutz zu Beginn der
-Datenschutzerklärung aufgeführten, verantwortlichen Person in unserer
-Organisation.
-        </p>
-        <p>
-          Quelle: SwissAnwalt
-        </p>
+  <!-- CONTENT -->
+  <main>
+  <section class="section">
+    <div class="container-modern">
+      <div class="legal-content">
 
+        <!-- Verantwortliche Stelle -->
+        <div class="legal-section reveal">
+          <h2>Verantwortliche Stelle</h2>
+          <div class="legal-info-card">
+            <p><strong>Hörschmiede Boo GmbH</strong></p>
+            <p>Daniel Boo</p>
+            <p>Seestrasse 89 &amp; 91</p>
+            <p>8810 Horgen</p>
+            <p>Telefon: 044 594 31 90</p>
+            <p>E-Mail: info@hoerschmiede-boo.ch</p>
+            <p>Website: https://www.hoerschmiede-boo.ch/</p>
+          </div>
+          <p>Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO).</p>
+        </div>
 
+        <!-- Allgemeiner Hinweis -->
+        <div class="legal-section reveal">
+          <h2>Allgemeiner Hinweis</h2>
+          <p>Gestützt auf Artikel 13 der schweizerischen Bundesverfassung und den datenschutzrechtlichen Bestimmungen des Bundes (Datenschutzgesetz, DSG) hat jede Person Anspruch auf Schutz ihrer Privatsphäre sowie auf Schutz vor Missbrauch ihrer persönlichen Daten. Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
+          <p>In Zusammenarbeit mit unseren Hosting-Providern bemühen wir uns, die Datenbanken so gut wie möglich vor fremden Zugriffen, Verlusten, Missbrauch oder vor Fälschung zu schützen.</p>
+          <p>Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
+          <p>Durch die Nutzung dieser Website erklären Sie sich mit der Erhebung, Verarbeitung und Nutzung von Daten gemäss der nachfolgenden Beschreibung einverstanden. Diese Website kann grundsätzlich ohne Registrierung besucht werden. Dabei werden Daten wie beispielsweise aufgerufene Seiten bzw. Namen der abgerufenen Datei, Datum und Uhrzeit zu statistischen Zwecken auf dem Server gespeichert, ohne dass diese Daten unmittelbar auf Ihre Person bezogen werden. Personenbezogene Daten, insbesondere Name, Adresse oder E-Mail-Adresse werden soweit möglich auf freiwilliger Basis erhoben. Ohne Ihre Einwilligung erfolgt keine Weitergabe der Daten an Dritte.</p>
+        </div>
+
+        <!-- Bearbeitung von Personendaten -->
+        <div class="legal-section reveal">
+          <h2>Bearbeitung von Personendaten</h2>
+          <p>Personendaten sind alle Angaben, die sich auf eine bestimmte oder bestimmbare Person beziehen. Eine betroffene Person ist eine Person, über die Personendaten bearbeitet werden. Bearbeiten umfasst jeden Umgang mit Personendaten, unabhängig von den angewandten Mitteln und Verfahren, insbesondere das Aufbewahren, Bekanntgeben, Beschaffen, Löschen, Speichern, Verändern, Vernichten und Verwenden von Personendaten.</p>
+          <p>Wir bearbeiten Personendaten im Einklang mit dem schweizerischen Datenschutzrecht. Im Übrigen bearbeiten wir – soweit und sofern die EU-DSGVO anwendbar ist – Personendaten gemäss folgenden Rechtsgrundlagen im Zusammenhang mit Art. 6 Abs. 1 DSGVO:</p>
+          <ul>
+            <li><strong>Einwilligung</strong> (Art. 6 Abs. 1 S. 1 lit. a. DSGVO) – Die betroffene Person hat ihre Einwilligung in die Verarbeitung der sie betreffenden personenbezogenen Daten für einen spezifischen Zweck oder mehrere bestimmte Zwecke gegeben.</li>
+            <li><strong>Vertragserfüllung und vorvertragliche Anfragen</strong> (Art. 6 Abs. 1 S. 1 lit. b. DSGVO) – Die Verarbeitung ist für die Erfüllung eines Vertrags, dessen Vertragspartei die betroffene Person ist, oder zur Durchführung vorvertraglicher Massnahmen erforderlich.</li>
+            <li><strong>Rechtliche Verpflichtung</strong> (Art. 6 Abs. 1 S. 1 lit. c. DSGVO) – Die Verarbeitung ist zur Erfüllung einer rechtlichen Verpflichtung erforderlich, der der Verantwortliche unterliegt.</li>
+            <li><strong>Schutz lebenswichtiger Interessen</strong> (Art. 6 Abs. 1 S. 1 lit. d. DSGVO) – Die Verarbeitung ist erforderlich, um lebenswichtige Interessen der betroffenen Person oder einer anderen natürlichen Person zu schützen.</li>
+            <li><strong>Berechtigte Interessen</strong> (Art. 6 Abs. 1 S. 1 lit. f. DSGVO) – Die Verarbeitung ist zur Wahrung der berechtigten Interessen des Verantwortlichen oder eines Dritten erforderlich, sofern nicht die Interessen oder Grundrechte und Grundfreiheiten der betroffenen Person überwiegen.</li>
+          </ul>
+          <p>Wir bearbeiten Personendaten für jene Dauer, die für den jeweiligen Zweck oder die jeweiligen Zwecke erforderlich ist. Bei länger dauernden Aufbewahrungspflichten aufgrund von gesetzlichen und sonstigen Pflichten, denen wir unterliegen, schränken wir die Bearbeitung entsprechend ein.</p>
+        </div>
+
+        <!-- Sicherheitsmassnahmen -->
+        <div class="legal-section reveal">
+          <h2>Sicherheitsmassnahmen</h2>
+          <p>Wir treffen nach Massgabe der gesetzlichen Vorgaben unter Berücksichtigung des Stands der Technik, der Implementierungskosten und der Art, des Umfangs, der Umstände und der Zwecke der Verarbeitung sowie der unterschiedlichen Eintrittswahrscheinlichkeiten und des Ausmasses der Bedrohung der Rechte und Freiheiten natürlicher Personen geeignete technische und organisatorische Massnahmen, um ein dem Risiko angemessenes Schutzniveau zu gewährleisten.</p>
+          <p>Zu den Massnahmen gehören insbesondere die Sicherung der Vertraulichkeit, Integrität und Verfügbarkeit von Daten durch Kontrolle des physischen und elektronischen Zugangs zu den Daten als auch des sie betreffenden Zugriffs, der Eingabe, der Weitergabe, der Sicherung der Verfügbarkeit und ihrer Trennung. Des Weiteren haben wir Verfahren eingerichtet, die eine Wahrnehmung von Betroffenenrechten, die Löschung von Daten und Reaktionen auf die Gefährdung der Daten gewährleisten.</p>
+        </div>
+
+        <!-- Übermittlung -->
+        <div class="legal-section reveal">
+          <h2>Übermittlung von personenbezogenen Daten</h2>
+          <p>Im Rahmen unserer Verarbeitung von personenbezogenen Daten kommt es vor, dass die Daten an andere Stellen, Unternehmen, rechtlich selbstständige Organisationseinheiten oder Personen übermittelt oder sie ihnen gegenüber offengelegt werden. Zu den Empfängern dieser Daten können z.B. mit IT-Aufgaben beauftragte Dienstleister oder Anbieter von Diensten und Inhalten, die in eine Webseite eingebunden werden, gehören. In solchen Fällen beachten wir die gesetzlichen Vorgaben und schliessen insbesondere entsprechende Verträge bzw. Vereinbarungen, die dem Schutz Ihrer Daten dienen, mit den Empfängern Ihrer Daten ab.</p>
+        </div>
+
+        <!-- Datenverarbeitung in Drittländern -->
+        <div class="legal-section reveal">
+          <h2>Datenverarbeitung in Drittländern</h2>
+          <p>Sofern wir Daten in einem Drittland (d.h., ausserhalb der Europäischen Union (EU), des Europäischen Wirtschaftsraums (EWR)) verarbeiten oder die Verarbeitung im Rahmen der Inanspruchnahme von Diensten Dritter oder der Offenlegung bzw. Übermittlung von Daten an andere Personen, Stellen oder Unternehmen stattfindet, erfolgt dies nur im Einklang mit den gesetzlichen Vorgaben.</p>
+          <p>Vorbehaltlich ausdrücklicher Einwilligung oder vertraglich oder gesetzlich erforderlicher Übermittlung, verarbeiten wir die Daten nur in Drittländern mit einem anerkannten Datenschutzniveau, vertraglicher Verpflichtung durch sogenannte Standardschutzklauseln der EU-Kommission, beim Vorliegen von Zertifizierungen oder verbindlichen internen Datenschutzvorschriften (Art. 44 bis 49 DSGVO).</p>
+        </div>
+
+        <!-- Cookies -->
+        <div class="legal-section reveal">
+          <h2>Cookies</h2>
+          <p>Diese Website verwendet Cookies. Cookies sind Textdateien, die Daten von besuchten Websites oder Domains enthalten und von einem Browser auf dem Computer des Benutzers gespeichert werden. Ein Cookie dient in erster Linie dazu, die Informationen über einen Benutzer während oder nach seinem Besuch innerhalb eines Onlineangebotes zu speichern.</p>
+          <h3>Die folgenden Cookie-Typen und Funktionen werden unterschieden:</h3>
+          <ul>
+            <li><strong>Temporäre Cookies</strong> (Session-Cookies): Werden spätestens gelöscht, nachdem ein Nutzer ein Online-Angebot verlassen und seinen Browser geschlossen hat.</li>
+            <li><strong>Permanente Cookies</strong>: Bleiben auch nach dem Schliessen des Browsers gespeichert. So kann beispielsweise der Login-Status gespeichert oder bevorzugte Inhalte direkt angezeigt werden.</li>
+            <li><strong>First-Party-Cookies</strong>: Werden von uns selbst gesetzt.</li>
+            <li><strong>Third-Party-Cookies</strong> (Drittanbieter-Cookies): Werden hauptsächlich von Werbetreibenden verwendet, um Benutzerinformationen zu verarbeiten.</li>
+            <li><strong>Notwendige Cookies</strong>: Können zum Betrieb einer Webseite unbedingt erforderlich sein (z.B. um Logins oder andere Nutzereingaben zu speichern).</li>
+            <li><strong>Statistik-, Marketing- und Personalisierung-Cookies</strong>: Werden im Regelfall auch im Rahmen der Reichweitenmessung eingesetzt sowie wenn die Interessen eines Nutzers in einem Nutzerprofil gespeichert werden.</li>
+          </ul>
+          <p><strong>Hinweise zu Rechtsgrundlagen:</strong> Auf welcher Rechtsgrundlage wir Ihre personenbezogenen Daten mithilfe von Cookies verarbeiten, hängt davon ab, ob wir Sie um eine Einwilligung bitten. Falls dies zutrifft und Sie in die Nutzung von Cookies einwilligen, ist die Rechtsgrundlage der Verarbeitung Ihrer Daten die erklärte Einwilligung.</p>
+          <p><strong>Speicherdauer:</strong> Sofern wir Ihnen keine expliziten Angaben zur Speicherdauer von permanenten Cookies mitteilen, gehen Sie bitte davon aus, dass die Speicherdauer bis zu zwei Jahre betragen kann.</p>
+          <p><strong>Widerruf und Widerspruch (Opt-Out):</strong> Sie können Ihren Widerspruch mittels der Einstellungen Ihres Browsers erklären, z.B. indem Sie die Nutzung von Cookies deaktivieren. Ein Widerspruch gegen den Einsatz von Cookies zu Zwecken des Onlinemarketings kann auch über die Webseiten <a href="https://optout.aboutads.info" target="_blank" rel="noopener" style="color: var(--gold);">optout.aboutads.info</a> und <a href="https://www.youronlinechoices.com/" target="_blank" rel="noopener" style="color: var(--gold);">youronlinechoices.com</a> erklärt werden.</p>
+        </div>
+
+        <!-- SSL/TLS -->
+        <div class="legal-section reveal">
+          <h2>SSL-/TLS-Verschlüsselung</h2>
+          <p>Diese Website nutzt aus Gründen der Sicherheit und zum Schutz der Übertragung vertraulicher Inhalte eine SSL-/TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von "http://" auf "https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.</p>
+          <p>Wenn die SSL bzw. TLS Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.</p>
+        </div>
+
+        <!-- Server-Log-Files -->
+        <div class="legal-section reveal">
+          <h2>Server-Log-Files</h2>
+          <p>Der Provider dieser Website erhebt und speichert automatisch Informationen in sogenannten Server-Log-Files, die Ihr Browser automatisch an uns übermittelt. Dies sind:</p>
+          <ul>
+            <li>Browsertyp und Browserversion</li>
+            <li>Verwendetes Betriebssystem</li>
+            <li>Referrer URL</li>
+            <li>Hostname des zugreifenden Rechners</li>
+            <li>Uhrzeit der Serveranfrage</li>
+          </ul>
+          <p>Diese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.</p>
+        </div>
+
+        <!-- Dienste von Dritten -->
+        <div class="legal-section reveal">
+          <h2>Dienste von Dritten</h2>
+
+          <h3>Google Maps</h3>
+          <p>Diese Website nutzt das Angebot von Google Maps. Dadurch können wir Ihnen interaktive Karten direkt in der Website anzeigen. Durch den Besuch auf der Website erhält Google die Information, dass Sie die entsprechende Unterseite unserer Website aufgerufen haben. Weitere Informationen finden sich in der <a href="https://www.google.de/intl/de/policies/privacy" target="_blank" rel="noopener" style="color: var(--gold);">Datenschutzerklärung von Google</a>.</p>
+
+          <h3>Google Ads</h3>
+          <p>Diese Website nutzt das Google Conversion-Tracking. Sind Sie über eine von Google geschaltete Anzeige auf unsere Website gelangt, wird von Google Ads ein Cookie auf Ihrem Rechner gesetzt. Diese Cookies verlieren nach 30 Tagen ihre Gültigkeit und dienen nicht der persönlichen Identifizierung. Möchten Sie nicht am Tracking teilnehmen, können Sie das hierfür erforderliche Setzen eines Cookies ablehnen – etwa per Browser-Einstellung.</p>
+
+          <h3>Facebook</h3>
+          <p>Diese Website verwendet Funktionen von Facebook Inc. Bei Aufruf unserer Seiten mit Facebook-Plug-Ins wird eine Verbindung zwischen Ihrem Browser und den Servern von Facebook aufgebaut. Mehr erfahren Sie unter <a href="https://de-de.facebook.com/about/privacy" target="_blank" rel="noopener" style="color: var(--gold);">facebook.com/about/privacy</a>.</p>
+
+          <h3>Instagram</h3>
+          <p>Auf unserer Website sind Funktionen des Dienstes Instagram eingebunden. Weitere Informationen finden Sie in der <a href="http://instagram.com/about/legal/privacy/" target="_blank" rel="noopener" style="color: var(--gold);">Datenschutzerklärung von Instagram</a>.</p>
+        </div>
+
+        <!-- Kontaktformular -->
+        <div class="legal-section reveal">
+          <h2>Kontaktformular</h2>
+          <p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+        </div>
+
+        <!-- Rechte betroffener Personen -->
+        <div class="legal-section reveal">
+          <h2>Rechte betroffener Personen</h2>
+          <ul>
+            <li><strong>Recht auf Bestätigung</strong> – Sie haben das Recht, vom Betreiber der Website eine Bestätigung darüber zu verlangen, ob personenbezogene Daten verarbeitet werden.</li>
+            <li><strong>Recht auf Auskunft</strong> – Sie haben das Recht, jederzeit unentgeltliche Auskunft über die zu Ihrer Person gespeicherten personenbezogenen Daten und eine Kopie dieser Auskunft zu erhalten.</li>
+            <li><strong>Recht auf Berichtigung</strong> – Sie haben das Recht, die unverzügliche Berichtigung sie betreffender unrichtiger personenbezogener Daten zu verlangen.</li>
+            <li><strong>Recht auf Löschung</strong> (Recht auf Vergessen werden) – Sie haben das Recht, dass die sie betreffenden personenbezogenen Daten unverzüglich gelöscht werden, sofern einer der gesetzlich vorgesehenen Gründe zutrifft.</li>
+            <li><strong>Recht auf Einschränkung der Verarbeitung</strong> – Sie haben das Recht, die Einschränkung der Verarbeitung zu verlangen, wenn bestimmte Voraussetzungen gegeben sind.</li>
+            <li><strong>Recht auf Datenübertragbarkeit</strong> – Sie haben das Recht, die sie betreffenden personenbezogenen Daten in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten.</li>
+            <li><strong>Recht auf Widerspruch</strong> – Sie haben das Recht, jederzeit gegen die Verarbeitung sie betreffender personenbezogener Daten Widerspruch einzulegen.</li>
+            <li><strong>Recht auf Widerruf</strong> – Sie haben das Recht, eine abgegebene Einwilligung zur Verarbeitung personenbezogener Daten jederzeit zu widerrufen.</li>
+          </ul>
+          <p>Möchten Sie eines dieser Rechte in Anspruch nehmen, können Sie sich jederzeit an unseren Datenschutzbeauftragten wenden.</p>
+        </div>
+
+        <!-- Urheberrechte -->
+        <div class="legal-section reveal">
+          <h2>Urheberrechte</h2>
+          <p>Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf der Website gehören ausschliesslich dem Betreiber dieser Website oder den speziell genannten Rechteinhabern. Für die Reproduktion von sämtlichen Dateien ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen.</p>
+        </div>
+
+        <!-- Haftungsausschluss -->
+        <div class="legal-section reveal">
+          <h2>Allgemeiner Haftungsausschluss</h2>
+          <p>Alle Angaben unseres Internetangebotes wurden sorgfältig geprüft. Wir bemühen uns, unser Informationsangebot aktuell, inhaltlich richtig und vollständig anzubieten. Trotzdem kann das Auftreten von Fehlern nicht völlig ausgeschlossen werden, womit wir keine Garantie für Vollständigkeit, Richtigkeit und Aktualität von Informationen übernehmen können.</p>
+          <p>Wir können diese Datenschutzerklärung jederzeit ohne Vorankündigung anpassen. Es gilt die jeweils aktuelle, auf unserer Website publizierte Fassung.</p>
+        </div>
+
+        <!-- Kontakt -->
+        <div class="legal-section reveal">
+          <h2>Fragen zum Datenschutz</h2>
+          <p>Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person in unserer Organisation.</p>
+        </div>
+
+        <p class="legal-source">Quelle: SwissAnwalt</p>
 
       </div>
     </div>
-    
-  </body>
+  </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container-modern">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="img/FooterUMini.png" alt="Hörschmiede Boo" />
+          <span class="footer-logo-text">Hörschmiede Boo</span>
+        </div>
+        <div class="footer-links">
+          <a href="datenschutz.html">Datenschutz</a>
+          <a href="impressum.html" target="_blank">Impressum</a>
+          <a href="faq.html" target="_blank">FAQ</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2025 Hörschmiede Boo GmbH. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Nach oben scrollen">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+  </button>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+    const navOverlay = document.getElementById('navOverlay');
+    menuToggle.addEventListener('click', () => { menuToggle.classList.toggle('active'); mainNav.classList.toggle('open'); navOverlay.classList.toggle('active'); document.body.style.overflow = mainNav.classList.contains('open') ? 'hidden' : ''; });
+    navOverlay.addEventListener('click', () => { menuToggle.classList.remove('active'); mainNav.classList.remove('open'); navOverlay.classList.remove('active'); document.body.style.overflow = ''; });
+    mainNav.querySelectorAll('a').forEach(l => l.addEventListener('click', () => { menuToggle.classList.remove('active'); mainNav.classList.remove('open'); navOverlay.classList.remove('active'); document.body.style.overflow = ''; }));
+
+    const header = document.querySelector('.site-header');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 20); });
+
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => { scrollTopBtn.classList.toggle('visible', window.scrollY > 400); });
+    scrollTopBtn.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    revealElements.forEach(el => revealObserver.observe(el));
+  </script>
+</body>
 </html>
