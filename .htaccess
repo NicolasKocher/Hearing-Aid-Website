@@ -1,0 +1,74 @@
+# 404 Fehlerseite
+ErrorDocument 404 /404.html
+
+# Sicherheit: Verzeichnis-Listing deaktivieren
+Options -Indexes
+
+# UTF-8 Zeichensatz
+AddDefaultCharset UTF-8
+
+# MIME-Typen korrekt setzen
+AddType text/html .html
+AddType text/css .css
+AddType text/xml .xml
+AddType application/javascript .js
+AddType image/svg+xml .svg
+AddType image/webp .webp
+AddType video/mp4 .mp4
+
+# Browser-Caching für bessere Performance
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Bilder: 1 Monat
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 month"
+
+  # Video: 1 Monat
+  ExpiresByType video/mp4 "access plus 1 month"
+
+  # CSS & JS: 1 Woche
+  ExpiresByType text/css "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+
+  # Fonts: 1 Monat
+  ExpiresByType font/woff2 "access plus 1 month"
+  ExpiresByType font/woff "access plus 1 month"
+  ExpiresByType application/font-woff2 "access plus 1 month"
+
+  # HTML: immer prüfen
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# Komprimierung (GZIP) für schnellere Ladezeiten
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE application/json
+</IfModule>
+
+# Sicherheits-Header
+<IfModule mod_headers.c>
+  # Clickjacking-Schutz
+  Header set X-Frame-Options "SAMEORIGIN"
+
+  # XSS-Schutz
+  Header set X-Content-Type-Options "nosniff"
+
+  # Referrer-Policy
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# HTTPS erzwingen (IONOS)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>

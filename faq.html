@@ -21,14 +21,18 @@
   <meta property="og:locale" content="de_CH" />
   <meta property="og:site_name" content="Hörschmiede Boo GmbH" />
 
-  <!-- Fonts -->
+  <!-- Resource Hints -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <!-- Styles -->
+  <!-- Critical CSS (preload + stylesheet) -->
+  <link rel="preload" href="css/modern.css" as="style" />
   <link rel="stylesheet" href="css/modern.css" />
   <link rel="stylesheet" href="css/datenschutz.css" />
+
+  <!-- Fonts (non-blocking) -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="img/FooterUMini.png" />
@@ -835,7 +839,7 @@
     <div class="container-modern">
       <div class="footer-inner">
         <div class="footer-logo">
-          <img src="img/FooterUMini.png" alt="Hörschmiede Boo" />
+          <img src="img/FooterUMini.png" alt="Hörschmiede Boo GmbH Logo" loading="lazy" decoding="async" />
           <span class="footer-logo-text">Hörschmiede Boo</span>
         </div>
         <div class="footer-links">

@@ -1,0 +1,65 @@
+# robots.txt – Hörschmiede Boo GmbH
+# https://www.hoerschmiede-boo.ch
+
+# Alle Suchmaschinen-Crawler erlaubt
+User-agent: *
+Allow: /
+Disallow:
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# KI-Suche: OpenAI (ChatGPT, SearchGPT)
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+# KI-Suche: Google AI (Gemini)
+User-agent: Google-Extended
+Allow: /
+
+# KI-Suche: Anthropic (Claude)
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# KI-Suche: Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# KI-Suche: Microsoft Copilot
+User-agent: CopilotBot
+Allow: /
+
+# KI-Suche: Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# KI-Suche: Cohere
+User-agent: cohere-ai
+Allow: /
+
+# KI-Suche: You.com
+User-agent: YouBot
+Allow: /
+
+# Sitemap
+Sitemap: https://www.hoerschmiede-boo.ch/sitemap.xml

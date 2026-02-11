@@ -33,14 +33,20 @@
   <meta name="geo.position" content="47.2625;8.5912" />
   <meta name="ICBM" content="47.2625, 8.5912" />
 
-  <!-- Fonts -->
+  <!-- Resource Hints -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="dns-prefetch" href="https://cdn.iubenda.com" />
+  <link rel="dns-prefetch" href="https://www.google.com" />
 
-  <!-- Styles -->
+  <!-- Critical CSS (preload + stylesheet) -->
+  <link rel="preload" href="css/modern.css" as="style" />
   <link rel="stylesheet" href="css/modern.css" />
   <link rel="stylesheet" href="css/datenschutz.css" />
+
+  <!-- Fonts (non-blocking) -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="img/FooterUMini.png" />
@@ -61,7 +67,7 @@
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Seestrasse 91",
+      "streetAddress": "Seestrasse 89 & 91",
       "addressLocality": "Horgen",
       "postalCode": "8810",
       "addressCountry": "CH",
@@ -183,10 +189,17 @@
 
   <!-- ============ HERO SECTION ============ -->
   <section class="hero" id="hero">
-    <video class="hero-video" id="heroVideo" autoplay loop muted playsinline webkit-playsinline preload="auto" disablePictureInPicture disableRemotePlayback>
+    <video class="hero-video" id="heroVideo" autoplay loop muted playsinline webkit-playsinline preload="metadata" disablePictureInPicture disableRemotePlayback>
       <source src="videos/Werbevideo2.mp4" type="video/mp4" />
     </video>
     <div class="hero-overlay"></div>
+
+    <!-- Video Pause/Play Button (Barrierefreiheit) -->
+    <button class="video-toggle-btn" id="videoToggleBtn" aria-label="Hintergrundvideo pausieren" title="Video pausieren">
+      <svg class="icon-pause" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 9v6m4-6v6"/></svg>
+      <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="display:none;"><path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/></svg>
+    </button>
+
     <div class="hero-content">
       <div class="hero-badge">Ihr Akustiker in Horgen</div>
       <h1 class="hero-title">Individuelle <span>Hörsysteme</span> nach Mass</h1>
@@ -241,22 +254,22 @@
       <div class="steps-grid">
         <div class="step-card reveal delay-1">
           <span class="step-number">1</span>
-          <img class="step-icon" src="img/icons8-gruppenaufgabe-100.png" alt="Hörbedarf ermitteln" />
+          <img class="step-icon" loading="lazy" decoding="async" src="img/icons8-gruppenaufgabe-100.png" alt="Hörbedarf ermitteln" />
           <h3 class="step-title">Hörbedarf ermitteln</h3>
         </div>
         <div class="step-card reveal delay-2">
           <span class="step-number">2</span>
-          <img class="step-icon" src="img/icons8-horgerat-100.png" alt="Hörgerät auswählen" />
+          <img class="step-icon" loading="lazy" decoding="async" src="img/icons8-horgerat-100.png" alt="Hörgerät auswählen" />
           <h3 class="step-title">Hörgerät auswählen</h3>
         </div>
         <div class="step-card reveal delay-3">
           <span class="step-number">3</span>
-          <img class="step-icon" src="img/icons8-gehirn-100.png" alt="Kostenlos testen" />
+          <img class="step-icon" loading="lazy" decoding="async" src="img/icons8-gehirn-100.png" alt="Kostenlos testen" />
           <h3 class="step-title">Unverbindlich kostenlos testen</h3>
         </div>
         <div class="step-card reveal delay-4">
           <span class="step-number">4</span>
-          <img class="step-icon" src="img/icons8-glucklich-100.png" alt="Gut hören" />
+          <img class="step-icon" loading="lazy" decoding="async" src="img/icons8-glucklich-100.png" alt="Gut hören" />
           <h3 class="step-title">Gut hören und verstehen</h3>
         </div>
       </div>
@@ -275,7 +288,7 @@
 
         <div class="service-card reveal">
           <div class="service-icon-wrap">
-            <img class="service-icon" src="img/ear (1).png" alt="Hörtest" />
+            <img class="service-icon" loading="lazy" decoding="async" src="img/ear (1).png" alt="Icon kostenloser Hörtest – Hörvermögen ermitteln" />
           </div>
           <h3 class="service-title">Kostenloser Hörtest</h3>
           <p class="service-text">
@@ -288,7 +301,7 @@
 
         <div class="service-card reveal">
           <div class="service-icon-wrap">
-            <img class="service-icon" src="img/hearing.png" alt="Probetragen" />
+            <img class="service-icon" loading="lazy" decoding="async" src="img/hearing.png" alt="Icon Hörgeräte kostenlos Probetragen" />
           </div>
           <h3 class="service-title">Kostenloses Probetragen</h3>
           <p class="service-text">
@@ -301,7 +314,7 @@
 
         <div class="service-card reveal">
           <div class="service-icon-wrap">
-            <img class="service-icon" src="img/hammer.png" alt="Individuell" />
+            <img class="service-icon" loading="lazy" decoding="async" src="img/hammer.png" alt="Icon individuell angefertigte Im-Ohr-Hörgeräte" />
           </div>
           <h3 class="service-title">Individuell und diskret</h3>
           <p class="service-text">
@@ -314,7 +327,7 @@
 
         <div class="service-card reveal">
           <div class="service-icon-wrap">
-            <img class="service-icon" src="img/heart-handshake.png" alt="Beratung" />
+            <img class="service-icon" loading="lazy" decoding="async" src="img/heart-handshake.png" alt="Icon faire und transparente Hörgeräte-Beratung" />
           </div>
           <h3 class="service-title">Faire und transparente Beratung</h3>
           <p class="service-text">
@@ -326,7 +339,7 @@
 
         <div class="service-card reveal">
           <div class="service-icon-wrap">
-            <img class="service-icon" src="img/leaf.png" alt="Natural Fitting" />
+            <img class="service-icon" loading="lazy" decoding="async" src="img/leaf.png" alt="Icon Natural Fitting – natürliche Hörgeräte-Anpassung" />
           </div>
           <h3 class="service-title">Natural Fitting</h3>
           <p class="service-text">
@@ -339,7 +352,7 @@
 
         <div class="service-card reveal">
           <div class="service-icon-wrap">
-            <img class="service-icon" src="img/laut.png" alt="Gehörschutz" />
+            <img class="service-icon" loading="lazy" decoding="async" src="img/laut.png" alt="Icon individueller Gehörschutz nach Mass" />
           </div>
           <h3 class="service-title">Gehörschutz</h3>
           <p class="service-text">
@@ -351,7 +364,7 @@
 
         <div class="service-card reveal">
           <div class="service-icon-wrap">
-            <img class="service-icon" src="img/in-ear-earphones-with-cord.png" alt="In-Ear" />
+            <img class="service-icon" loading="lazy" decoding="async" src="img/in-ear-earphones-with-cord.png" alt="Icon In-Ear Monitoring – massgeschneiderte Kopfhörer" />
           </div>
           <h3 class="service-title">In-Ear Monitoring</h3>
           <p class="service-text">
@@ -363,7 +376,7 @@
 
         <div class="service-card reveal">
           <div class="service-icon-wrap">
-            <img class="service-icon" src="img/customer.png" alt="Service" />
+            <img class="service-icon" loading="lazy" decoding="async" src="img/customer.png" alt="Icon Hörgeräte Service und Wartung" />
           </div>
           <h3 class="service-title">Service</h3>
           <p class="service-text">
@@ -375,7 +388,7 @@
 
         <div class="service-card reveal">
           <div class="service-icon-wrap">
-            <img class="service-icon" src="img/customer-support.png" alt="Reparaturen" />
+            <img class="service-icon" loading="lazy" decoding="async" src="img/customer-support.png" alt="Icon Hörgeräte Reparatur mit kostenlosem Leihgerät" />
           </div>
           <h3 class="service-title">Reparaturen</h3>
           <p class="service-text">
@@ -386,7 +399,7 @@
 
         <div class="service-card reveal">
           <div class="service-icon-wrap">
-            <img class="service-icon" src="img/ear (2).png" alt="Tinnitus" />
+            <img class="service-icon" loading="lazy" decoding="async" src="img/ear (2).png" alt="Icon Tinnitusberatung und Therapie mit Hörsystemen" />
           </div>
           <h3 class="service-title">Tinnitusberatung</h3>
           <p class="service-text">
@@ -398,7 +411,7 @@
 
         <div class="service-card reveal">
           <div class="service-icon-wrap">
-            <img class="service-icon" src="img/customer-service.png" alt="Fremdgeräte" />
+            <img class="service-icon" loading="lazy" decoding="async" src="img/customer-service.png" alt="Icon Fremdgeräte – Einstellung und Optimierung bestehender Hörgeräte" />
           </div>
           <h3 class="service-title">Fremdgeräte</h3>
           <p class="service-text">
@@ -409,7 +422,7 @@
 
         <div class="service-card reveal">
           <div class="service-icon-wrap">
-            <img class="service-icon" src="img/budget.png" alt="Finanzierung" />
+            <img class="service-icon" loading="lazy" decoding="async" src="img/budget.png" alt="Icon Finanzierung und Versicherung für Hörgeräte" />
           </div>
           <h3 class="service-title">Finanzierung / Versicherung</h3>
           <p class="service-text">
@@ -422,7 +435,7 @@
 
         <div class="service-card reveal">
           <div class="service-icon-wrap">
-            <img class="service-icon" src="img/house.png" alt="Hausbesuch" />
+            <img class="service-icon" loading="lazy" decoding="async" src="img/house.png" alt="Icon Hausbesuch-Service – Hörgeräte-Anpassung zu Hause" />
           </div>
           <h3 class="service-title">Hausbesuch-Service</h3>
           <p class="service-text">
@@ -475,7 +488,7 @@
 
       <div class="product-card reveal-left">
         <div class="product-img-wrap">
-          <img class="product-img" src="img/HinterdemOhr.png" alt="Hinter dem Ohr Hörgerät" />
+          <img class="product-img" loading="lazy" decoding="async" src="img/HinterdemOhr.png" alt="Hinter-dem-Ohr Hörgerät (HdO) – klein, unauffällig und leistungsstark" />
         </div>
         <div class="product-info">
           <h3 class="product-title">Hinter dem Ohr</h3>
@@ -492,7 +505,7 @@
 
       <div class="product-card reverse reveal-right">
         <div class="product-img-wrap">
-          <img class="product-img" src="img/ImOhr.png" alt="Im Ohr Hörgerät" />
+          <img class="product-img" loading="lazy" decoding="async" src="img/ImOhr.png" alt="Im-Ohr Hörgerät (IdO) – diskret und individuell angefertigt" />
         </div>
         <div class="product-info">
           <h3 class="product-title">Im Ohr</h3>
@@ -507,7 +520,7 @@
 
       <div class="product-card reveal-left">
         <div class="product-img-wrap">
-          <img class="product-img" src="img/Gehorschutz.png" alt="Gehörschutz" />
+          <img class="product-img" loading="lazy" decoding="async" src="img/Gehorschutz.png" alt="Individueller Gehörschutz – massangefertigt für optimalen Schutz" />
         </div>
         <div class="product-info">
           <h3 class="product-title">Gehörschutz</h3>
@@ -530,13 +543,13 @@
         <p>Unsere Partner-Marken</p>
       </div>
       <div class="brands-grid reveal">
-        <img class="brand-logo" src="img/Phonak.png" alt="Phonak" />
-        <img class="brand-logo" src="img/Oticon.png" alt="Oticon" />
-        <img class="brand-logo" src="img/ReSound.png" alt="ReSound" />
-        <img class="brand-logo" src="img/unitron.png" alt="Unitron" />
-        <img class="brand-logo" src="img/signia.png" alt="Signia" />
-        <img class="brand-logo" src="img/Starkey.png" alt="Starkey" />
-        <img class="brand-logo" src="img/widex.png" alt="Widex" />
+        <img class="brand-logo" loading="lazy" decoding="async" src="img/Phonak.png" alt="Phonak Hörgeräte – Partner der Hörschmiede Boo" />
+        <img class="brand-logo" loading="lazy" decoding="async" src="img/Oticon.png" alt="Oticon Hörgeräte – Partner der Hörschmiede Boo" />
+        <img class="brand-logo" loading="lazy" decoding="async" src="img/ReSound.png" alt="ReSound Hörgeräte – Partner der Hörschmiede Boo" />
+        <img class="brand-logo" loading="lazy" decoding="async" src="img/unitron.png" alt="Unitron Hörgeräte – Partner der Hörschmiede Boo" />
+        <img class="brand-logo" loading="lazy" decoding="async" src="img/signia.png" alt="Signia Hörgeräte – Partner der Hörschmiede Boo" />
+        <img class="brand-logo" loading="lazy" decoding="async" src="img/Starkey.png" alt="Starkey Hörgeräte – Partner der Hörschmiede Boo" />
+        <img class="brand-logo" loading="lazy" decoding="async" src="img/widex.png" alt="Widex Hörgeräte – Partner der Hörschmiede Boo" />
       </div>
     </div>
   </section>
@@ -553,7 +566,7 @@
       <!-- Daniel Boo -->
       <div class="about-block reveal-left">
         <div class="about-img-wrap">
-          <img class="about-img" src="img/daniel-boo.jpg" alt="Daniel Boo - Hörsystemakustiker" />
+          <img class="about-img" loading="lazy" decoding="async" src="img/daniel-boo.jpg" alt="Daniel Boo – Hörsystemakustiker mit eidg. Fachausweis, Inhaber der Hörschmiede Boo in Horgen" />
         </div>
         <div class="about-content">
           <h3 class="about-name">Daniel Boo</h3>
@@ -572,7 +585,7 @@
       <!-- Qualitätsversprechen -->
       <div class="about-block reverse reveal-right">
         <div class="about-img-wrap">
-          <img class="about-img-small" src="img/raum.jpeg" alt="Praxisraum" />
+          <img class="about-img-small" loading="lazy" decoding="async" src="img/raum.jpeg" alt="Moderner Praxisraum der Hörschmiede Boo in Horgen" />
         </div>
         <div class="about-content">
           <h3 class="about-subtitle">Qualitätsversprechen</h3>
@@ -588,7 +601,7 @@
       <!-- Individuelle Hörsysteme -->
       <div class="about-block reveal-left">
         <div class="about-img-wrap">
-          <img class="about-img-small" src="img/tisch.jpeg" alt="Arbeitsplatz" />
+          <img class="about-img-small" loading="lazy" decoding="async" src="img/tisch.jpeg" alt="Arbeitsplatz mit professioneller Hörsystem-Technik in der Hörschmiede Boo" />
         </div>
         <div class="about-content">
           <h3 class="about-subtitle">Individuelle Hörsysteme</h3>
@@ -612,7 +625,8 @@
         <p class="section-subtitle">Überzeugen Sie sich selbst — 100% echte Google-Bewertungen.</p>
       </div>
 
-      <div class="testimonials-grid">
+      <div class="testimonials-slider" id="testimonialsSlider">
+      <div class="testimonials-grid" id="testimonialsGrid">
 
         <div class="testimonial-card reveal delay-1">
           <div class="testimonial-stars">
@@ -708,6 +722,15 @@
 
       </div>
 
+      <!-- Slider Dots (nur Mobile) -->
+      <div class="slider-dots" id="sliderDots">
+        <button class="slider-dot active" aria-label="Bewertung 1"></button>
+        <button class="slider-dot" aria-label="Bewertung 2"></button>
+        <button class="slider-dot" aria-label="Bewertung 3"></button>
+        <button class="slider-dot" aria-label="Bewertung 4"></button>
+      </div>
+      </div>
+
       <div class="text-center">
         <a href="https://www.google.com/search?sa=X&sca_esv=074920bdea4960d4&sxsrf=ANbL-n4DiHX1lgUNd3V0wc2eYrbUuLhhaQ:1770662342120&q=H%C3%B6rger%C3%A4te+in+Horgen+-+H%C3%B6rschmiede+Boo+GmbH+Rezensionen&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDMwNzExN7IwszA0NbAwMTE1t9jAyPiK0dLj8Lai9NSiw0tKUhUy8xQ88oG8PAVdBZB4cXJGbmZqSqqCU36-gntukodCUGpVal5xZn5eat4iVvL1AgDBHxqfkwAAAA&rldimm=16074472868150844578&tbm=lcl&hl=de-DE#lkt=LocalPoiReviews" target="_blank" rel="noopener" class="google-rating-badge reveal">
           <svg viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
@@ -730,33 +753,66 @@
         <!-- Contact Form -->
         <div class="contact-form-card reveal-left">
           <h3 class="contact-form-title">Kontaktanfrage</h3>
-          <form action="https://formsubmit.co/info@hoerschmiede-boo.ch" method="POST">
+          <form id="contactForm" action="https://formsubmit.co/ajax/info@hoerschmiede-boo.ch" method="POST">
+            <input type="hidden" name="_subject" value="Neue Kontaktanfrage über hoerschmiede-boo.ch" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="text" name="_honey" style="display:none" />
+
             <div class="form-group">
-              <input type="text" name="contact_name" class="form-input" placeholder="Ihr Name" required />
+              <label for="contact_name" class="form-label">Name *</label>
+              <input type="text" id="contact_name" name="contact_name" class="form-input" placeholder="Ihr vollständiger Name" required minlength="2" autocomplete="name" />
+              <span class="form-error" id="error_name"></span>
             </div>
             <div class="form-group">
-              <input type="email" name="contact_email" class="form-input" placeholder="Ihre E-Mail" required />
+              <label for="contact_email" class="form-label">E-Mail *</label>
+              <input type="email" id="contact_email" name="contact_email" class="form-input" placeholder="ihre@email.ch" required autocomplete="email" />
+              <span class="form-error" id="error_email"></span>
             </div>
             <div class="form-group">
-              <textarea name="contact_message" class="form-input" placeholder="Ihre Nachricht" rows="5" required></textarea>
+              <label for="contact_message" class="form-label">Nachricht *</label>
+              <textarea id="contact_message" name="contact_message" class="form-input" placeholder="Wie können wir Ihnen helfen?" rows="5" required minlength="10"></textarea>
+              <span class="form-error" id="error_message"></span>
             </div>
-            <button type="submit" class="btn btn-primary form-submit">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
-              Nachricht senden
+            <button type="submit" class="btn btn-primary form-submit" id="formSubmitBtn">
+              <svg class="btn-icon-send" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+              <svg class="btn-spinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" stroke-dasharray="31.4 31.4" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" dur="0.8s" from="0 12 12" to="360 12 12" repeatCount="indefinite"/></circle></svg>
+              <span class="btn-text">Nachricht senden</span>
             </button>
           </form>
+
+          <!-- Erfolgs-/Fehlermeldung -->
+          <div class="form-status form-success" id="formSuccess" style="display:none;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <div>
+              <strong>Nachricht gesendet!</strong>
+              <p>Vielen Dank für Ihre Anfrage. Wir melden uns in Kürze bei Ihnen.</p>
+            </div>
+          </div>
+          <div class="form-status form-fail" id="formFail" style="display:none;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <div>
+              <strong>Fehler beim Senden</strong>
+              <p>Bitte versuchen Sie es erneut oder kontaktieren Sie uns unter <a href="tel:+41445943190" style="color:var(--gold);font-weight:600;">044 594 31 90</a>.</p>
+            </div>
+          </div>
         </div>
 
         <!-- Map & Info -->
         <div class="contact-right reveal-right">
-          <div class="map-container">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1914.5999196155287!2d8.59116408324015!3d47.26248488567136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aa95eee158b67%3A0xdf13ffe849c91ca2!2sH%C3%B6rschmiede%20Boo%20GmbH!5e0!3m2!1sde!2sch!4v1664373307869!5m2!1sde!2sch" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Standort Hörschmiede Boo GmbH">
-            </iframe>
+          <div class="map-container" id="mapContainer">
+            <!-- DSGVO: Google Maps erst nach Einwilligung laden -->
+            <div class="map-consent" id="mapConsent">
+              <div class="map-consent-inner">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="map-consent-icon"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                <p class="map-consent-title">Google Maps</p>
+                <p class="map-consent-text">Beim Laden der Karte werden Daten an Google übertragen. <a href="datenschutz.html" target="_blank" style="color:var(--gold);">Datenschutzerklärung</a></p>
+                <button class="btn btn-primary btn-sm" id="mapConsentBtn">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;"><path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                  Karte laden
+                </button>
+              </div>
+            </div>
           </div>
 
           <div class="contact-info-card">
@@ -771,7 +827,7 @@
               <div class="contact-info-item">
                 <h4>Adresse</h4>
                 <p>Hörschmiede Boo GmbH</p>
-                <p>Seestrasse 91</p>
+                <p>Seestrasse 89 &amp; 91</p>
                 <p>8810 Horgen</p>
                 <p>Schweiz</p>
               </div>
@@ -797,7 +853,7 @@
     <div class="container-modern">
       <div class="footer-inner">
         <div class="footer-logo">
-          <img src="img/FooterUMini.png" alt="Hörschmiede Boo" />
+          <img src="img/FooterUMini.png" alt="Hörschmiede Boo GmbH Logo" loading="lazy" decoding="async" />
           <span class="footer-logo-text">Hörschmiede Boo</span>
         </div>
         <div class="footer-links">
@@ -820,6 +876,14 @@
     </div>
   </footer>
 
+  <!-- Sticky CTA (Mobile) -->
+  <div class="sticky-cta" id="stickyCta">
+    <a href="https://suisse1.amparex.net/amparex/web/selfservice/onlinetp/s0pqyszbg2yhqndoi6tgalrvhgggdot0hdktwnbtq9u=/resourcetp/0182f3a0-9a74-0000-0571-1C697A9F8F3A" target="_blank" class="sticky-cta-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+      Kostenlosen Termin vereinbaren
+    </a>
+  </div>
+
   <!-- Scroll to Top Button -->
   <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Nach oben scrollen">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
@@ -831,8 +895,8 @@
     var _iub = _iub || [];
     _iub.csConfiguration = {"consentOnContinuedBrowsing":false,"enableTcf":true,"floatingPreferencesButtonDisplay":"bottom-right","invalidateConsentWithoutLog":true,"lang":"de","perPurposeConsent":true,"whitelabel":false,"cookiePolicyId":47220464,"siteId":2814454, "banner":{ "acceptButtonColor":"#C7A658","acceptButtonDisplay":true,"backgroundColor":"#262628","closeButtonDisplay":false,"customizeButtonDisplay":true,"explicitWithdrawal":true,"fontSizeBody":"16px","listPurposes":true,"position":"bottom","rejectButtonDisplay":true }};
   </script>
-  <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/stub-v2.js"></script>
-  <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/safe-tcf-v2.js"></script>
+  <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/stub-v2.js" async></script>
+  <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/safe-tcf-v2.js" async></script>
   <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
 
   <script>
@@ -865,10 +929,30 @@
       });
     });
 
-    // ---- Hero Video Autoplay Fix ----
+    // ---- Hero Video Autoplay + Pause/Play Toggle ----
     (function() {
       const video = document.getElementById('heroVideo');
       const hero = document.querySelector('.hero');
+      const toggleBtn = document.getElementById('videoToggleBtn');
+      const iconPause = toggleBtn ? toggleBtn.querySelector('.icon-pause') : null;
+      const iconPlay = toggleBtn ? toggleBtn.querySelector('.icon-play') : null;
+      let userPaused = false; // Nutzer hat manuell pausiert
+
+      function updateToggleButton(isPlaying) {
+        if (!toggleBtn) return;
+        if (isPlaying) {
+          iconPause.style.display = '';
+          iconPlay.style.display = 'none';
+          toggleBtn.setAttribute('aria-label', 'Hintergrundvideo pausieren');
+          toggleBtn.setAttribute('title', 'Video pausieren');
+        } else {
+          iconPause.style.display = 'none';
+          iconPlay.style.display = '';
+          toggleBtn.setAttribute('aria-label', 'Hintergrundvideo abspielen');
+          toggleBtn.setAttribute('title', 'Video abspielen');
+        }
+      }
+
       if (video) {
         // Ensure muted (required for autoplay on all browsers)
         video.muted = true;
@@ -878,36 +962,57 @@
         // Try to play; if blocked, retry or show fallback
         var playPromise = video.play();
         if (playPromise !== undefined) {
-          playPromise.catch(function() {
-            // Autoplay was prevented – try once more after user interaction
+          playPromise.then(function() {
+            updateToggleButton(true);
+          }).catch(function() {
             video.muted = true;
-            video.play().catch(function() {
+            video.play().then(function() {
+              updateToggleButton(true);
+            }).catch(function() {
               // Video truly can't autoplay, show gradient fallback
               hero.classList.add('no-video');
               video.style.display = 'none';
+              if (toggleBtn) toggleBtn.style.display = 'none';
             });
           });
         }
 
-        // Handle video loading errors (e.g. codec not supported)
+        // Handle video loading errors
         video.addEventListener('error', function() {
           hero.classList.add('no-video');
           video.style.display = 'none';
+          if (toggleBtn) toggleBtn.style.display = 'none';
         });
 
-        // iOS low-power mode: video might pause, handle it
+        // iOS low-power mode: only auto-resume if user hasn't paused
         video.addEventListener('pause', function() {
-          if (!document.hidden) {
+          if (!document.hidden && !userPaused) {
             video.play().catch(function() {});
           }
         });
 
-        // Resume video when tab becomes visible again
+        // Resume when tab visible again (only if user hasn't paused)
         document.addEventListener('visibilitychange', function() {
-          if (!document.hidden && video.paused) {
+          if (!document.hidden && video.paused && !userPaused) {
             video.play().catch(function() {});
           }
         });
+
+        // ---- Toggle Button Click ----
+        if (toggleBtn) {
+          toggleBtn.addEventListener('click', function() {
+            if (video.paused) {
+              userPaused = false;
+              video.play().then(function() {
+                updateToggleButton(true);
+              }).catch(function() {});
+            } else {
+              userPaused = true;
+              video.pause();
+              updateToggleButton(false);
+            }
+          });
+        }
       }
     })();
 
@@ -1028,6 +1133,198 @@
       }, { threshold: 0.3 });
       statsObserver.observe(statsBar);
     }
+
+    // ---- Contact Form: AJAX Submit + Validation ----
+    (function() {
+      const form = document.getElementById('contactForm');
+      const submitBtn = document.getElementById('formSubmitBtn');
+      const successMsg = document.getElementById('formSuccess');
+      const failMsg = document.getElementById('formFail');
+      if (!form) return;
+
+      const fields = [
+        { input: document.getElementById('contact_name'),    error: document.getElementById('error_name'),    msg: 'Bitte geben Sie Ihren Namen ein (mind. 2 Zeichen).' },
+        { input: document.getElementById('contact_email'),   error: document.getElementById('error_email'),   msg: 'Bitte geben Sie eine gültige E-Mail-Adresse ein.' },
+        { input: document.getElementById('contact_message'), error: document.getElementById('error_message'), msg: 'Bitte schreiben Sie eine Nachricht (mind. 10 Zeichen).' }
+      ];
+
+      // Live-Validierung bei Eingabe (Fehler entfernen)
+      fields.forEach(f => {
+        f.input.addEventListener('input', function() {
+          if (this.validity.valid) {
+            this.classList.remove('invalid');
+            f.error.classList.remove('visible');
+            f.error.textContent = '';
+          }
+        });
+        // Fehler anzeigen beim Verlassen des Felds
+        f.input.addEventListener('blur', function() {
+          if (this.value.trim() && !this.validity.valid) {
+            this.classList.add('invalid');
+            f.error.classList.add('visible');
+            f.error.textContent = f.msg;
+          }
+        });
+      });
+
+      function validateAll() {
+        let valid = true;
+        fields.forEach(f => {
+          if (!f.input.validity.valid || !f.input.value.trim()) {
+            f.input.classList.add('invalid');
+            f.error.classList.add('visible');
+            f.error.textContent = f.msg;
+            valid = false;
+          } else {
+            f.input.classList.remove('invalid');
+            f.error.classList.remove('visible');
+            f.error.textContent = '';
+          }
+        });
+        return valid;
+      }
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        successMsg.style.display = 'none';
+        failMsg.style.display = 'none';
+
+        if (!validateAll()) {
+          // Zum ersten fehlerhaften Feld scrollen
+          const firstInvalid = form.querySelector('.invalid');
+          if (firstInvalid) firstInvalid.focus();
+          return;
+        }
+
+        // Loading-State
+        submitBtn.disabled = true;
+        submitBtn.querySelector('.btn-icon-send').style.display = 'none';
+        submitBtn.querySelector('.btn-spinner').style.display = '';
+        submitBtn.querySelector('.btn-text').textContent = 'Wird gesendet…';
+
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        })
+        .then(function(response) {
+          if (response.ok) {
+            form.style.display = 'none';
+            successMsg.style.display = 'flex';
+          } else {
+            throw new Error('Server error');
+          }
+        })
+        .catch(function() {
+          failMsg.style.display = 'flex';
+        })
+        .finally(function() {
+          submitBtn.disabled = false;
+          submitBtn.querySelector('.btn-icon-send').style.display = '';
+          submitBtn.querySelector('.btn-spinner').style.display = 'none';
+          submitBtn.querySelector('.btn-text').textContent = 'Nachricht senden';
+        });
+      });
+    })();
+
+    // ---- Google Maps: DSGVO Consent ----
+    (function() {
+      const mapContainer = document.getElementById('mapContainer');
+      const mapConsent = document.getElementById('mapConsent');
+      const consentBtn = document.getElementById('mapConsentBtn');
+      if (!mapContainer || !consentBtn) return;
+
+      var mapSrc = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1914.5999196155287!2d8.59116408324015!3d47.26248488567136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aa95eee158b67%3A0xdf13ffe849c91ca2!2sH%C3%B6rschmiede%20Boo%20GmbH!5e0!3m2!1sde!2sch!4v1664373307869!5m2!1sde!2sch';
+
+      function loadMap() {
+        mapConsent.remove();
+        var iframe = document.createElement('iframe');
+        iframe.src = mapSrc;
+        iframe.allowFullscreen = true;
+        iframe.loading = 'lazy';
+        iframe.referrerPolicy = 'no-referrer-when-downgrade';
+        iframe.title = 'Standort Hörschmiede Boo GmbH auf Google Maps';
+        mapContainer.appendChild(iframe);
+        try { localStorage.setItem('maps_consent', '1'); } catch(e) {}
+      }
+
+      // Prüfe ob schon eingewilligt wurde
+      try {
+        if (localStorage.getItem('maps_consent') === '1') {
+          loadMap();
+          return;
+        }
+      } catch(e) {}
+
+      consentBtn.addEventListener('click', loadMap);
+    })();
+
+    // ---- Testimonials Slider: Dot Navigation ----
+    (function() {
+      const grid = document.getElementById('testimonialsGrid');
+      const dots = document.querySelectorAll('.slider-dot');
+      if (!grid || !dots.length) return;
+
+      // Dot-Klick scrollt zur entsprechenden Karte
+      dots.forEach(function(dot, i) {
+        dot.addEventListener('click', function() {
+          var cards = grid.querySelectorAll('.testimonial-card');
+          if (cards[i]) {
+            cards[i].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+          }
+        });
+      });
+
+      // Aktiven Dot bei Scroll aktualisieren
+      var scrollTimeout;
+      grid.addEventListener('scroll', function() {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(function() {
+          var cards = grid.querySelectorAll('.testimonial-card');
+          var gridRect = grid.getBoundingClientRect();
+          var center = gridRect.left + gridRect.width / 2;
+          var closestIdx = 0;
+          var closestDist = Infinity;
+          cards.forEach(function(card, i) {
+            var cardRect = card.getBoundingClientRect();
+            var cardCenter = cardRect.left + cardRect.width / 2;
+            var dist = Math.abs(cardCenter - center);
+            if (dist < closestDist) {
+              closestDist = dist;
+              closestIdx = i;
+            }
+          });
+          dots.forEach(function(d, i) {
+            d.classList.toggle('active', i === closestIdx);
+          });
+        }, 50);
+      });
+    })();
+
+    // ---- Sticky CTA (Mobile) ----
+    (function() {
+      var stickyCta = document.getElementById('stickyCta');
+      var heroSection = document.getElementById('hero');
+      var footer = document.querySelector('.site-footer');
+      if (!stickyCta || !heroSection) return;
+
+      function updateStickyCta() {
+        var heroBottom = heroSection.getBoundingClientRect().bottom;
+        var footerTop = footer ? footer.getBoundingClientRect().top : Infinity;
+        var windowH = window.innerHeight;
+
+        if (heroBottom < 0 && footerTop > windowH) {
+          stickyCta.classList.add('visible');
+        } else {
+          stickyCta.classList.remove('visible');
+        }
+      }
+
+      window.addEventListener('scroll', updateStickyCta, { passive: true });
+      updateStickyCta();
+    })();
   </script>
 
 </body>

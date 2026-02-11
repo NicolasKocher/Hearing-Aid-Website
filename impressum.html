@@ -8,10 +8,18 @@
   <meta name="robots" content="noindex, follow" />
   <link rel="canonical" href="https://www.hoerschmiede-boo.ch/impressum.html" />
 
+  <!-- Resource Hints -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Critical CSS (preload + stylesheet) -->
+  <link rel="preload" href="css/modern.css" as="style" />
   <link rel="stylesheet" href="css/modern.css" />
+
+  <!-- Fonts (non-blocking) -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
   <link rel="icon" type="image/png" href="img/FooterUMini.png" />
 
   <style>
@@ -212,7 +220,7 @@
           <h2>Kontakt-Adresse</h2>
           <div class="legal-info-card">
             <p><strong>Hörschmiede Boo GmbH</strong></p>
-            <p>Seestrasse 80 &amp; 91</p>
+            <p>Seestrasse 89 &amp; 91</p>
             <p>8810 Horgen</p>
             <p>Schweiz</p>
             <p style="margin-top: 12px;">E-Mail: <a href="mailto:info@hoerschmiede-boo.ch" style="color: var(--gold); font-weight: 600;">info@hoerschmiede-boo.ch</a></p>
@@ -274,7 +282,7 @@
     <div class="container-modern">
       <div class="footer-inner">
         <div class="footer-logo">
-          <img src="img/FooterUMini.png" alt="Hörschmiede Boo" />
+          <img src="img/FooterUMini.png" alt="Hörschmiede Boo GmbH Logo" loading="lazy" decoding="async" />
           <span class="footer-logo-text">Hörschmiede Boo</span>
         </div>
         <div class="footer-links">
