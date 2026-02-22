@@ -795,7 +795,7 @@
             <input type="hidden" name="_subject" value="Neue Kontaktanfrage über hoerschmiede-boo.ch" />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
-            <input type="text" name="_honey" style="display:none" />
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;pointer-events:none;" />
 
             <div class="form-group">
               <label for="contact_name" class="form-label">Name *</label>
@@ -811,6 +811,11 @@
               <label for="contact_message" class="form-label">Nachricht *</label>
               <textarea id="contact_message" name="contact_message" class="form-input" placeholder="Wie können wir Ihnen helfen?" rows="5" required minlength="10"></textarea>
               <span class="form-error" id="error_message"></span>
+            </div>
+            <div class="form-group">
+              <label for="contact_botcheck" class="form-label" id="contact_botcheck_label">Sicherheitsfrage *</label>
+              <input type="text" id="contact_botcheck" name="contact_botcheck" class="form-input" inputmode="numeric" autocomplete="off" required />
+              <span class="form-error" id="error_botcheck"></span>
             </div>
             <button type="submit" class="btn btn-primary form-submit" id="formSubmitBtn">
               <svg class="btn-icon-send" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
@@ -913,14 +918,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- Sticky CTA (Mobile) -->
-  <div class="sticky-cta" id="stickyCta">
-    <a href="https://suisse1.amparex.net/amparex/web/selfservice/onlinetp/s0pqyszbg2yhqndoi6tgalrvhgggdot0hdktwnbtq9u=/resourcetp/0182f3a0-9a74-0000-0571-1C697A9F8F3A" target="_blank" class="sticky-cta-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-      Kostenlosen Termin vereinbaren
-    </a>
-  </div>
 
   <!-- Scroll to Top Button -->
   <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Nach oben scrollen">
@@ -1178,7 +1175,17 @@
       const submitBtn = document.getElementById('formSubmitBtn');
       const successMsg = document.getElementById('formSuccess');
       const failMsg = document.getElementById('formFail');
+      const botCheckInput = document.getElementById('contact_botcheck');
+      const botCheckLabel = document.getElementById('contact_botcheck_label');
+      const botCheckError = document.getElementById('error_botcheck');
       if (!form) return;
+
+      const botA = Math.floor(Math.random() * 7) + 2;
+      const botB = Math.floor(Math.random() * 7) + 2;
+      const botResult = botA + botB;
+      if (botCheckLabel) {
+        botCheckLabel.textContent = 'Sicherheitsfrage * (Bitte rechnen: ' + botA + ' + ' + botB + ')';
+      }
 
       const fields = [
         { input: document.getElementById('contact_name'),    error: document.getElementById('error_name'),    msg: 'Bitte geben Sie Ihren Namen ein (mind. 2 Zeichen).' },
@@ -1205,6 +1212,16 @@
         });
       });
 
+      if (botCheckInput) {
+        botCheckInput.addEventListener('input', function() {
+          botCheckInput.classList.remove('invalid');
+          if (botCheckError) {
+            botCheckError.classList.remove('visible');
+            botCheckError.textContent = '';
+          }
+        });
+      }
+
       function validateAll() {
         let valid = true;
         fields.forEach(f => {
@@ -1219,6 +1236,22 @@
             f.error.textContent = '';
           }
         });
+
+        if (!botCheckInput || botCheckInput.value.trim() !== String(botResult)) {
+          if (botCheckInput) botCheckInput.classList.add('invalid');
+          if (botCheckError) {
+            botCheckError.classList.add('visible');
+            botCheckError.textContent = 'Bitte lösen Sie die Sicherheitsfrage korrekt.';
+          }
+          valid = false;
+        } else {
+          botCheckInput.classList.remove('invalid');
+          if (botCheckError) {
+            botCheckError.classList.remove('visible');
+            botCheckError.textContent = '';
+          }
+        }
+
         return valid;
       }
 
@@ -1241,6 +1274,7 @@
         submitBtn.querySelector('.btn-text').textContent = 'Wird gesendet…';
 
         const formData = new FormData(form);
+        formData.delete('contact_botcheck');
 
         fetch(form.action, {
           method: 'POST',
@@ -1341,28 +1375,6 @@
       });
     })();
 
-    // ---- Sticky CTA (Mobile) ----
-    (function() {
-      var stickyCta = document.getElementById('stickyCta');
-      var heroSection = document.getElementById('hero');
-      var footer = document.querySelector('.site-footer');
-      if (!stickyCta || !heroSection) return;
-
-      function updateStickyCta() {
-        var heroBottom = heroSection.getBoundingClientRect().bottom;
-        var footerTop = footer ? footer.getBoundingClientRect().top : Infinity;
-        var windowH = window.innerHeight;
-
-        if (heroBottom < 0 && footerTop > windowH) {
-          stickyCta.classList.add('visible');
-        } else {
-          stickyCta.classList.remove('visible');
-        }
-      }
-
-      window.addEventListener('scroll', updateStickyCta, { passive: true });
-      updateStickyCta();
-    })();
   </script>
 
 </body>
