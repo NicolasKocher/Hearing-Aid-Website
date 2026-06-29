@@ -83,15 +83,21 @@
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "08:30",
+        "dayOfWeek": ["Monday","Tuesday","Thursday"],
+        "opens": "09:00",
         "closes": "12:00"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "dayOfWeek": ["Monday","Tuesday","Thursday"],
         "opens": "13:00",
         "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Wednesday","Friday"],
+        "opens": "09:00",
+        "closes": "12:00"
       }
     ],
     "sameAs": [
@@ -217,7 +223,6 @@
         <a href="#ueber-uns">Über uns</a>
         <a href="#kontakt">Kontakt</a>
         <a href="#anfahrt">Anfahrt</a>
-        <a href="https://www.testyourhearing.com/hoerschmiede-boo" target="_blank">Hörtest</a>
         <a href="faq.html" target="_blank">FAQ</a>
       </nav>
 
@@ -861,9 +866,11 @@
             <div class="contact-info-grid">
               <div class="contact-info-item">
                 <h4>Öffnungszeiten</h4>
-                <p>Montag - Freitag</p>
-                <p>08:30 - 12:00 Uhr</p>
+                <p>Mo, Di, Do</p>
+                <p>09:00 - 12:00 Uhr</p>
                 <p>13:00 - 17:00 Uhr</p>
+                <p style="margin-top: 8px;">Mi &amp; Fr</p>
+                <p>09:00 - 12:00 Uhr</p>
                 <p style="margin-top: 8px; font-style: italic; color: var(--gold);">Samstag nach Vereinbarung</p>
               </div>
               <div class="contact-info-item">
@@ -990,6 +997,14 @@
   <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Nach oben scrollen">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
   </button>
+
+  <!-- Lightbox für Wegbeschreibungs-Bilder -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vergrössertes Bild" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Schliessen">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+  </div>
 
   <!-- ============ SCRIPTS ============ -->
   <!-- iubenda Cookie Consent -->
@@ -1307,6 +1322,44 @@
       } catch(e) {}
 
       consentBtn.addEventListener('click', loadMap);
+    })();
+
+    // ---- Lightbox: Wegbeschreibungs-Bilder vergrössern ----
+    (function() {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const closeBtn = document.getElementById('lightboxClose');
+      if (!lightbox || !lightboxImg) return;
+
+      function openLightbox(src, alt) {
+        lightboxImg.src = src;
+        lightboxImg.alt = alt || '';
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove('open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        lightboxImg.src = '';
+      }
+
+      // Nur tatsächlich vorhandene Wegbeschreibungs-Bilder klickbar machen
+      document.querySelectorAll('.directions-img').forEach(function(img) {
+        img.style.cursor = 'zoom-in';
+        img.setAttribute('role', 'button');
+        img.setAttribute('tabindex', '0');
+        img.addEventListener('click', function() { openLightbox(img.currentSrc || img.src, img.alt); });
+        img.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(img.currentSrc || img.src, img.alt); }
+        });
+      });
+
+      closeBtn.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', function(e) { if (e.target === lightbox) closeLightbox(); });
+      document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox(); });
     })();
 
     // ---- Testimonials Slider: Dot Navigation ----
