@@ -32,7 +32,7 @@
 
 /* --- Reset & Base --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; overflow-x: clip; }
 
 body {
   font-family: var(--font-body);
@@ -40,7 +40,7 @@ body {
   line-height: 1.7;
   color: var(--text);
   background: var(--bg);
-  overflow-x: hidden;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -185,57 +185,19 @@ p:last-child { margin-bottom: 0; }
   background: var(--dark);
 }
 
-.hero-video {
-  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-  object-fit: cover; -o-object-fit: cover;
-  opacity: 0.7;
-  -webkit-transform: translateZ(0); transform: translateZ(0);
-  -webkit-backface-visibility: hidden; backface-visibility: hidden;
-}
-
 .hero.no-video {
-  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-soft) 50%, #2a2a4a 100%);
+  background:
+    radial-gradient(70% 55% at 50% 0%, rgba(216,179,88,0.18) 0%, rgba(216,179,88,0) 60%),
+    radial-gradient(60% 50% at 85% 105%, rgba(216,179,88,0.12) 0%, rgba(216,179,88,0) 55%),
+    linear-gradient(135deg, #0b1120 0%, #0f172a 48%, #1e293b 100%);
 }
 
-.hero-overlay {
-  position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.6) 100%);
-  z-index: 1;
-}
-
-/* Video Pause/Play Toggle */
-.video-toggle-btn {
-  position: absolute;
-  bottom: 24px;
-  right: 24px;
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(15, 23, 42, 0.5);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: rgba(255, 255, 255, 0.8);
-  cursor: pointer;
-  transition: all var(--transition);
-}
-.video-toggle-btn:hover {
-  background: rgba(216, 179, 88, 0.25);
-  border-color: var(--gold);
-  color: var(--gold-light);
-  transform: scale(1.08);
-}
-.video-toggle-btn:focus-visible {
-  outline: 2px solid var(--gold);
-  outline-offset: 3px;
-}
-.video-toggle-btn svg {
-  width: 20px;
-  height: 20px;
+/* Weiche, dekorative Lichtakzente im Hero */
+.hero-decor {
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(closest-side at 18% 28%, rgba(216,179,88,0.10), rgba(216,179,88,0) 70%),
+    radial-gradient(closest-side at 82% 70%, rgba(255,255,255,0.05), rgba(255,255,255,0) 70%);
 }
 
 .hero-content {
@@ -654,6 +616,38 @@ p:last-child { margin-bottom: 0; }
 .about-text { color: var(--text-light); font-size: 1rem; line-height: 1.8; text-align: justify; }
 
 .about-text .highlight { color: var(--gold); font-weight: 700; }
+
+/* --- Anfahrt / Wegbeschreibung --- */
+/* Wegbeschreibungs-Bilder vollständig zeigen (nicht zuschneiden) */
+.directions-img-wrap { width: 380px; max-width: 100%; }
+.directions-img-wrap .directions-img {
+  width: 100%;
+  height: auto;        /* volle Bildhöhe – kein Beschneiden der Route */
+  object-fit: contain;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+.directions-img-wrap.is-empty .directions-img-hint { min-height: 280px; }
+@media (max-width: 1024px) { .directions-img-wrap { width: 320px; } }
+@media (max-width: 768px)  { .directions-img-wrap { width: 100%; max-width: 400px; margin: 0 auto; } }
+
+.directions-img-hint { display: none; }
+.directions-img-wrap.is-empty .directions-img-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  padding: 24px;
+  background: var(--gold-bg);
+  border: 2px dashed var(--gold);
+  box-shadow: none;
+  color: var(--gold-dark);
+}
+.directions-img-hint svg { width: 44px; height: 44px; opacity: 0.85; }
+.directions-img-hint span { font-weight: 700; font-size: 1rem; line-height: 1.4; }
+.directions-img-hint small { font-size: 0.8rem; color: var(--text-light); font-family: monospace; word-break: break-all; }
 
 /* --- Testimonials Section --- */
 .testimonials-section {
@@ -1090,18 +1084,24 @@ textarea.form-input { resize: vertical; min-height: 130px; }
   .logo-title { font-size: 1.1rem; }
   .logo-subtitle { font-size: 0.7rem; }
 
+  /* Kein backdrop-filter auf Mobile: sonst wird der Header zum Containing-Block
+     für das fixed Off-Canvas-Menü und dieses haftet am Header statt am Viewport. */
+  .site-header { backdrop-filter: none; -webkit-backdrop-filter: none; background: rgba(255,255,255,0.98); }
+  .site-header.scrolled { background: #fff; }
+
   .menu-toggle { display: flex; }
 
   .main-nav {
-    position: fixed; top: 0; right: -100%;
-    width: 280px; height: 100vh;
+    position: fixed; top: 0; right: 0;
+    width: min(280px, 82vw); max-width: 100%; height: 100vh; height: 100dvh;
     background: white; flex-direction: column;
     padding: 80px 24px 40px; gap: 4px;
     box-shadow: -10px 0 40px rgba(0,0,0,0.1);
-    transition: right var(--transition); z-index: 1000;
-    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform var(--transition); z-index: 1000;
+    overflow-y: auto; overscroll-behavior: contain;
   }
-  .main-nav.open { right: 0; }
+  .main-nav.open { transform: translateX(0); }
   .main-nav a { padding: 12px 16px; font-size: 1.05rem; width: 100%; border-radius: var(--radius-sm); }
   .main-nav a:hover { background: var(--gold-bg); }
   .main-nav a::after { display: none; }

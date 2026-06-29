@@ -30,8 +30,8 @@
   <!-- Geo Tags -->
   <meta name="geo.region" content="CH-ZH" />
   <meta name="geo.placename" content="Horgen" />
-  <meta name="geo.position" content="47.2625;8.5912" />
-  <meta name="ICBM" content="47.2625, 8.5912" />
+  <meta name="geo.position" content="47.2595;8.5976" />
+  <meta name="ICBM" content="47.2595, 8.5976" />
 
   <!-- Resource Hints -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -67,7 +67,7 @@
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Seestrasse 89 & 91",
+      "streetAddress": "Alte Landstrasse 14",
       "addressLocality": "Horgen",
       "postalCode": "8810",
       "addressCountry": "CH",
@@ -75,8 +75,8 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 47.2625,
-      "longitude": 8.5912
+      "latitude": 47.2595,
+      "longitude": 8.5976
     },
     "openingHoursSpecification": [
       {
@@ -210,6 +210,7 @@
         <a href="#hoergeraete">Hörgeräte</a>
         <a href="#ueber-uns">Über uns</a>
         <a href="#kontakt">Kontakt</a>
+        <a href="#anfahrt">Anfahrt</a>
         <a href="https://www.testyourhearing.com/hoerschmiede-boo" target="_blank">Hörtest</a>
         <a href="faq.html" target="_blank">FAQ</a>
       </nav>
@@ -226,21 +227,11 @@
   <main>
 
   <!-- ============ HERO SECTION ============ -->
-  <section class="hero" id="hero">
-    <video class="hero-video" id="heroVideo" autoplay loop muted playsinline webkit-playsinline preload="metadata" disablePictureInPicture disableRemotePlayback>
-      <source src="videos/Werbevideo2.mp4" type="video/mp4" />
-    </video>
-    <div class="hero-overlay"></div>
-
-    <!-- Video Pause/Play Button (Barrierefreiheit) -->
-    <button class="video-toggle-btn" id="videoToggleBtn" aria-label="Hintergrundvideo pausieren" title="Video pausieren">
-      <svg class="icon-pause" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 9v6m4-6v6"/></svg>
-      <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="display:none;"><path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/></svg>
-    </button>
+  <section class="hero no-video" id="hero">
+    <div class="hero-decor" aria-hidden="true"></div>
 
     <div class="hero-content">
-      <div class="hero-badge">Ihr Akustiker in Horgen</div>
-      <h1 class="hero-title">Individuelle <span>Hörsysteme</span> nach Mass</h1>
+      <h1 class="hero-title">Ihre <span>Hörberatung</span> in Horgen</h1>
       <p class="hero-text">
         Persönliche Beratung, modernste Technik und massgeschneiderte Hörlösungen 
         für Ihr bestes Hörerlebnis.
@@ -870,7 +861,7 @@
               <div class="contact-info-item">
                 <h4>Adresse</h4>
                 <p>Hörschmiede Boo GmbH</p>
-                <p>Seestrasse 89 &amp; 91</p>
+                <p>Alte Landstrasse 14</p>
                 <p>8810 Horgen</p>
                 <p>Schweiz</p>
               </div>
@@ -884,6 +875,74 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ANFAHRT & WEGBESCHREIBUNG ============ -->
+  <section class="section section-alt" id="anfahrt">
+    <div class="container-modern">
+      <div class="section-header reveal">
+        <span class="section-badge">Anfahrt</span>
+        <h2 class="section-title">So finden Sie <span>zu uns</span></h2>
+        <p class="section-subtitle">Sie finden uns an der <strong>Alte Landstrasse 14, 8810 Horgen</strong> &ndash; direkt gegenüber der evangelischen Kirche.</p>
+        <div class="gold-line"></div>
+      </div>
+
+      <!-- Anfahrt & Parkmöglichkeiten -->
+      <div class="about-block reveal-left">
+        <div class="about-img-wrap directions-img-wrap">
+          <!-- Bild 1: hier ein Foto zur Anfahrt/Parkmöglichkeit einfügen. Datei einfach unter dem unten genannten Pfad ablegen. -->
+          <img class="about-img-small directions-img" loading="lazy" decoding="async"
+               src="img/anfahrt-parkhaus.jpg"
+               alt="Anfahrt und Parkmöglichkeit beim Parkhaus Schinzenhof in Horgen"
+               onerror="this.closest('.directions-img-wrap').classList.add('is-empty'); this.remove();" />
+          <div class="directions-img-hint" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            <span>Bild zur Wegbeschreibung einfügen</span>
+            <small>img/anfahrt-parkhaus.jpg</small>
+          </div>
+        </div>
+        <div class="about-content">
+          <h3 class="about-subtitle">Anfahrt &amp; Parkmöglichkeiten</h3>
+          <p class="about-text">
+            Wir empfehlen Ihnen, Ihr Fahrzeug im <span class="highlight">Parkhaus Schinzenhof (Migros)</span> zu
+            parkieren. Von dort gelangen Sie bequem mit einem der beiden Lifte entweder auf den Dorfplatz oder direkt
+            zum Schinzenhof. <em>(Bei beiden Liften ganz nach oben.)</em>
+          </p>
+          <p class="about-text" style="margin-top: 16px;">
+            Von beiden Ausgängen sind es nur wenige Meter in Richtung der evangelischen Kirche. Unser Geschäft
+            befindet sich <span class="highlight">direkt gegenüber der Kirche</span> und ist gut sichtbar.
+          </p>
+        </div>
+      </div>
+
+      <!-- Anreise mit den öffentlichen Verkehrsmitteln -->
+      <div class="about-block reverse reveal-right">
+        <div class="about-img-wrap directions-img-wrap">
+          <!-- Bild 2: hier ein Foto zur Wegbeschreibung ab Bahnhof einfügen. Datei einfach unter dem unten genannten Pfad ablegen. -->
+          <img class="about-img-small directions-img" loading="lazy" decoding="async"
+               src="img/anfahrt-bahnhof.jpg"
+               alt="Wegbeschreibung vom Bahnhof Horgen zur Hörschmiede Boo"
+               onerror="this.closest('.directions-img-wrap').classList.add('is-empty'); this.remove();" />
+          <div class="directions-img-hint" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            <span>Bild zur Wegbeschreibung einfügen</span>
+            <small>img/anfahrt-bahnhof.jpg</small>
+          </div>
+        </div>
+        <div class="about-content">
+          <h3 class="about-subtitle">Anreise mit den öffentlichen Verkehrsmitteln</h3>
+          <p class="about-text">
+            Vom <span class="highlight">Bahnhof Horgen</span> erreichen Sie uns in rund <span class="highlight">5 Gehminuten</span>.
+          </p>
+          <p class="about-text" style="margin-top: 16px;">
+            Verlassen Sie den Bahnhof in Richtung Seestrasse. Halten Sie sich links und folgen Sie der Seestrasse bis
+            zum Kreisel und überqueren Sie die Strasse. Biegen Sie in die Stockerstrasse, überqueren Sie den
+            Fussgängerüberweg und biegen Sie anschliessend in die Alte Landstrasse ab. Folgen Sie der Alten
+            Landstrasse &ndash; nach rund 2 Minuten erreichen Sie die Hörschmiede Boo auf der linken Strassenseite.
+          </p>
         </div>
       </div>
     </div>
@@ -963,93 +1022,6 @@
         document.body.style.overflow = '';
       });
     });
-
-    // ---- Hero Video Autoplay + Pause/Play Toggle ----
-    (function() {
-      const video = document.getElementById('heroVideo');
-      const hero = document.querySelector('.hero');
-      const toggleBtn = document.getElementById('videoToggleBtn');
-      const iconPause = toggleBtn ? toggleBtn.querySelector('.icon-pause') : null;
-      const iconPlay = toggleBtn ? toggleBtn.querySelector('.icon-play') : null;
-      let userPaused = false; // Nutzer hat manuell pausiert
-
-      function updateToggleButton(isPlaying) {
-        if (!toggleBtn) return;
-        if (isPlaying) {
-          iconPause.style.display = '';
-          iconPlay.style.display = 'none';
-          toggleBtn.setAttribute('aria-label', 'Hintergrundvideo pausieren');
-          toggleBtn.setAttribute('title', 'Video pausieren');
-        } else {
-          iconPause.style.display = 'none';
-          iconPlay.style.display = '';
-          toggleBtn.setAttribute('aria-label', 'Hintergrundvideo abspielen');
-          toggleBtn.setAttribute('title', 'Video abspielen');
-        }
-      }
-
-      if (video) {
-        // Ensure muted (required for autoplay on all browsers)
-        video.muted = true;
-        video.setAttribute('muted', '');
-        video.setAttribute('playsinline', '');
-
-        // Try to play; if blocked, retry or show fallback
-        var playPromise = video.play();
-        if (playPromise !== undefined) {
-          playPromise.then(function() {
-            updateToggleButton(true);
-          }).catch(function() {
-            video.muted = true;
-            video.play().then(function() {
-              updateToggleButton(true);
-            }).catch(function() {
-              // Video truly can't autoplay, show gradient fallback
-              hero.classList.add('no-video');
-              video.style.display = 'none';
-              if (toggleBtn) toggleBtn.style.display = 'none';
-            });
-          });
-        }
-
-        // Handle video loading errors
-        video.addEventListener('error', function() {
-          hero.classList.add('no-video');
-          video.style.display = 'none';
-          if (toggleBtn) toggleBtn.style.display = 'none';
-        });
-
-        // iOS low-power mode: only auto-resume if user hasn't paused
-        video.addEventListener('pause', function() {
-          if (!document.hidden && !userPaused) {
-            video.play().catch(function() {});
-          }
-        });
-
-        // Resume when tab visible again (only if user hasn't paused)
-        document.addEventListener('visibilitychange', function() {
-          if (!document.hidden && video.paused && !userPaused) {
-            video.play().catch(function() {});
-          }
-        });
-
-        // ---- Toggle Button Click ----
-        if (toggleBtn) {
-          toggleBtn.addEventListener('click', function() {
-            if (video.paused) {
-              userPaused = false;
-              video.play().then(function() {
-                updateToggleButton(true);
-              }).catch(function() {});
-            } else {
-              userPaused = true;
-              video.pause();
-              updateToggleButton(false);
-            }
-          });
-        }
-      }
-    })();
 
     // ---- Sticky Header Shadow ----
     const header = document.querySelector('.site-header');
@@ -1308,7 +1280,7 @@
       const consentBtn = document.getElementById('mapConsentBtn');
       if (!mapContainer || !consentBtn) return;
 
-      var mapSrc = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1914.5999196155287!2d8.59116408324015!3d47.26248488567136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aa95eee158b67%3A0xdf13ffe849c91ca2!2sH%C3%B6rschmiede%20Boo%20GmbH!5e0!3m2!1sde!2sch!4v1664373307869!5m2!1sde!2sch';
+      var mapSrc = 'https://maps.google.com/maps?q=Alte%20Landstrasse%2014%2C%208810%20Horgen&z=17&hl=de&output=embed';
 
       function loadMap() {
         mapConsent.remove();
