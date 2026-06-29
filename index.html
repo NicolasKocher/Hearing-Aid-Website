@@ -38,6 +38,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="dns-prefetch" href="https://cdn.iubenda.com" />
   <link rel="dns-prefetch" href="https://www.google.com" />
+  <link rel="dns-prefetch" href="https://js.hcaptcha.com" />
+  <link rel="dns-prefetch" href="https://hcaptcha.com" />
 
   <!-- Critical CSS (preload + stylesheet) -->
   <link rel="preload" href="css/modern.css" as="style" />
@@ -180,6 +182,10 @@
         <a href="mailto:info@hoerschmiede-boo.ch">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
           <span>info@hoerschmiede-boo.ch</span>
+        </a>
+        <a href="https://maps.google.com/maps?q=Alte+Landstrasse+14,+8810+Horgen" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <span>Alte Landstrasse 14, 8810 Horgen</span>
         </a>
       </div>
       <div class="top-bar-social">
@@ -595,7 +601,7 @@
       <!-- Daniel Boo -->
       <div class="about-block reveal-left">
         <div class="about-img-wrap">
-          <img class="about-img" loading="lazy" decoding="async" src="img/daniel-boo.jpg" alt="Daniel Boo – Hörsystemakustiker mit eidg. Fachausweis, Inhaber der Hörschmiede Boo in Horgen" />
+          <img class="about-img" loading="lazy" decoding="async" src="img/daniel-boo-neu.jpeg" alt="Daniel Boo – Hörsystemakustiker mit eidg. Fachausweis, Inhaber der Hörschmiede Boo in Horgen" />
         </div>
         <div class="about-content">
           <h3 class="about-name">Daniel Boo</h3>
@@ -782,31 +788,33 @@
         <!-- Contact Form -->
         <div class="contact-form-card reveal-left">
           <h3 class="contact-form-title">Kontaktanfrage</h3>
-          <form id="contactForm" action="https://formsubmit.co/ajax/info@hoerschmiede-boo.ch" method="POST">
-            <input type="hidden" name="_subject" value="Neue Kontaktanfrage über hoerschmiede-boo.ch" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;pointer-events:none;" />
+          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Web3Forms Access Key: kostenlos auf https://web3forms.com mit info@hoerschmiede-boo.ch erstellen und hier einsetzen -->
+            <input type="hidden" name="access_key" value="cdfd16ba-6dcd-45a6-a4e3-319f81f12340" />
+            <input type="hidden" name="subject" value="Neue Kontaktanfrage über hoerschmiede-boo.ch" />
+            <input type="hidden" name="from_name" value="Hörschmiede Boo Website" />
+            <!-- Honeypot (Web3Forms-Konvention): für Menschen unsichtbar, füllt ein Bot es aus, wird die Anfrage verworfen -->
+            <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;pointer-events:none;" />
 
             <div class="form-group">
               <label for="contact_name" class="form-label">Name *</label>
-              <input type="text" id="contact_name" name="contact_name" class="form-input" placeholder="Ihr vollständiger Name" required minlength="2" autocomplete="name" />
+              <input type="text" id="contact_name" name="name" class="form-input" placeholder="Ihr vollständiger Name" required minlength="2" autocomplete="name" />
               <span class="form-error" id="error_name"></span>
             </div>
             <div class="form-group">
               <label for="contact_email" class="form-label">E-Mail *</label>
-              <input type="email" id="contact_email" name="contact_email" class="form-input" placeholder="ihre@email.ch" required autocomplete="email" />
+              <input type="email" id="contact_email" name="email" class="form-input" placeholder="ihre@email.ch" required autocomplete="email" />
               <span class="form-error" id="error_email"></span>
             </div>
             <div class="form-group">
               <label for="contact_message" class="form-label">Nachricht *</label>
-              <textarea id="contact_message" name="contact_message" class="form-input" placeholder="Wie können wir Ihnen helfen?" rows="5" required minlength="10"></textarea>
+              <textarea id="contact_message" name="message" class="form-input" placeholder="Wie können wir Ihnen helfen?" rows="5" required minlength="10"></textarea>
               <span class="form-error" id="error_message"></span>
             </div>
             <div class="form-group">
-              <label for="contact_botcheck" class="form-label" id="contact_botcheck_label">Sicherheitsfrage *</label>
-              <input type="text" id="contact_botcheck" name="contact_botcheck" class="form-input" inputmode="numeric" autocomplete="off" required />
-              <span class="form-error" id="error_botcheck"></span>
+              <!-- hCaptcha (von Web3Forms verwaltet, serverseitige Prüfung) -->
+              <div class="h-captcha" data-captcha="true" data-lang="de"></div>
+              <span class="form-error" id="error_captcha"></span>
             </div>
             <button type="submit" class="btn btn-primary form-submit" id="formSubmitBtn">
               <svg class="btn-icon-send" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
@@ -993,6 +1001,9 @@
   <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/safe-tcf-v2.js" async></script>
   <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
 
+  <!-- Web3Forms Client-Script: rendert das hCaptcha-Widget (data-captcha="true"), serverseitig via Web3Forms geprüft -->
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
   <script>
     // ---- Mobile Menu ----
     const menuToggle = document.getElementById('menuToggle');
@@ -1147,17 +1158,8 @@
       const submitBtn = document.getElementById('formSubmitBtn');
       const successMsg = document.getElementById('formSuccess');
       const failMsg = document.getElementById('formFail');
-      const botCheckInput = document.getElementById('contact_botcheck');
-      const botCheckLabel = document.getElementById('contact_botcheck_label');
-      const botCheckError = document.getElementById('error_botcheck');
+      const captchaError = document.getElementById('error_captcha');
       if (!form) return;
-
-      const botA = Math.floor(Math.random() * 7) + 2;
-      const botB = Math.floor(Math.random() * 7) + 2;
-      const botResult = botA + botB;
-      if (botCheckLabel) {
-        botCheckLabel.textContent = 'Sicherheitsfrage * (Bitte rechnen: ' + botA + ' + ' + botB + ')';
-      }
 
       const fields = [
         { input: document.getElementById('contact_name'),    error: document.getElementById('error_name'),    msg: 'Bitte geben Sie Ihren Namen ein (mind. 2 Zeichen).' },
@@ -1184,14 +1186,18 @@
         });
       });
 
-      if (botCheckInput) {
-        botCheckInput.addEventListener('input', function() {
-          botCheckInput.classList.remove('invalid');
-          if (botCheckError) {
-            botCheckError.classList.remove('visible');
-            botCheckError.textContent = '';
-          }
-        });
+      // hCaptcha-Token aus dem (von hCaptcha eingefügten) versteckten Feld lesen
+      function getCaptchaToken() {
+        const el = form.querySelector('textarea[name="h-captcha-response"]');
+        return el ? el.value.trim() : '';
+      }
+
+      function clearCaptchaError() {
+        if (captchaError) { captchaError.classList.remove('visible'); captchaError.textContent = ''; }
+      }
+
+      function resetCaptcha() {
+        try { if (window.hcaptcha) window.hcaptcha.reset(); } catch (e) {}
       }
 
       function validateAll() {
@@ -1209,19 +1215,14 @@
           }
         });
 
-        if (!botCheckInput || botCheckInput.value.trim() !== String(botResult)) {
-          if (botCheckInput) botCheckInput.classList.add('invalid');
-          if (botCheckError) {
-            botCheckError.classList.add('visible');
-            botCheckError.textContent = 'Bitte lösen Sie die Sicherheitsfrage korrekt.';
+        if (!getCaptchaToken()) {
+          if (captchaError) {
+            captchaError.classList.add('visible');
+            captchaError.textContent = 'Bitte bestätigen Sie, dass Sie kein Roboter sind.';
           }
           valid = false;
         } else {
-          botCheckInput.classList.remove('invalid');
-          if (botCheckError) {
-            botCheckError.classList.remove('visible');
-            botCheckError.textContent = '';
-          }
+          clearCaptchaError();
         }
 
         return valid;
@@ -1246,7 +1247,6 @@
         submitBtn.querySelector('.btn-text').textContent = 'Wird gesendet…';
 
         const formData = new FormData(form);
-        formData.delete('contact_botcheck');
 
         fetch(form.action, {
           method: 'POST',
@@ -1254,15 +1254,19 @@
           headers: { 'Accept': 'application/json' }
         })
         .then(function(response) {
-          if (response.ok) {
+          return response.json().then(function(data) { return { ok: response.ok, data: data }; });
+        })
+        .then(function(res) {
+          if (res.ok && res.data && res.data.success) {
             form.style.display = 'none';
             successMsg.style.display = 'flex';
           } else {
-            throw new Error('Server error');
+            throw new Error((res.data && res.data.message) || 'Server error');
           }
         })
         .catch(function() {
           failMsg.style.display = 'flex';
+          resetCaptcha();
         })
         .finally(function() {
           submitBtn.disabled = false;
