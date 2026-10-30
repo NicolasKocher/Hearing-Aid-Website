@@ -38,8 +38,28 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
 # KI-Suche: Perplexity
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# KI-Suche: Apple (Siri, Apple Intelligence)
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# KI-Suche: DuckDuckGo
+User-agent: DuckAssistBot
 Allow: /
 
 # KI-Suche: Microsoft Copilot
@@ -63,3 +83,5 @@ Allow: /
 
 # Sitemap
 Sitemap: https://www.hoerschmiede-boo.ch/sitemap.xml
+
+# Kurzfassung für KI-Assistenten: https://www.hoerschmiede-boo.ch/llms.txt

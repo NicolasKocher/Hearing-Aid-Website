@@ -15,6 +15,7 @@ AddType application/javascript .js
 AddType image/svg+xml .svg
 AddType image/webp .webp
 AddType video/mp4 .mp4
+AddType font/woff2 .woff2
 
 # Browser-Caching für bessere Performance
 <IfModule mod_expires.c>
