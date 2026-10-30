@@ -1,963 +1,746 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de-CH">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO Meta Tags -->
-  <title>Hörschmiede Boo GmbH | Hörgeräte & Hörsysteme nach Mass in Horgen</title>
-  <meta name="description" content="Hörschmiede Boo GmbH in Horgen – Ihr Spezialist für individuelle Hörgeräte & Hörsysteme. Kostenloser Hörtest, persönliche Beratung und modernste Technik. Jetzt Termin vereinbaren!" />
-  <meta name="keywords" content="Hörgeräte Horgen, Hörsysteme nach Mass, Hörtest kostenlos, Hörakustiker Horgen, Hörgeräte Zürichsee, Im-Ohr-Hörgeräte, HdO Hörgeräte, Tinnitusberatung, Gehörschutz, Hörschmiede Boo" />
+  <!-- SEO -->
+  <title>Hörgeräte in Horgen | Hörschmiede Boo – Hörakustik-Meister am Zürichsee</title>
+  <meta name="description" content="Hörgeräte nach Mass in Horgen: kostenloser Hörtest, Probetragen und markenunabhängige Beratung vom Hörakustik-Meister Daniel Boo. Jetzt Termin buchen." />
   <meta name="author" content="Hörschmiede Boo GmbH" />
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#E3A82B" />
   <link rel="canonical" href="https://www.hoerschmiede-boo.ch/" />
+  <link rel="alternate" hreflang="de-CH" href="https://www.hoerschmiede-boo.ch/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.hoerschmiede-boo.ch/" />
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph / Social -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.hoerschmiede-boo.ch/" />
-  <meta property="og:title" content="Hörschmiede Boo GmbH | Hörgeräte & Hörsysteme nach Mass in Horgen" />
-  <meta property="og:description" content="Individuelle Hörgeräte vom Meister. Kostenloser Hörtest, unverbindliche Beratung und modernste Hörsystemtechnik in Horgen am Zürichsee." />
-  <meta property="og:image" content="https://www.hoerschmiede-boo.ch/img/FooterUMini.png" />
+  <meta property="og:title" content="Hörgeräte in Horgen | Hörschmiede Boo" />
+  <meta property="og:description" content="Kostenloser Hörtest, kostenloses Probetragen und markenunabhängige Beratung vom Hörakustik-Meister in Horgen am Zürichsee." />
+  <meta property="og:image" content="https://www.hoerschmiede-boo.ch/img/daniel-boo-neu.jpeg" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="1131" />
+  <meta property="og:image:alt" content="Daniel Boo, Hörakustik-Meister der Hörschmiede Boo, mit einem Im-Ohr-Hörgerät" />
   <meta property="og:locale" content="de_CH" />
-  <meta property="og:site_name" content="Hörschmiede Boo GmbH" />
-
-  <!-- Twitter Card -->
+  <meta property="og:site_name" content="Hörschmiede Boo" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Hörschmiede Boo GmbH | Hörgeräte & Hörsysteme nach Mass in Horgen" />
-  <meta name="twitter:description" content="Individuelle Hörgeräte vom Meister. Kostenloser Hörtest und Beratung in Horgen." />
-  <meta name="twitter:image" content="https://www.hoerschmiede-boo.ch/img/FooterUMini.png" />
+  <meta name="twitter:title" content="Hörgeräte in Horgen | Hörschmiede Boo" />
+  <meta name="twitter:description" content="Kostenloser Hörtest und markenunabhängige Beratung vom Hörakustik-Meister in Horgen." />
+  <meta name="twitter:image" content="https://www.hoerschmiede-boo.ch/img/daniel-boo-neu.jpeg" />
+  <meta name="twitter:image:alt" content="Daniel Boo, Hörakustik-Meister der Hörschmiede Boo, mit einem Im-Ohr-Hörgerät" />
 
-  <!-- Geo Tags -->
+  <!-- Geo -->
   <meta name="geo.region" content="CH-ZH" />
   <meta name="geo.placename" content="Horgen" />
   <meta name="geo.position" content="47.2595;8.5976" />
   <meta name="ICBM" content="47.2595, 8.5976" />
 
   <!-- Resource Hints -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="dns-prefetch" href="https://cdn.iubenda.com" />
-  <link rel="dns-prefetch" href="https://www.google.com" />
   <link rel="dns-prefetch" href="https://js.hcaptcha.com" />
   <link rel="dns-prefetch" href="https://hcaptcha.com" />
+  <link rel="preload" href="img/daniel-boo-neu.jpeg" as="image" fetchpriority="high" />
 
-  <!-- Critical CSS (preload + stylesheet) -->
-  <link rel="preload" href="css/modern.css" as="style" />
-  <link rel="stylesheet" href="css/modern.css" />
-  <link rel="stylesheet" href="css/datenschutz.css" />
+  <!-- Fonts (lokal gehostet, keine Datenübertragung an Google) -->
+  <link rel="preload" href="fonts/archivo.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/atkinson.woff2" as="font" type="font/woff2" crossorigin />
 
-  <!-- Fonts (non-blocking) -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/site.css" />
+  <script>document.documentElement.classList.add('js');</script>
 
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="img/FooterUMini.png" />
+  <link rel="apple-touch-icon" href="img/FooterUMini.png" />
 
-  <!-- Structured Data: LocalBusiness -->
+  <!-- Strukturierte Daten: Geschäft, Inhaber, Leistungen, Website -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": "https://www.hoerschmiede-boo.ch/#business",
-    "name": "Hörschmiede Boo GmbH",
-    "description": "Individuelle Hörgeräte und Hörsysteme nach Mass – kostenloser Hörtest, persönliche Beratung und modernste Technik in Horgen am Zürichsee.",
-    "url": "https://www.hoerschmiede-boo.ch",
-    "telephone": "+41 44 594 31 90",
-    "email": "info@hoerschmiede-boo.ch",
-    "image": "https://www.hoerschmiede-boo.ch/img/FooterUMini.png",
-    "logo": "https://www.hoerschmiede-boo.ch/img/FooterUMini.png",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Alte Landstrasse 14",
-      "addressLocality": "Horgen",
-      "postalCode": "8810",
-      "addressCountry": "CH",
-      "addressRegion": "ZH"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 47.2595,
-      "longitude": 8.5976
-    },
-    "openingHoursSpecification": [
+    "@graph": [
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Thursday"],
-        "opens": "09:00",
-        "closes": "12:00"
+        "@type": ["MedicalBusiness", "LocalBusiness"],
+        "@id": "https://www.hoerschmiede-boo.ch/#business",
+        "name": "Hörschmiede Boo GmbH",
+        "alternateName": ["Hörschmiede Boo", "Hörgeräte in Horgen – Hörschmiede Boo"],
+        "description": "Unabhängige Hörakustik in Horgen am Zürichsee: Hörgeräte und Hörsysteme nach Mass, kostenloser Hörtest, kostenloses Probetragen, Natural Fitting, Gehörschutz, In-Ear Monitoring, Tinnitusberatung, Reparaturen mit Leihgerät und Hausbesuche. Inhaber ist Hörakustik-Meister Daniel Boo.",
+        "slogan": "Hören ist Handwerk.",
+        "url": "https://www.hoerschmiede-boo.ch/",
+        "telephone": "+41 44 594 31 90",
+        "email": "info@hoerschmiede-boo.ch",
+        "image": [
+          "https://www.hoerschmiede-boo.ch/img/daniel-boo-neu.jpeg",
+          "https://www.hoerschmiede-boo.ch/img/tisch.jpeg",
+          "https://www.hoerschmiede-boo.ch/img/raum.jpeg"
+        ],
+        "logo": "https://www.hoerschmiede-boo.ch/img/FooterUMini.png",
+        "priceRange": "Hörtest und Beratung kostenlos",
+        "currenciesAccepted": "CHF",
+        "knowsLanguage": "de",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Alte Landstrasse 14",
+          "postalCode": "8810",
+          "addressLocality": "Horgen",
+          "addressRegion": "ZH",
+          "addressCountry": "CH"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 47.2595, "longitude": 8.5976 },
+        "hasMap": "https://maps.google.com/?cid=16074472868150844578",
+        "areaServed": [
+          { "@type": "City", "name": "Horgen" },
+          { "@type": "AdministrativeArea", "name": "Bezirk Horgen" },
+          { "@type": "Place", "name": "Zürichsee" },
+          { "@type": "AdministrativeArea", "name": "Kanton Zürich" }
+        ],
+        "openingHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Thursday"], "opens": "09:00", "closes": "12:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Thursday"], "opens": "13:00", "closes": "17:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday", "Friday"], "opens": "09:00", "closes": "12:00" }
+        ],
+        "potentialAction": {
+          "@type": "ReserveAction",
+          "name": "Kostenlosen Hörtest buchen",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://suisse1.amparex.net/amparex/web/selfservice/onlinetp/s0pqyszbg2yhqndoi6tgalrvhgggdot0hdktwnbtq9u=/resourcetp/0182f3a0-9a74-0000-0571-1C697A9F8F3A",
+            "inLanguage": "de-CH",
+            "actionPlatform": ["https://schema.org/DesktopWebPlatform", "https://schema.org/MobileWebPlatform"]
+          }
+        },
+        "founder": { "@id": "https://www.hoerschmiede-boo.ch/#daniel-boo" },
+        "employee": { "@id": "https://www.hoerschmiede-boo.ch/#daniel-boo" },
+        "brand": [
+          { "@type": "Brand", "name": "Phonak" },
+          { "@type": "Brand", "name": "Oticon" },
+          { "@type": "Brand", "name": "ReSound" },
+          { "@type": "Brand", "name": "Unitron" },
+          { "@type": "Brand", "name": "Signia" },
+          { "@type": "Brand", "name": "Starkey" },
+          { "@type": "Brand", "name": "Widex" }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/hoerschmiede_boo/",
+          "https://www.facebook.com/profile.php?id=100084035448678",
+          "https://maps.google.com/?cid=16074472868150844578"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Leistungen der Hörschmiede Boo",
+          "itemListElement": [
+            { "@type": "Offer", "price": "0", "priceCurrency": "CHF", "itemOffered": { "@type": "Service", "name": "Kostenloser Hörtest", "description": "Ermittlung des Hörvermögens in wenigen Minuten mit anschliessender Besprechung, kostenlos und unverbindlich." } },
+            { "@type": "Offer", "price": "0", "priceCurrency": "CHF", "itemOffered": { "@type": "Service", "name": "Kostenloses Probetragen", "description": "Hörsysteme verschiedener Hersteller unverbindlich im eigenen Alltag testen." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hörgeräte-Anpassung mit Natural Fitting", "description": "Anpassverfahren, das Klang und Lautstärke möglichst realitätsgetreu auf das individuelle Hörvermögen abstimmt." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Im-Ohr-Hörgeräte (IdO) nach Mass" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hinter-dem-Ohr-Hörgeräte (HdO)" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gehörschutz nach Mass" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "In-Ear Monitoring für Musiker und Gamer" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tinnitusberatung" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Service und Wartung von Hörsystemen" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparaturen mit kostenlosem Leihgerät" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Einstellung von Fremdgeräten" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hausbesuch-Service" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Finanzierung und Versicherung von Hörgeräten, auch 0%-Finanzierung" } }
+          ]
+        },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "bestRating": "5", "worstRating": "1", "ratingCount": "4", "reviewCount": "4" },
+        "review": [
+          { "@type": "Review", "author": { "@type": "Person", "name": "D. K." }, "datePublished": "2024-01-15", "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "Daniel Boo hat mich sehr kompetent und freundlich beraten und mir alle Details zu meinem ersten Hörgerät inkl. den Möglichkeiten zur Steuerung über die App erklärt. Ich fühle mich bei ihm bestens aufgehoben und empfehle ihn jederzeit gerne weiter." },
+          { "@type": "Review", "author": { "@type": "Person", "name": "L. M." }, "datePublished": "2024-02-10", "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "Ich habe mir bei Herrn Boo mein In-Ear Monitoring fertigen lassen. Ich kann seine Beratung wie auch das Produkt nur sehr empfehlen. Sitzt top im Ohr und beste Qualität. Auch preislich sehr fair. Ich komme immer wieder gerne zur Hörschmiede." },
+          { "@type": "Review", "author": { "@type": "Person", "name": "A. H." }, "datePublished": "2024-03-05", "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "Sehr professionell, gute Betreuung! Hervorragende Qualität in der Abstimmung meiner persönlichen Höransprüche. Sehr empfehlenswert, wenn Hören zum Genuss werden soll!" },
+          { "@type": "Review", "author": { "@type": "Person", "name": "M. W." }, "datePublished": "2024-04-20", "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "Aufgrund seiner positiven Google Bewertungen habe ich mich für die Hörgeräteberatung Boo entschieden. Herr Boo ist sehr kompetent und nimmt sich viel Zeit für seine Kundschaft. Er ist nicht auf eine Marke fixiert, was sehr wichtig ist. Bin sehr zufrieden." }
+        ]
       },
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Thursday"],
-        "opens": "13:00",
-        "closes": "17:00"
+        "@type": "Person",
+        "@id": "https://www.hoerschmiede-boo.ch/#daniel-boo",
+        "name": "Daniel Boo",
+        "jobTitle": "Hörsystemakustiker mit eidg. Fachausweis, Hörakustiker-Meister",
+        "image": "https://www.hoerschmiede-boo.ch/img/daniel-boo-neu.jpeg",
+        "worksFor": { "@id": "https://www.hoerschmiede-boo.ch/#business" },
+        "knowsAbout": ["Hörakustik", "Hörgeräte", "Hörtest", "Tinnitus", "Gehörschutz", "In-Ear Monitoring"],
+        "alumniOf": [
+          { "@type": "EducationalOrganization", "name": "Landesberufsschule Lübeck" },
+          { "@type": "EducationalOrganization", "name": "IfB Karlsruhe" }
+        ],
+        "hasCredential": [
+          { "@type": "EducationalOccupationalCredential", "name": "Ausbildung zum Hörsystemakustiker", "dateCreated": "2013" },
+          { "@type": "EducationalOccupationalCredential", "name": "Meisterbrief im Hörakustiker-Handwerk", "credentialCategory": "Meisterprüfung", "dateCreated": "2020" },
+          { "@type": "EducationalOccupationalCredential", "name": "Hörsystemakustiker mit eidgenössischem Fachausweis", "credentialCategory": "Eidgenössischer Fachausweis" }
+        ],
+        "sameAs": ["https://www.instagram.com/hoerschmiede_boo/"]
       },
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Wednesday","Friday"],
-        "opens": "09:00",
-        "closes": "12:00"
-      }
-    ],
-    "sameAs": [
-      "https://www.instagram.com/hoerschmiede_boo/",
-      "https://www.facebook.com/profile.php?id=100084035448678"
-    ],
-    "founder": {
-      "@type": "Person",
-      "name": "Daniel Boo",
-      "jobTitle": "Hörsystemakustiker mit eidg. Fachausweis"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Hörakustik-Dienstleistungen",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kostenloser Hörtest" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kostenloses Probetragen" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Individuelle Hörgeräte-Anpassung" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Natural Fitting" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gehörschutz" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tinnitusberatung" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "In-Ear Monitoring" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparaturen & Service" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hausbesuch-Service" } }
-      ]
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "bestRating": "5",
-      "worstRating": "1",
-      "ratingCount": "4",
-      "reviewCount": "4"
-    },
-    "review": [
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Daniel Kopetschny" },
-        "datePublished": "2024-01-15",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "reviewBody": "Daniel Boo hat mich sehr kompetent und freundlich beraten und mir alle Details zu meinem ersten Hörgerät inkl. den Möglichkeiten zur Steuerung über die App erklärt. Ich fühle mich bei ihm bestens aufgehoben und empfehle ihn jederzeit gerne weiter."
+        "@type": "WebSite",
+        "@id": "https://www.hoerschmiede-boo.ch/#website",
+        "url": "https://www.hoerschmiede-boo.ch/",
+        "name": "Hörschmiede Boo",
+        "inLanguage": "de-CH",
+        "publisher": { "@id": "https://www.hoerschmiede-boo.ch/#business" }
       },
       {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Luck Man" },
-        "datePublished": "2024-02-10",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "reviewBody": "Ich habe mir bei Herrn Boo mein In-Ear Monitoring fertigen lassen. Ich kann seine Beratung wie auch das Produkt nur sehr empfehlen. Sitzt top im Ohr und beste Qualität. Auch preislich sehr fair. Ich komme immer wieder gerne zur Hörschmiede."
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Andino Hartkopf" },
-        "datePublished": "2024-03-05",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "reviewBody": "Sehr professionell, gute Betreuung! Hervorragende Qualität in der Abstimmung meiner persönlichen Höransprüche. Sehr empfehlenswert, wenn Hören zum Genuss werden soll!"
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Marcel Weber" },
-        "datePublished": "2024-04-20",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "reviewBody": "Aufgrund seiner positiven Google Bewertungen habe ich mich für die Hörgeräteberatung Boo entschieden. Herr Boo ist sehr kompetent und nimmt sich viel Zeit für seine Kundschaft. Er ist nicht auf eine Marke fixiert, was sehr wichtig ist. Bin sehr zufrieden."
+        "@type": "WebPage",
+        "@id": "https://www.hoerschmiede-boo.ch/#webpage",
+        "url": "https://www.hoerschmiede-boo.ch/",
+        "name": "Hörgeräte in Horgen | Hörschmiede Boo",
+        "isPartOf": { "@id": "https://www.hoerschmiede-boo.ch/#website" },
+        "about": { "@id": "https://www.hoerschmiede-boo.ch/#business" },
+        "primaryImageOfPage": "https://www.hoerschmiede-boo.ch/img/daniel-boo-neu.jpeg",
+        "inLanguage": "de-CH",
+        "dateModified": "2026-10-30"
       }
     ]
-  }
-  </script>
-
-  <!-- Structured Data: WebSite (for sitelinks search) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Hörschmiede Boo GmbH",
-    "url": "https://www.hoerschmiede-boo.ch"
   }
   </script>
 </head>
 <body>
 
-  <!-- ============ TOP BAR ============ -->
-  <div class="top-bar">
-    <div class="container-modern top-bar-inner">
-      <div class="top-bar-contact">
-        <a href="tel:+41445943190">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-          <span>044 594 31 90</span>
-        </a>
-        <a href="mailto:info@hoerschmiede-boo.ch">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-          <span>info@hoerschmiede-boo.ch</span>
-        </a>
-        <a href="https://maps.google.com/maps?q=Alte+Landstrasse+14,+8810+Horgen" target="_blank" rel="noopener">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-          <span>Alte Landstrasse 14, 8810 Horgen</span>
-        </a>
-      </div>
-      <div class="top-bar-social">
-        <a href="https://www.instagram.com/hoerschmiede_boo/" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=100084035448678" target="_blank" rel="noopener" aria-label="Facebook">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
 
-  <!-- ============ HEADER / NAVIGATION ============ -->
-  <header class="site-header" id="home">
-    <div class="header-inner">
-      <a href="index.html" class="logo-link">
-        <img src="img/FooterUMini.png" alt="Hörschmiede Boo Logo" class="logo-img" />
-        <div class="logo-text">
-          <span class="logo-title">HÖRSCHMIEDE BOO</span>
-          <span class="logo-subtitle">Hörsysteme nach Mass</span>
-        </div>
+  <!-- SVG-Icons (einmal definiert, überall per <use> eingesetzt) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.4-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 4v16M16 4v16"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></symbol>
+    <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  </svg>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a href="index.html" class="brand" aria-label="Hörschmiede Boo – zur Startseite">
+        <img src="img/FooterUMini.png" alt="" class="brand-mark" width="40" height="40" />
+        <span class="brand-text">
+          <span class="brand-name">Hörschmiede Boo</span>
+          <span class="brand-sub">Hörsysteme nach Mass</span>
+        </span>
       </a>
 
       <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
-        <a href="#home" class="active">Home</a>
         <a href="#leistungen">Leistungen</a>
         <a href="#hoergeraete">Hörgeräte</a>
-        <a href="#ueber-uns">Über uns</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="#ueber-mich">Über mich</a>
         <a href="#anfahrt">Anfahrt</a>
-        <a href="faq.html" target="_blank">FAQ</a>
+        <a href="faq.html">FAQ</a>
+        <a href="#kontakt">Kontakt</a>
+        <div class="nav-mobile-extra">
+          <a class="btn btn--mustard" href="https://suisse1.amparex.net/amparex/web/selfservice/onlinetp/s0pqyszbg2yhqndoi6tgalrvhgggdot0hdktwnbtq9u=/resourcetp/0182f3a0-9a74-0000-0571-1C697A9F8F3A" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+            Kostenlosen Hörtest buchen
+          </a>
+          <a class="nav-phone-big" href="tel:+41445943190">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+            044 594 31 90
+          </a>
+        </div>
       </nav>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="header-actions">
+        <a class="header-phone" href="tel:+41445943190" aria-label="Anrufen: 044 594 31 90">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+          <span>044 594 31 90</span>
+        </a>
+        <a class="btn btn--ink btn--sm header-cta" href="https://suisse1.amparex.net/amparex/web/selfservice/onlinetp/s0pqyszbg2yhqndoi6tgalrvhgggdot0hdktwnbtq9u=/resourcetp/0182f3a0-9a74-0000-0571-1C697A9F8F3A" target="_blank" rel="noopener">Termin buchen</a>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Menü öffnen">
+          <svg class="icon icon-open" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
     </div>
-    <div class="nav-overlay" id="navOverlay"></div>
   </header>
 
-  <main>
+  <main id="inhalt">
 
-  <!-- ============ HERO SECTION ============ -->
-  <section class="hero no-video" id="hero">
-    <div class="hero-decor" aria-hidden="true"></div>
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1 class="hero-title" id="hero-title">Hören ist Handwerk. <span class="hero-title-sub">Hörgeräte nach Mass in Horgen</span></h1>
+        <p class="hero-lead">
+          Daniel Boo, Hörakustik-Meister am Zürichsee, misst Ihr Gehör, berät Sie markenunabhängig und
+          stellt Ihr Hörsystem so ein, dass Gespräche wieder mühelos werden. Hörtest und Probetragen sind kostenlos.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn--ink btn--lg" href="https://suisse1.amparex.net/amparex/web/selfservice/onlinetp/s0pqyszbg2yhqndoi6tgalrvhgggdot0hdktwnbtq9u=/resourcetp/0182f3a0-9a74-0000-0571-1C697A9F8F3A" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+            Kostenlosen Hörtest buchen
+          </a>
+          <a class="btn btn--line btn--lg" href="tel:+41445943190">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+            044 594 31 90
+          </a>
+        </div>
+        <p class="hero-status" id="openStatus" aria-live="polite">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span class="status-text">Mo–Fr ab 09:00 Uhr für Sie da</span>
+          <span class="status-sep" aria-hidden="true">·</span>
+          <a href="#anfahrt">Alte Landstrasse 14, Horgen</a>
+        </p>
+      </div>
 
-    <div class="hero-content">
-      <h1 class="hero-title">Ihre <span>Hörberatung</span> in Horgen</h1>
-      <p class="hero-text">
-        Persönliche Beratung, modernste Technik und massgeschneiderte Hörlösungen 
-        für Ihr bestes Hörerlebnis.
-      </p>
-      <div class="hero-cta">
-        <a href="https://suisse1.amparex.net/amparex/web/selfservice/onlinetp/s0pqyszbg2yhqndoi6tgalrvhgggdot0hdktwnbtq9u=/resourcetp/0182f3a0-9a74-0000-0571-1C697A9F8F3A" target="_blank" class="btn btn-primary btn-pulse">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-          Kostenlosen Termin vereinbaren
-        </a>
-        <a href="#leistungen" class="btn btn-outline">
-          Mehr erfahren
-        </a>
+      <figure class="hero-portrait">
+        <img src="img/daniel-boo-neu.jpeg" alt="Daniel Boo hält ein kleines Im-Ohr-Hörgerät zwischen den Fingern" width="1600" height="1131" fetchpriority="high" />
+        <figcaption>Daniel Boo <span>Hörsystemakustiker mit eidg. Fachausweis und Meisterbrief</span></figcaption>
+      </figure>
+    </div>
+
+    <!-- Signatur: das Audiogramm. Die Kurve hebt sich – vom Hörverlust zum versorgten Hören. -->
+    <div class="wrap">
+      <div class="audiogram" aria-hidden="true">
+        <div class="audiogram-scale">
+          <span style="--x:5%">250</span><span style="--x:23%">500</span><span style="--x:41%">1000</span><span style="--x:59%">2000</span><span style="--x:77%">4000</span><span style="--x:95%">8000&nbsp;Hz</span>
+        </div>
+        <svg class="audiogram-chart" viewBox="0 0 1000 200" preserveAspectRatio="none">
+          <g class="ag-grid">
+            <path d="M0 10H1000M0 32.5H1000M0 55H1000M0 77.5H1000M0 100H1000M0 122.5H1000M0 145H1000M0 167.5H1000M0 190H1000"/>
+            <path d="M50 0V200M230 0V200M410 0V200M590 0V200M770 0V200M950 0V200"/>
+          </g>
+          <path class="ag-before" d="M50 43.75L230 55L410 66.25L590 100L770 145L950 167.5"/>
+          <path class="ag-before-dots" d="M50 43.75h0M230 55h0M410 66.25h0M590 100h0M770 145h0M950 167.5h0"/>
+          <path class="ag-after" d="M50 32.5L230 32.5L410 43.75L590 55L770 66.25L950 77.5"/>
+          <path class="ag-after-dots" d="M50 32.5h0M230 32.5h0M410 43.75h0M590 55h0M770 66.25h0M950 77.5h0"/>
+        </svg>
+        <div class="audiogram-legend">
+          <span class="lg-before">Ohne Hörsystem</span>
+          <span class="lg-after">Mit angepasstem Hörsystem</span>
+          <span class="lg-note">Beispiel-Audiogramm eines typischen Hochtonverlusts</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ STATS BAR ============ -->
-  <section class="stats-bar">
-    <div class="container-modern">
-      <div class="stats-grid">
-        <div class="stat-item reveal delay-1">
-          <div class="stat-number">17+</div>
-          <div class="stat-label">Jahre Erfahrung</div>
-        </div>
-        <div class="stat-item reveal delay-2">
-          <div class="stat-number">7</div>
-          <div class="stat-label">Premium Marken</div>
-        </div>
-        <div class="stat-item reveal delay-3">
-          <div class="stat-number">100%</div>
-          <div class="stat-label">Individuelle Beratung</div>
-        </div>
-        <div class="stat-item reveal delay-4">
-          <div class="stat-number">0 CHF</div>
-          <div class="stat-label">Hörtest & Beratung</div>
-        </div>
+  <!-- ============ ABLAUF ============ -->
+  <section class="section" id="ablauf" aria-labelledby="ablauf-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="section-title" id="ablauf-title">In vier Schritten zu besserem Hören</h2>
+        <p class="section-lead">Ohne Zeitdruck, ohne Verpflichtung. Hörtest und Beratung sind für Sie kostenlos.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- ============ 4 SCHRITTE ============ -->
-  <section class="section" id="schritte">
-    <div class="container-modern">
-      <div class="section-header reveal">
-        <span class="section-badge">So einfach geht's</span>
-        <h2 class="section-title">In nur 4 Schritten zu <span>besserem Hören</span></h2>
-        <div class="gold-line"></div>
-      </div>
-      <div class="steps-grid">
-        <div class="step-card reveal delay-1">
-          <span class="step-number">1</span>
-          <img class="step-icon" loading="lazy" decoding="async" src="img/icons8-gruppenaufgabe-100.png" alt="Hörbedarf ermitteln" />
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num" aria-hidden="true">1</span>
           <h3 class="step-title">Hörbedarf ermitteln</h3>
-        </div>
-        <div class="step-card reveal delay-2">
-          <span class="step-number">2</span>
-          <img class="step-icon" loading="lazy" decoding="async" src="img/icons8-horgerat-100.png" alt="Hörgerät auswählen" />
+          <p>Wir sprechen darüber, wo Ihnen das Verstehen schwerfällt. Danach messen wir Ihr Gehör – das dauert nur wenige Minuten.</p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">2</span>
           <h3 class="step-title">Hörgerät auswählen</h3>
-        </div>
-        <div class="step-card reveal delay-3">
-          <span class="step-number">3</span>
-          <img class="step-icon" loading="lazy" decoding="async" src="img/icons8-gehirn-100.png" alt="Kostenlos testen" />
+          <p>Markenunabhängig aus dem Sortiment von sieben Herstellern: passend zu Ihrem Ohr, Ihrem Alltag und Ihrem Budget.</p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">3</span>
           <h3 class="step-title">Unverbindlich kostenlos testen</h3>
-        </div>
-        <div class="step-card reveal delay-4">
-          <span class="step-number">4</span>
-          <img class="step-icon" loading="lazy" decoding="async" src="img/icons8-glucklich-100.png" alt="Gut hören" />
+          <p>Sie tragen die Geräte in Ihrer gewohnten Umgebung Probe und vergleichen in Ruhe verschiedene Hersteller.</p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">4</span>
           <h3 class="step-title">Gut hören und verstehen</h3>
+          <p>Mit Natural Fitting fein abgestimmt. Auch danach bleibe ich für Service, Kontrolle und Nachjustierung an Ihrer Seite.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ HÖRPROBE ============ -->
+  <section class="section section--graphite" id="hoerprobe" aria-labelledby="hoerprobe-title">
+    <div class="wrap probe-grid">
+      <div class="probe-copy">
+        <h2 class="section-title" id="hoerprobe-title">Hören Sie, was leise verschwindet</h2>
+        <p class="section-lead">
+          Ein Hörverlust beginnt meist bei den hohen Tönen: Vogelgezwitscher, das Ticken einer Uhr,
+          die Laute s, f und sch. Weil er schleichend kommt, fällt er oft erst spät auf.
+        </p>
+        <p class="probe-hint">Starten Sie die Hörprobe und wechseln Sie zwischen den Stufen. Am besten mit Kopfhörern.</p>
+      </div>
+
+      <div class="probe" id="probe">
+        <div class="probe-controls">
+          <button class="probe-play" id="probePlay" type="button" aria-pressed="false">
+            <svg class="icon icon-play" aria-hidden="true"><use href="#i-play"/></svg>
+            <svg class="icon icon-pause" aria-hidden="true"><use href="#i-pause"/></svg>
+            <span class="probe-play-label">Hörprobe starten</span>
+          </button>
+          <div class="probe-levels" role="radiogroup" aria-label="Stärke des Hörverlusts simulieren">
+            <button type="button" role="radio" aria-checked="true" data-cutoff="20000" data-label="Normales Gehör">Normal</button>
+            <button type="button" role="radio" aria-checked="false" data-cutoff="3000" data-label="Leichter Hochtonverlust">Leicht</button>
+            <button type="button" role="radio" aria-checked="false" data-cutoff="1100" data-label="Mittlerer Hochtonverlust">Mittel</button>
+            <button type="button" role="radio" aria-checked="false" data-cutoff="420" data-label="Starker Hörverlust">Stark</button>
+          </div>
         </div>
+
+        <div class="spectrum" id="spectrum" style="--cut:100%">
+          <div class="spectrum-rows">
+            <div class="band" style="--a:0%;--b:20%"><span class="band-bar"></span><span class="band-label">Brummen des Kühlschranks <em>in der Hörprobe</em></span></div>
+            <div class="band" style="--a:20%;--b:50%"><span class="band-bar"></span><span class="band-label">Vokale einer Stimme</span></div>
+            <div class="band" style="--a:65%;--b:85%"><span class="band-bar"></span><span class="band-label">Ticken einer Uhr <em>in der Hörprobe</em></span></div>
+            <div class="band" style="--a:74%;--b:92%"><span class="band-bar"></span><span class="band-label">Vogelgezwitscher <em>in der Hörprobe</em></span></div>
+            <div class="band" style="--a:80%;--b:96%"><span class="band-bar"></span><span class="band-label">Konsonanten s, f, sch</span></div>
+          </div>
+          <div class="spectrum-lost" aria-hidden="true"><span>nicht mehr hörbar</span></div>
+          <div class="spectrum-axis" aria-hidden="true">
+            <span style="--x:0%">100</span><span style="--x:30%">250</span><span style="--x:50%">1000</span><span style="--x:65%">2000</span><span style="--x:80%">4000</span><span style="--x:100%">10&thinsp;000&nbsp;Hz</span>
+          </div>
+        </div>
+        <p class="probe-note" aria-live="polite"><strong id="probeStatus">Normales Gehör:</strong> <span id="probeStatusText">alle Geräusche der Hörprobe sind zu hören.</span></p>
+        <p class="probe-fine">Vereinfachte Klangsimulation. Sie ersetzt keinen Hörtest.</p>
       </div>
     </div>
   </section>
 
   <!-- ============ LEISTUNGEN ============ -->
-  <section class="section section-alt" id="leistungen">
-    <div class="container-modern">
-      <div class="section-header reveal">
-        <span class="section-badge">Unsere Leistungen</span>
-        <h2 class="section-title">Individuelle Hörgeräte von <span>Meisterhand</span></h2>
-        <p class="section-subtitle">Umfassende Beratung und professionelle Lösungen für Ihr Hörvermögen.</p>
-      </div>
-      <div class="services-grid">
-
-        <div class="service-card reveal">
-          <div class="service-icon-wrap">
-            <img class="service-icon" loading="lazy" decoding="async" src="img/ear (1).png" alt="Icon kostenloser Hörtest – Hörvermögen ermitteln" />
-          </div>
-          <h3 class="service-title">Kostenloser Hörtest</h3>
-          <p class="service-text">
-            Sie haben das Gefühl Gesprächen nicht mehr richtig folgen zu können? 
-            Die Ermittlung Ihres Hörvermögens dauert nur wenige Minuten. 
-            Anschliessend besprechen wir das Ergebnis und suchen für Sie die bestmögliche Hörlösung. 
-            Hörtest wie auch die Beratung ist für Sie kostenlos und unverbindlich.
-          </p>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon-wrap">
-            <img class="service-icon" loading="lazy" decoding="async" src="img/hearing.png" alt="Icon Hörgeräte kostenlos Probetragen" />
-          </div>
-          <h3 class="service-title">Kostenloses Probetragen</h3>
-          <p class="service-text">
-            Bei mir haben Sie die Möglichkeit eine breite Auswahl ausgewählter Hörsysteme 
-            unverbindlich in Ihrer gewohnten Umgebung ganz ohne Zeitdruck zu testen. 
-            Es macht zudem Sinn, verschiedene Hersteller auszuprobieren um den passenden 
-            Klang nach Ihrem Empfinden herauszusuchen.
-          </p>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon-wrap">
-            <img class="service-icon" loading="lazy" decoding="async" src="img/hammer.png" alt="Icon individuell angefertigte Im-Ohr-Hörgeräte" />
-          </div>
-          <h3 class="service-title">Individuell und diskret</h3>
-          <p class="service-text">
-            Im-Ohr-Hörsysteme sind hierfür perfekt geeignet. 
-            Sie sind klein und werden individuell passend angefertigt. 
-            Durch die fortgeschrittene Miniaturisierung der Hörtechnologie sind die Möglichkeiten 
-            für eine Im-Ohr-Hörlösung ausgesprochen gut.
-          </p>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon-wrap">
-            <img class="service-icon" loading="lazy" decoding="async" src="img/heart-handshake.png" alt="Icon faire und transparente Hörgeräte-Beratung" />
-          </div>
-          <h3 class="service-title">Faire und transparente Beratung</h3>
-          <p class="service-text">
-            Jeder Mensch ist individuell. 
-            Umso wichtiger ist eine bedarfsbezogene Beratung. 
-            Gemeinsam finden wir die bestmögliche Hörlösung für Sie.
-          </p>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon-wrap">
-            <img class="service-icon" loading="lazy" decoding="async" src="img/leaf.png" alt="Icon Natural Fitting – natürliche Hörgeräte-Anpassung" />
-          </div>
-          <h3 class="service-title">Natural Fitting</h3>
-          <p class="service-text">
-            Natural Fitting ist ein neuartiges Anpass-Verfahren, das dafür sorgt, 
-            Hörsysteme in Klang und Lautstärke möglichst realitätsgetreu auf jeden Menschen 
-            und sein individuelles Hörvermögen abzustimmen. Das Resultat: Sehr hohe 
-            Spontanakzeptanz und ausgezeichnetes Sprachverständnis.
-          </p>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon-wrap">
-            <img class="service-icon" loading="lazy" decoding="async" src="img/laut.png" alt="Icon individueller Gehörschutz nach Mass" />
-          </div>
-          <h3 class="service-title">Gehörschutz</h3>
-          <p class="service-text">
-            Egal für welches Themengebiet Sie einen Gehörschutz benötigen, 
-            nach einer Abformung von Ihrem Ohr ist es möglich, einen individuellen 
-            Gehörschutz anfertigen zu lassen. Für jede Situation gibt es eine dämpfende Lösung.
-          </p>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon-wrap">
-            <img class="service-icon" loading="lazy" decoding="async" src="img/in-ear-earphones-with-cord.png" alt="Icon In-Ear Monitoring – massgeschneiderte Kopfhörer" />
-          </div>
-          <h3 class="service-title">In-Ear Monitoring</h3>
-          <p class="service-text">
-            Sie sind Musiker / Gamer oder benötigen einfach einen qualitativ 
-            hochwertigen In-Ear Kopfhörer? Gerne berate ich Sie um Ihnen ein 
-            massgeschneidertes Angebot zu machen.
-          </p>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon-wrap">
-            <img class="service-icon" loading="lazy" decoding="async" src="img/customer.png" alt="Icon Hörgeräte Service und Wartung" />
-          </div>
-          <h3 class="service-title">Service</h3>
-          <p class="service-text">
-            Die Reinigung und Wartung Ihrer Hörsysteme ist genau so wichtig, 
-            wie die regelmässige Kontrolle Ihres Hörvermögens. 
-            Sollte sich Ihr Hörvermögen verändert haben, stelle ich Ihnen Ihr Hörsystem wieder bestmöglich ein.
-          </p>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon-wrap">
-            <img class="service-icon" loading="lazy" decoding="async" src="img/customer-support.png" alt="Icon Hörgeräte Reparatur mit kostenlosem Leihgerät" />
-          </div>
-          <h3 class="service-title">Reparaturen</h3>
-          <p class="service-text">
-            Ihr Hörsystem ist defekt? Keine Sorge, Sie müssen nicht auf gutes Hören verzichten. 
-            Während der Reparaturzeit bekommen Sie von mir ein kostenloses Leihgerät zur Verfügung gestellt.
-          </p>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon-wrap">
-            <img class="service-icon" loading="lazy" decoding="async" src="img/ear (2).png" alt="Icon Tinnitusberatung und Therapie mit Hörsystemen" />
-          </div>
-          <h3 class="service-title">Tinnitusberatung</h3>
-          <p class="service-text">
-            Leiden Sie regelmässig unter Ohrgeräuschen wie Pfeifen oder Rauschen? 
-            Durch modernste Hörsystemtechnik ist es oft möglich, die plagenden Geräusche in den Hintergrund zu drängen. 
-            Vereinbaren Sie gerne einen Termin für eine individuelle Beratung.
-          </p>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon-wrap">
-            <img class="service-icon" loading="lazy" decoding="async" src="img/customer-service.png" alt="Icon Fremdgeräte – Einstellung und Optimierung bestehender Hörgeräte" />
-          </div>
-          <h3 class="service-title">Fremdgeräte</h3>
-          <p class="service-text">
-            Sie haben bereits eigene Hörsysteme, sind aber mit Ihrer Einstellung nicht zufrieden? 
-            Gerne dürfen Sie sich an mich wenden damit wir gemeinsam die richtige Lösung für Sie finden.
-          </p>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon-wrap">
-            <img class="service-icon" loading="lazy" decoding="async" src="img/budget.png" alt="Icon Finanzierung und Versicherung für Hörgeräte" />
-          </div>
-          <h3 class="service-title">Finanzierung / Versicherung</h3>
-          <p class="service-text">
-            Falls Sie eine Finanzierung oder eine Versicherung Ihrer neu erworbenen 
-            Hörgeräte wünschen, ist dies bei uns grundsätzlich möglich. 
-            Eine Besonderheit stellt da eine 0% Finanzierung dar. 
-            Gerne erstelle ich Ihnen ein unverbindliches Angebot.
-          </p>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon-wrap">
-            <img class="service-icon" loading="lazy" decoding="async" src="img/house.png" alt="Icon Hausbesuch-Service – Hörgeräte-Anpassung zu Hause" />
-          </div>
-          <h3 class="service-title">Hausbesuch-Service</h3>
-          <p class="service-text">
-            Es ist für Sie nicht möglich Ihr zu Hause zu verlassen? 
-            Ich möchte Ihnen dennoch helfen. Gerne komme ich zu Ihnen nach Hause 
-            und passe Ihnen Ihre Hörsysteme in Ihrer gewohnten Umgebung an.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Wave Divider -->
-  <div class="wave-divider" style="background: var(--bg-alt);">
-    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" fill="#0f172a">
-      <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z"></path>
-    </svg>
-  </div>
-
-  <!-- ============ CTA BANNER ============ -->
-  <section class="cta-banner">
-    <div class="container-modern">
-      <div class="cta-inner reveal-scale">
-        <h2 class="cta-title">Jetzt kostenlosen Termin vereinbaren</h2>
-        <p class="cta-text">Hörtest und Beratung sind für Sie kostenlos und unverbindlich.</p>
-        <a href="https://suisse1.amparex.net/amparex/web/selfservice/onlinetp/s0pqyszbg2yhqndoi6tgalrvhgggdot0hdktwnbtq9u=/resourcetp/0182f3a0-9a74-0000-0571-1C697A9F8F3A" target="_blank" class="btn btn-primary btn-pulse">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-          Termin vereinbaren
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Wave Divider (flipped) -->
-  <div class="wave-divider wave-divider-top" style="background: var(--bg);">
-    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" fill="#0f172a">
-      <path d="M0,40 C360,0 720,80 1080,40 C1260,20 1380,30 1440,40 L1440,0 L0,0 Z"></path>
-    </svg>
-  </div>
-
-  <!-- ============ HÖRGERÄTE / PRODUKTE ============ -->
-  <section class="section" id="hoergeraete">
-    <div class="container-modern">
-      <div class="section-header reveal">
-        <span class="section-badge">Unsere Produkte</span>
-        <h2 class="section-title">Hörgeräte & <span>Zubehör</span></h2>
-        <p class="section-subtitle">Modernste Technik für jedes Bedürfnis - diskret, leistungsstark und individuell.</p>
+  <section class="section" id="leistungen" aria-labelledby="leistungen-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="section-title" id="leistungen-title">Individuelle Hörgeräte von Meisterhand</h2>
+        <p class="section-lead">Umfassende Beratung und professionelle Lösungen für Ihr Hörvermögen, von der ersten Messung bis zur Reparatur.</p>
       </div>
 
-      <div class="product-card reveal-left">
-        <div class="product-img-wrap">
-          <img class="product-img" loading="lazy" decoding="async" src="img/HinterdemOhr.png" alt="Hinter-dem-Ohr Hörgerät (HdO) – klein, unauffällig und leistungsstark" />
-        </div>
-        <div class="product-info">
-          <h3 class="product-title">Hinter dem Ohr</h3>
-          <p class="product-text">
-            Hinter-dem-Ohr Hörgeräte (kurz HdO) sind heutzutage bis 
-            auf wenige Ausnahmen klein und unauffällig. Durch eine individuelle 
-            Anpassung an Ihr Ohr sitzt das Gerät bequem und ist kaum 
-            zu spüren oder zu sehen. Die Hörsysteme sind sehr leistungsstark und bieten 
-            eine hervorragende Klangqualität. Bei nahezu allen modernen HdO Geräten ist eine direkte Verbindung 
-            zu Smartphone, TV Adapter oder externen Mikrofonen möglich.
-          </p>
-        </div>
-      </div>
-
-      <div class="product-card reverse reveal-right">
-        <div class="product-img-wrap">
-          <img class="product-img" loading="lazy" decoding="async" src="img/ImOhr.png" alt="Im-Ohr Hörgerät (IdO) – diskret und individuell angefertigt" />
-        </div>
-        <div class="product-info">
-          <h3 class="product-title">Im Ohr</h3>
-          <p class="product-text">
-            In-dem-Ohr Hörgeräte (kurz IdO) sind eine leistungsstarke Hörlösung für Menschen, 
-            die gerne eine diskrete Lösung möchten. Durch eine Abformung Ihres Ohres sitzen die Geräte 
-            passgenau und sind somit sehr komfortabel zu tragen. Von der Qualität des Hörens 
-            wie auch des Gerätes selbst steht das IdO Gerät dem HdO Gerät in nichts nach.
-          </p>
-        </div>
-      </div>
-
-      <div class="product-card reveal-left">
-        <div class="product-img-wrap">
-          <img class="product-img" loading="lazy" decoding="async" src="img/Gehorschutz.png" alt="Individueller Gehörschutz – massangefertigt für optimalen Schutz" />
-        </div>
-        <div class="product-info">
-          <h3 class="product-title">Gehörschutz</h3>
-          <p class="product-text">
-            Ob bei der Arbeit, nachts im Bett, beim Schwimmen oder Jagen - 
-            Schutz für Ihr Gehör ist wichtig. Selbst geringe Lärmbelastung führt auf 
-            Dauer ohne Schutz häufig zu einer schleichenden Minderung des Hörvermögens. 
-            Die beste Lösung ist ein individuell auf Sie angefertigter Gehörschutz. 
-            Er ist komfortabel zu tragen und dichtet das Ohr bestens ab.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ MARKEN ============ -->
-  <section class="brands-section">
-    <div class="container-modern">
-      <div class="brands-header reveal">
-        <p>Unsere Partner-Marken</p>
-      </div>
-      <div class="brands-grid reveal">
-        <img class="brand-logo" loading="lazy" decoding="async" src="img/Phonak.png" alt="Phonak Hörgeräte – Partner der Hörschmiede Boo" />
-        <img class="brand-logo" loading="lazy" decoding="async" src="img/Oticon.png" alt="Oticon Hörgeräte – Partner der Hörschmiede Boo" />
-        <img class="brand-logo" loading="lazy" decoding="async" src="img/ReSound.png" alt="ReSound Hörgeräte – Partner der Hörschmiede Boo" />
-        <img class="brand-logo" loading="lazy" decoding="async" src="img/unitron.png" alt="Unitron Hörgeräte – Partner der Hörschmiede Boo" />
-        <img class="brand-logo" loading="lazy" decoding="async" src="img/signia.png" alt="Signia Hörgeräte – Partner der Hörschmiede Boo" />
-        <img class="brand-logo" loading="lazy" decoding="async" src="img/Starkey.png" alt="Starkey Hörgeräte – Partner der Hörschmiede Boo" />
-        <img class="brand-logo" loading="lazy" decoding="async" src="img/widex.png" alt="Widex Hörgeräte – Partner der Hörschmiede Boo" />
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ ÜBER UNS ============ -->
-  <section class="section" id="ueber-uns">
-    <div class="container-modern">
-      <div class="section-header reveal">
-        <span class="section-badge">Über uns</span>
-        <h2 class="section-title">Kompetenz trifft <span>Leidenschaft</span></h2>
-        <div class="gold-line"></div>
-      </div>
-
-      <!-- Daniel Boo -->
-      <div class="about-block reveal-left">
-        <div class="about-img-wrap">
-          <img class="about-img" loading="lazy" decoding="async" src="img/daniel-boo-neu.jpeg" alt="Daniel Boo – Hörsystemakustiker mit eidg. Fachausweis, Inhaber der Hörschmiede Boo in Horgen" />
-        </div>
-        <div class="about-content">
-          <h3 class="about-name">Daniel Boo</h3>
-          <p class="about-role">Hörsystemakustiker mit eidg. Fachausweis</p>
-          <p class="about-text">
-            Ich bin seit nun mehr 17 Jahre in der Hörsystembranche tätig. 2013 schloss 
-            ich meine Ausbildung zum Hörsystemakustiker an der Landesberufsschule in Lübeck erfolgreich ab.
-            Um Sie noch kompetenter beraten zu können, absolvierte ich im Jahr 2020 meinen Meister am IfB in Karlsruhe.
-            In meinem beruflichen Werdegang durfte ich verschiedene Bereiche der Hörakustik kennenlernen.
-            Meine Motivation ist es, für jeden Kunden eine <span class="highlight">individuelle, transparente und qualitativ hochwertige Hörlösung</span> zu finden.
-            Regelmässige Weiterbildungen garantieren beste Hörerfolge.
-          </p>
-        </div>
-      </div>
-
-      <!-- Qualitätsversprechen -->
-      <div class="about-block reverse reveal-right">
-        <div class="about-img-wrap">
-          <img class="about-img-small" loading="lazy" decoding="async" src="img/raum.jpeg" alt="Moderner Praxisraum der Hörschmiede Boo in Horgen" />
-        </div>
-        <div class="about-content">
-          <h3 class="about-subtitle">Qualitätsversprechen</h3>
-          <p class="about-text">
-            Um die besten <span class="highlight">Erfolge</span> zu erzielen,
-            arbeite ich mit <span class="highlight">höchster Qualität</span> und 
-            modernsten Standards. Gerne berate ich Sie unverbindlich um Ihnen eine
-            <span class="highlight">bedarfsbezogene und transparente Lösung</span> zu offerieren.
-          </p>
-        </div>
-      </div>
-
-      <!-- Individuelle Hörsysteme -->
-      <div class="about-block reveal-left">
-        <div class="about-img-wrap">
-          <img class="about-img-small" loading="lazy" decoding="async" src="img/tisch.jpeg" alt="Arbeitsplatz mit professioneller Hörsystem-Technik in der Hörschmiede Boo" />
-        </div>
-        <div class="about-content">
-          <h3 class="about-subtitle">Individuelle Hörsysteme</h3>
-          <p class="about-text">
-            Ihr Gehör ist individuell. Aus diesem Grund ist eine <span class="highlight">massangefertigte Hörlösung</span> 
-            umso wichtiger für ein gutes Verstehen. Mit Hilfe <span class="highlight">hochwertiger Technik</span>, 
-            welche passgenau auf Ihren Bedarf angepasst wird, erzielen wir das Maximum 
-            an <span class="highlight">Sprachverstehen</span> und verbessern spürbar Ihre <span class="highlight">Lebensqualität</span>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ BEWERTUNGEN ============ -->
-  <section class="testimonials-section" id="bewertungen">
-    <div class="container-modern">
-      <div class="section-header reveal">
-        <span class="section-badge">Kundenstimmen</span>
-        <h2 class="section-title">Das sagen unsere <span>Kunden</span></h2>
-        <p class="section-subtitle">Überzeugen Sie sich selbst — 100% echte Google-Bewertungen.</p>
-      </div>
-
-      <div class="testimonials-slider" id="testimonialsSlider">
-      <div class="testimonials-grid" id="testimonialsGrid">
-
-        <div class="testimonial-card reveal delay-1">
-          <div class="testimonial-stars">
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <p class="testimonial-text">
-            «Daniel Boo hat mich sehr kompetent und freundlich beraten und mir alle Details zu meinem ersten Hörgerät inkl. den Möglichkeiten zur Steuerung über die App erklärt. Ich fühle mich bei ihm bestens aufgehoben und empfehle ihn jederzeit gerne weiter.»
-          </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">DK</div>
-            <div class="testimonial-info">
-              <span class="testimonial-name">D. K.</span>
-              <span class="testimonial-source">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-                Google Rezension
-              </span>
+      <div class="services">
+        <div class="service-group">
+          <h3 class="group-title">Hören &amp; Anpassen</h3>
+          <dl>
+            <div class="service">
+              <dt>Kostenloser Hörtest</dt>
+              <dd>Sie haben das Gefühl, Gesprächen nicht mehr richtig folgen zu können? Die Ermittlung Ihres Hörvermögens dauert nur wenige Minuten. Anschliessend besprechen wir das Ergebnis und suchen für Sie die bestmögliche Hörlösung. Hörtest wie auch Beratung sind für Sie kostenlos und unverbindlich.</dd>
             </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card reveal delay-2">
-          <div class="testimonial-stars">
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <p class="testimonial-text">
-            «Ich habe mir bei Herrn Boo mein In-Ear Monitoring fertigen lassen. Ich kann seine Beratung wie auch das Produkt nur sehr empfehlen. Sitzt top im Ohr und beste Qualität. Auch preislich sehr fair. Ich komme immer wieder gerne zur Hörschmiede.»
-          </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">LM</div>
-            <div class="testimonial-info">
-              <span class="testimonial-name">L. M.</span>
-              <span class="testimonial-source">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-                Google Rezension
-              </span>
+            <div class="service">
+              <dt>Kostenloses Probetragen</dt>
+              <dd>Testen Sie eine breite Auswahl ausgewählter Hörsysteme unverbindlich in Ihrer gewohnten Umgebung, ganz ohne Zeitdruck. Es lohnt sich, verschiedene Hersteller auszuprobieren, um den Klang zu finden, der Ihrem Empfinden entspricht.</dd>
             </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card reveal delay-3">
-          <div class="testimonial-stars">
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <p class="testimonial-text">
-            «Sehr professionell, gute Betreuung! Hervorragende Qualität in der Abstimmung meiner persönlichen Höransprüche. Sehr empfehlenswert, wenn Hören zum Genuss werden soll!»
-          </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">AH</div>
-            <div class="testimonial-info">
-              <span class="testimonial-name">A. H.</span>
-              <span class="testimonial-source">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-                Google Rezension
-              </span>
+            <div class="service">
+              <dt>Natural Fitting</dt>
+              <dd>Ein neuartiges Anpassverfahren, das Hörsysteme in Klang und Lautstärke möglichst realitätsgetreu auf Sie und Ihr individuelles Hörvermögen abstimmt. Das Resultat: sehr hohe Spontanakzeptanz und ausgezeichnetes Sprachverständnis.</dd>
             </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card reveal delay-4">
-          <div class="testimonial-stars">
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <p class="testimonial-text">
-            «Aufgrund seiner positiven Google Bewertungen habe ich mich für die Hörgeräteberatung Boo entschieden. Herr Boo ist sehr kompetent und nimmt sich viel Zeit für seine Kundschaft. Er ist nicht auf eine Marke fixiert, was sehr wichtig ist. Bin sehr zufrieden.»
-          </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">MW</div>
-            <div class="testimonial-info">
-              <span class="testimonial-name">M. W.</span>
-              <span class="testimonial-source">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-                Google Rezension
-              </span>
+            <div class="service">
+              <dt>Individuell und diskret</dt>
+              <dd>Im-Ohr-Hörsysteme sind klein und werden individuell passend angefertigt. Dank der fortgeschrittenen Miniaturisierung sind die Möglichkeiten für eine Im-Ohr-Lösung ausgesprochen gut.</dd>
             </div>
-          </div>
+            <div class="service">
+              <dt>Faire und transparente Beratung</dt>
+              <dd>Jeder Mensch ist individuell. Umso wichtiger ist eine bedarfsbezogene Beratung. Gemeinsam finden wir die bestmögliche Hörlösung für Sie.</dd>
+            </div>
+          </dl>
         </div>
 
+        <div class="service-group">
+          <h3 class="group-title">Service &amp; Betreuung</h3>
+          <dl>
+            <div class="service">
+              <dt>Service</dt>
+              <dd>Die Reinigung und Wartung Ihrer Hörsysteme ist genauso wichtig wie die regelmässige Kontrolle Ihres Hörvermögens. Hat sich Ihr Gehör verändert, stelle ich Ihr Hörsystem wieder bestmöglich ein.</dd>
+            </div>
+            <div class="service">
+              <dt>Reparaturen mit Leihgerät</dt>
+              <dd>Ihr Hörsystem ist defekt? Keine Sorge, Sie müssen nicht auf gutes Hören verzichten. Während der Reparaturzeit erhalten Sie ein kostenloses Leihgerät.</dd>
+            </div>
+            <div class="service">
+              <dt>Fremdgeräte</dt>
+              <dd>Sie haben bereits Hörsysteme, sind mit der Einstellung aber nicht zufrieden? Kommen Sie gerne vorbei, damit wir gemeinsam die richtige Lösung finden.</dd>
+            </div>
+            <div class="service">
+              <dt>Hausbesuch-Service</dt>
+              <dd>Es ist Ihnen nicht möglich, Ihr Zuhause zu verlassen? Gerne komme ich zu Ihnen und passe Ihre Hörsysteme in Ihrer gewohnten Umgebung an.</dd>
+            </div>
+            <div class="service">
+              <dt>Finanzierung / Versicherung</dt>
+              <dd>Eine Finanzierung oder Versicherung Ihrer neuen Hörgeräte ist grundsätzlich möglich, auch als 0%-Finanzierung. Gerne erstelle ich Ihnen ein unverbindliches Angebot.</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="service-group">
+          <h3 class="group-title">Schutz &amp; Spezialgebiete</h3>
+          <dl>
+            <div class="service">
+              <dt>Gehörschutz</dt>
+              <dd>Egal, wofür Sie einen Gehörschutz benötigen: Nach einer Abformung Ihres Ohres lässt sich ein individueller Gehörschutz anfertigen. Für jede Situation gibt es eine dämpfende Lösung.</dd>
+            </div>
+            <div class="service">
+              <dt>In-Ear Monitoring</dt>
+              <dd>Sie sind Musikerin, Musiker, Gamer oder wünschen sich einfach einen hochwertigen In-Ear-Kopfhörer? Gerne berate ich Sie und mache Ihnen ein massgeschneidertes Angebot.</dd>
+            </div>
+            <div class="service">
+              <dt>Tinnitusberatung</dt>
+              <dd>Leiden Sie regelmässig unter Ohrgeräuschen wie Pfeifen oder Rauschen? Mit modernster Hörsystemtechnik ist es oft möglich, die plagenden Geräusche in den Hintergrund zu drängen. Vereinbaren Sie gerne einen Termin für eine individuelle Beratung.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HÖRGERÄTE ============ -->
+  <section class="section section--paper" id="hoergeraete" aria-labelledby="hoergeraete-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="section-title" id="hoergeraete-title">Hörgeräte &amp; Zubehör</h2>
+        <p class="section-lead">Modernste Technik für jedes Bedürfnis: diskret, leistungsstark und auf Ihr Ohr angepasst.</p>
       </div>
 
-      <!-- Slider Dots (nur Mobile) -->
-      <div class="slider-dots" id="sliderDots">
-        <button class="slider-dot active" aria-label="Bewertung 1"></button>
-        <button class="slider-dot" aria-label="Bewertung 2"></button>
-        <button class="slider-dot" aria-label="Bewertung 3"></button>
-        <button class="slider-dot" aria-label="Bewertung 4"></button>
-      </div>
+      <div class="products">
+        <article class="product">
+          <img src="img/HinterdemOhr.png" alt="Hinter-dem-Ohr-Hörgerät mit dünnem Schallschlauch" width="300" height="300" loading="lazy" decoding="async" />
+          <h3 class="product-title">Hinter dem Ohr <span>HdO</span></h3>
+          <p>Heute bis auf wenige Ausnahmen klein und unauffällig. Durch die individuelle Anpassung sitzt das Gerät bequem und ist kaum zu spüren oder zu sehen. Sehr leistungsstark, mit hervorragender Klangqualität, und fast immer direkt mit Smartphone, TV-Adapter oder externem Mikrofon verbindbar.</p>
+        </article>
+        <article class="product">
+          <img src="img/ImOhr.png" alt="Im-Ohr-Hörgerät mit individuell geformter Schale" width="300" height="300" loading="lazy" decoding="async" />
+          <h3 class="product-title">Im Ohr <span>IdO</span></h3>
+          <p>Die leistungsstarke Lösung für alle, die es diskret möchten. Dank einer Abformung Ihres Ohres sitzen die Geräte passgenau und sind sehr komfortabel zu tragen. In Hörqualität und Verarbeitung steht das IdO-Gerät dem HdO-Gerät in nichts nach.</p>
+        </article>
+        <article class="product">
+          <img src="img/Gehorschutz.png" alt="Zwei individuell angefertigte Gehörschutz-Otoplastiken in Blau und Rot" width="300" height="300" loading="lazy" decoding="async" />
+          <h3 class="product-title">Gehörschutz <span>nach Mass</span></h3>
+          <p>Ob bei der Arbeit, nachts im Bett, beim Schwimmen oder Jagen: Schon geringe Lärmbelastung kann das Gehör auf Dauer schleichend schädigen. Ein individuell angefertigter Gehörschutz ist komfortabel und dichtet das Ohr bestens ab.</p>
+        </article>
       </div>
 
-      <div class="text-center">
-        <a href="https://www.google.com/search?sa=X&sca_esv=074920bdea4960d4&sxsrf=ANbL-n4DiHX1lgUNd3V0wc2eYrbUuLhhaQ:1770662342120&q=H%C3%B6rger%C3%A4te+in+Horgen+-+H%C3%B6rschmiede+Boo+GmbH+Rezensionen&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDMwNzExN7IwszA0NbAwMTE1t9jAyPiK0dLj8Lai9NSiw0tKUhUy8xQ88oG8PAVdBZB4cXJGbmZqSqqCU36-gntukodCUGpVal5xZn5eat4iVvL1AgDBHxqfkwAAAA&rldimm=16074472868150844578&tbm=lcl&hl=de-DE#lkt=LocalPoiReviews" target="_blank" rel="noopener" class="google-rating-badge reveal">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-          <span>5.0 Sterne auf Google — Alle Bewertungen ansehen</span>
-        </a>
+      <div class="brands">
+        <p class="brands-title">Markenunabhängig. Ich arbeite mit sieben Herstellern zusammen.</p>
+        <ul class="brands-list">
+          <li><img src="img/Phonak.png" alt="Phonak" width="300" height="150" loading="lazy" decoding="async" /></li>
+          <li><img src="img/Oticon.png" alt="Oticon" width="300" height="150" loading="lazy" decoding="async" /></li>
+          <li><img src="img/ReSound.png" alt="ReSound" width="300" height="150" loading="lazy" decoding="async" /></li>
+          <li><img src="img/unitron.png" alt="Unitron" width="300" height="150" loading="lazy" decoding="async" /></li>
+          <li><img src="img/signia.png" alt="Signia" width="300" height="150" loading="lazy" decoding="async" /></li>
+          <li><img src="img/Starkey.png" alt="Starkey" width="300" height="150" loading="lazy" decoding="async" /></li>
+          <li><img src="img/widex.png" alt="Widex" width="300" height="150" loading="lazy" decoding="async" /></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ÜBER MICH ============ -->
+  <section class="section" id="ueber-mich" aria-labelledby="ueber-title">
+    <div class="wrap about">
+      <figure class="about-photo">
+        <img src="img/tisch.jpeg" alt="Beratungsraum der Hörschmiede Boo mit gelben Sesseln, Arbeitstisch und dem gerahmten Meisterbrief an der Wand" width="2560" height="1920" loading="lazy" decoding="async" />
+        <figcaption>Der Beratungsraum. An der Wand: der Meisterbrief im Hörakustiker-Handwerk.</figcaption>
+      </figure>
+
+      <div class="about-copy">
+        <h2 class="section-title" id="ueber-title">Kompetenz trifft Leidenschaft</h2>
+        <p class="about-lead">
+          «Meine Motivation ist es, für jeden Kunden eine individuelle, transparente und qualitativ hochwertige Hörlösung zu finden.»
+        </p>
+        <p>
+          Ich bin seit 17 Jahren in der Hörsystembranche tätig und durfte in meinem beruflichen Werdegang verschiedene
+          Bereiche der Hörakustik kennenlernen. Regelmässige Weiterbildungen garantieren beste Hörerfolge.
+        </p>
+        <p>
+          Ihr Gehör ist individuell. Deshalb ist eine massangefertigte Hörlösung so wichtig für gutes Verstehen. Mit hochwertiger
+          Technik, die passgenau auf Ihren Bedarf eingestellt wird, erzielen wir das Maximum an Sprachverstehen und verbessern
+          spürbar Ihre Lebensqualität.
+        </p>
+
+        <ol class="timeline" aria-label="Werdegang von Daniel Boo">
+          <li><span class="tl-year">2013</span> Ausbildung zum Hörsystemakustiker an der Landesberufsschule Lübeck</li>
+          <li><span class="tl-year">2020</span> Meisterprüfung am IfB in Karlsruhe</li>
+          <li><span class="tl-year">Heute</span> Inhaber der Hörschmiede Boo in Horgen, Hörsystemakustiker mit eidg. Fachausweis</li>
+        </ol>
+      </div>
+
+      <figure class="about-photo about-photo--small">
+        <img src="img/raum.jpeg" alt="Wartebereich mit drei Ohrensesseln, Pflanze und warmem Licht" width="2560" height="1920" loading="lazy" decoding="async" />
+        <figcaption>Qualitätsversprechen: höchste Qualität, modernste Standards und eine bedarfsbezogene, transparente Offerte.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ BEWERTUNGEN + TERMIN ============ -->
+  <section class="section section--mustard" id="bewertungen" aria-labelledby="bewertungen-title">
+    <div class="wrap">
+      <h2 class="visually-hidden" id="bewertungen-title">Kundenstimmen</h2>
+      <figure class="quote-feature">
+        <blockquote>
+          <p>«Herr Boo ist sehr kompetent und nimmt sich viel Zeit für seine Kundschaft. Er ist nicht auf eine Marke fixiert, was sehr wichtig ist.»</p>
+        </blockquote>
+        <figcaption>M. W., Google-Rezension</figcaption>
+      </figure>
+
+      <div class="quotes">
+        <figure class="quote">
+          <blockquote><p>«Daniel Boo hat mich sehr kompetent und freundlich beraten und mir alle Details zu meinem ersten Hörgerät inkl. den Möglichkeiten zur Steuerung über die App erklärt. Ich fühle mich bei ihm bestens aufgehoben.»</p></blockquote>
+          <figcaption>D. K., Google-Rezension</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote><p>«Ich habe mir bei Herrn Boo mein In-Ear Monitoring fertigen lassen. Sitzt top im Ohr und beste Qualität. Auch preislich sehr fair. Ich komme immer wieder gerne zur Hörschmiede.»</p></blockquote>
+          <figcaption>L. M., Google-Rezension</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote><p>«Sehr professionell, gute Betreuung! Hervorragende Qualität in der Abstimmung meiner persönlichen Höransprüche. Sehr empfehlenswert, wenn Hören zum Genuss werden soll!»</p></blockquote>
+          <figcaption>A. H., Google-Rezension</figcaption>
+        </figure>
+      </div>
+
+      <a class="rating-link" href="https://www.google.com/search?sa=X&sca_esv=074920bdea4960d4&sxsrf=ANbL-n4DiHX1lgUNd3V0wc2eYrbUuLhhaQ:1770662342120&q=H%C3%B6rger%C3%A4te+in+Horgen+-+H%C3%B6rschmiede+Boo+GmbH+Rezensionen&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDMwNzExN7IwszA0NbAwMTE1t9jAyPiK0dLj8Lai9NSiw0tKUhUy8xQ88oG8PAVdBZB4cXJGbmZqSqqCU36-gntukodCUGpVal5xZn5eat4iVvL1AgDBHxqfkwAAAA&rldimm=16074472868150844578&tbm=lcl&hl=de-DE#lkt=LocalPoiReviews" target="_blank" rel="noopener">
+        5,0 von 5 Sternen auf Google. Alle Bewertungen ansehen
+        <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+      </a>
+
+      <div class="booking">
+        <div>
+          <h2 class="booking-title">Jetzt kostenlosen Termin vereinbaren</h2>
+          <p>Hörtest und Beratung sind für Sie kostenlos und unverbindlich.</p>
+        </div>
+        <div class="booking-actions">
+          <a class="btn btn--ink btn--lg" href="https://suisse1.amparex.net/amparex/web/selfservice/onlinetp/s0pqyszbg2yhqndoi6tgalrvhgggdot0hdktwnbtq9u=/resourcetp/0182f3a0-9a74-0000-0571-1C697A9F8F3A" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+            Online Termin buchen
+          </a>
+          <a class="btn btn--line btn--lg" href="tel:+41445943190">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+            Lieber anrufen
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ============ KONTAKT ============ -->
-  <section class="section" id="kontakt">
-    <div class="container-modern">
-      <div class="section-header reveal">
-        <span class="section-badge">Kontakt</span>
-        <h2 class="section-title">Haben Sie eine <span>Frage?</span></h2>
-        <p class="section-subtitle">Kontaktieren Sie uns gerne - wir freuen uns auf Ihre Nachricht!</p>
-      </div>
+  <section class="section" id="kontakt" aria-labelledby="kontakt-title">
+    <div class="wrap contact">
+      <div class="contact-info">
+        <h2 class="section-title" id="kontakt-title">Haben Sie eine Frage?</h2>
+        <p class="section-lead">Rufen Sie an, schreiben Sie eine Nachricht oder kommen Sie während der Öffnungszeiten vorbei. Ich freue mich auf Sie.</p>
+        <p class="contact-faq">Antworten zu Zuschüssen von AHV/IV und Krankenkasse, zur Pflege und Lebensdauer von Hörgeräten finden Sie in den <a href="faq.html">häufigen Fragen</a>.</p>
 
-      <div class="contact-grid">
-        <!-- Contact Form -->
-        <div class="contact-form-card reveal-left">
-          <h3 class="contact-form-title">Kontaktanfrage</h3>
-          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-            <!-- Web3Forms Access Key: kostenlos auf https://web3forms.com mit info@hoerschmiede-boo.ch erstellen und hier einsetzen -->
-            <input type="hidden" name="access_key" value="cdfd16ba-6dcd-45a6-a4e3-319f81f12340" />
-            <input type="hidden" name="subject" value="Neue Kontaktanfrage über hoerschmiede-boo.ch" />
-            <input type="hidden" name="from_name" value="Hörschmiede Boo Website" />
-            <!-- Honeypot (Web3Forms-Konvention): für Menschen unsichtbar, füllt ein Bot es aus, wird die Anfrage verworfen -->
-            <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;pointer-events:none;" />
-
-            <div class="form-group">
-              <label for="contact_name" class="form-label">Name *</label>
-              <input type="text" id="contact_name" name="name" class="form-input" placeholder="Ihr vollständiger Name" required minlength="2" autocomplete="name" />
-              <span class="form-error" id="error_name"></span>
-            </div>
-            <div class="form-group">
-              <label for="contact_email" class="form-label">E-Mail *</label>
-              <input type="email" id="contact_email" name="email" class="form-input" placeholder="ihre@email.ch" required autocomplete="email" />
-              <span class="form-error" id="error_email"></span>
-            </div>
-            <div class="form-group">
-              <label for="contact_message" class="form-label">Nachricht *</label>
-              <textarea id="contact_message" name="message" class="form-input" placeholder="Wie können wir Ihnen helfen?" rows="5" required minlength="10"></textarea>
-              <span class="form-error" id="error_message"></span>
-            </div>
-            <div class="form-group">
-              <!-- hCaptcha (von Web3Forms verwaltet, serverseitige Prüfung) -->
-              <div class="h-captcha" data-captcha="true" data-lang="de"></div>
-              <span class="form-error" id="error_captcha"></span>
-            </div>
-            <button type="submit" class="btn btn-primary form-submit" id="formSubmitBtn">
-              <svg class="btn-icon-send" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
-              <svg class="btn-spinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" stroke-dasharray="31.4 31.4" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" dur="0.8s" from="0 12 12" to="360 12 12" repeatCount="indefinite"/></circle></svg>
-              <span class="btn-text">Nachricht senden</span>
-            </button>
-          </form>
-
-          <!-- Erfolgs-/Fehlermeldung -->
-          <div class="form-status form-success" id="formSuccess" style="display:none;">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            <div>
-              <strong>Nachricht gesendet!</strong>
-              <p>Vielen Dank für Ihre Anfrage. Wir melden uns in Kürze bei Ihnen.</p>
-            </div>
-          </div>
-          <div class="form-status form-fail" id="formFail" style="display:none;">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            <div>
-              <strong>Fehler beim Senden</strong>
-              <p>Bitte versuchen Sie es erneut oder kontaktieren Sie uns unter <a href="tel:+41445943190" style="color:var(--gold);font-weight:600;">044 594 31 90</a>.</p>
-            </div>
-          </div>
+        <div class="contact-direct">
+          <a href="tel:+41445943190" class="contact-line">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+            <span><strong>044 594 31 90</strong><small>Telefon</small></span>
+          </a>
+          <a href="mailto:info@hoerschmiede-boo.ch" class="contact-line">
+            <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+            <span><strong>info@hoerschmiede-boo.ch</strong><small>E-Mail</small></span>
+          </a>
+          <a href="#anfahrt" class="contact-line">
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+            <span><strong>Alte Landstrasse 14, 8810 Horgen</strong><small>Direkt gegenüber der evangelischen Kirche</small></span>
+          </a>
         </div>
 
-        <!-- Map & Info -->
-        <div class="contact-right reveal-right">
-          <div class="map-container" id="mapContainer">
-            <!-- DSGVO: Google Maps erst nach Einwilligung laden -->
-            <div class="map-consent" id="mapConsent">
-              <div class="map-consent-inner">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="map-consent-icon"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                <p class="map-consent-title">Google Maps</p>
-                <p class="map-consent-text">Beim Laden der Karte werden Daten an Google übertragen. <a href="datenschutz.html" target="_blank" style="color:var(--gold);">Datenschutzerklärung</a></p>
-                <button class="btn btn-primary btn-sm" id="mapConsentBtn">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;"><path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
-                  Karte laden
-                </button>
-              </div>
-            </div>
-          </div>
+        <h3 class="hours-title">Öffnungszeiten</h3>
+        <table class="hours" id="hoursTable">
+          <tbody>
+            <tr data-days="1"><th scope="row">Montag</th><td>09:00–12:00 · 13:00–17:00</td></tr>
+            <tr data-days="2"><th scope="row">Dienstag</th><td>09:00–12:00 · 13:00–17:00</td></tr>
+            <tr data-days="3"><th scope="row">Mittwoch</th><td>09:00–12:00</td></tr>
+            <tr data-days="4"><th scope="row">Donnerstag</th><td>09:00–12:00 · 13:00–17:00</td></tr>
+            <tr data-days="5"><th scope="row">Freitag</th><td>09:00–12:00</td></tr>
+            <tr data-days="6"><th scope="row">Samstag</th><td>nach Vereinbarung</td></tr>
+          </tbody>
+        </table>
+      </div>
 
-          <div class="contact-info-card">
-            <div class="contact-info-grid">
-              <div class="contact-info-item">
-                <h4>Öffnungszeiten</h4>
-                <p>Mo, Di, Do</p>
-                <p>09:00 - 12:00 Uhr</p>
-                <p>13:00 - 17:00 Uhr</p>
-                <p style="margin-top: 8px;">Mi &amp; Fr</p>
-                <p>09:00 - 12:00 Uhr</p>
-                <p style="margin-top: 8px; font-style: italic; color: var(--gold);">Samstag nach Vereinbarung</p>
-              </div>
-              <div class="contact-info-item">
-                <h4>Adresse</h4>
-                <p>Hörschmiede Boo GmbH</p>
-                <p>Alte Landstrasse 14</p>
-                <p>8810 Horgen</p>
-                <p>Schweiz</p>
-              </div>
-              <div class="contact-info-item">
-                <h4>Telefon</h4>
-                <p><a href="tel:+41445943190" style="color: var(--gold); font-weight: 600;">044 594 31 90</a></p>
-              </div>
-              <div class="contact-info-item">
-                <h4>E-Mail</h4>
-                <p><a href="mailto:info@hoerschmiede-boo.ch" style="color: var(--gold); font-weight: 600;">info@hoerschmiede-boo.ch</a></p>
-              </div>
-            </div>
+      <div class="contact-form-wrap">
+        <h3 class="form-title">Kontaktanfrage</h3>
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <!-- Web3Forms Access Key: kostenlos auf https://web3forms.com mit info@hoerschmiede-boo.ch erstellen und hier einsetzen -->
+          <input type="hidden" name="access_key" value="cdfd16ba-6dcd-45a6-a4e3-319f81f12340" />
+          <input type="hidden" name="subject" value="Neue Kontaktanfrage über hoerschmiede-boo.ch" />
+          <input type="hidden" name="from_name" value="Hörschmiede Boo Website" />
+          <!-- Honeypot (Web3Forms-Konvention): für Menschen unsichtbar, füllt ein Bot es aus, wird die Anfrage verworfen -->
+          <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;pointer-events:none;" />
+
+          <div class="field">
+            <label for="contact_name">Name</label>
+            <input type="text" id="contact_name" name="name" placeholder="Vor- und Nachname" required minlength="2" autocomplete="name" aria-describedby="error_name" />
+            <span class="field-error" id="error_name"></span>
+          </div>
+          <div class="field">
+            <label for="contact_email">E-Mail</label>
+            <input type="email" id="contact_email" name="email" placeholder="ihre@email.ch" required autocomplete="email" aria-describedby="error_email" />
+            <span class="field-error" id="error_email"></span>
+          </div>
+          <div class="field">
+            <label for="contact_message">Nachricht</label>
+            <textarea id="contact_message" name="message" placeholder="Wie kann ich Ihnen helfen?" rows="5" required minlength="10" aria-describedby="error_message"></textarea>
+            <span class="field-error" id="error_message"></span>
+          </div>
+          <div class="field">
+            <!-- hCaptcha (von Web3Forms verwaltet, serverseitige Prüfung) -->
+            <div class="h-captcha" data-captcha="true" data-lang="de"></div>
+            <span class="field-error" id="error_captcha"></span>
+          </div>
+          <p class="form-fine">Alle Felder sind Pflichtfelder. Ihre Angaben verwende ich nur zur Beantwortung Ihrer Anfrage, siehe <a href="datenschutz.html">Datenschutz</a>.</p>
+          <button type="submit" class="btn btn--mustard btn--lg form-submit" id="formSubmitBtn">
+            <svg class="icon btn-icon-send" aria-hidden="true"><use href="#i-send"/></svg>
+            <span class="btn-spinner" aria-hidden="true" hidden></span>
+            <span class="btn-text">Nachricht senden</span>
+          </button>
+        </form>
+
+        <div class="form-status form-status--ok" id="formSuccess" role="status" hidden>
+          <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+          <div>
+            <strong>Nachricht gesendet.</strong>
+            <p>Vielen Dank für Ihre Anfrage. Ich melde mich in Kürze bei Ihnen.</p>
+          </div>
+        </div>
+        <div class="form-status form-status--fail" id="formFail" role="alert" hidden>
+          <svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>
+          <div>
+            <strong>Die Nachricht konnte nicht gesendet werden.</strong>
+            <p>Bitte versuchen Sie es erneut oder rufen Sie direkt an: <a href="tel:+41445943190">044 594 31 90</a>.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ ANFAHRT & WEGBESCHREIBUNG ============ -->
-  <section class="section section-alt" id="anfahrt">
-    <div class="container-modern">
-      <div class="section-header reveal">
-        <span class="section-badge">Anfahrt</span>
-        <h2 class="section-title">So finden Sie <span>zu uns</span></h2>
-        <p class="section-subtitle">Sie finden uns an der <strong>Alte Landstrasse 14, 8810 Horgen</strong> &ndash; direkt gegenüber der evangelischen Kirche.</p>
-        <div class="gold-line"></div>
+  <!-- ============ ANFAHRT ============ -->
+  <section class="section section--paper" id="anfahrt" aria-labelledby="anfahrt-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="section-title" id="anfahrt-title">So finden Sie zu mir</h2>
+        <p class="section-lead">Alte Landstrasse 14, 8810 Horgen, direkt gegenüber der evangelischen Kirche.</p>
       </div>
 
-      <!-- Anfahrt & Parkmöglichkeiten -->
-      <div class="about-block reveal-left">
-        <div class="about-img-wrap directions-img-wrap">
-          <!-- Bild 1: hier ein Foto zur Anfahrt/Parkmöglichkeit einfügen. Datei einfach unter dem unten genannten Pfad ablegen. -->
-          <img class="about-img-small directions-img" loading="lazy" decoding="async"
-               src="img/anfahrt-parkhaus.jpg"
-               alt="Anfahrt und Parkmöglichkeit beim Parkhaus Schinzenhof in Horgen"
-               onerror="this.closest('.directions-img-wrap').classList.add('is-empty'); this.remove();" />
-          <div class="directions-img-hint" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            <span>Bild zur Wegbeschreibung einfügen</span>
-            <small>img/anfahrt-parkhaus.jpg</small>
-          </div>
-        </div>
-        <div class="about-content">
-          <h3 class="about-subtitle">Anfahrt &amp; Parkmöglichkeiten</h3>
-          <p class="about-text">
-            Wir empfehlen Ihnen, Ihr Fahrzeug im <span class="highlight">Parkhaus Schinzenhof (Migros)</span> zu
-            parkieren. Von dort gelangen Sie bequem mit einem der beiden Lifte entweder auf den Dorfplatz oder direkt
-            zum Schinzenhof. <em>(Bei beiden Liften ganz nach oben.)</em>
-          </p>
-          <p class="about-text" style="margin-top: 16px;">
-            Von beiden Ausgängen sind es nur wenige Meter in Richtung der evangelischen Kirche. Unser Geschäft
-            befindet sich <span class="highlight">direkt gegenüber der Kirche</span> und ist gut sichtbar.
-          </p>
-        </div>
-      </div>
+      <div class="routes">
+        <article class="route">
+          <button class="route-img" type="button" data-lightbox="img/anfahrt-parkhaus.jpg" aria-label="Karte zur Anfahrt mit dem Auto vergrössern">
+            <img src="img/anfahrt-parkhaus.jpg" alt="Luftbild mit Fussweg von den Liften Schinzenhof und Dorfplatz zur Hörschmiede Boo" width="632" height="593" loading="lazy" decoding="async" />
+            <span class="route-zoom"><svg class="icon" aria-hidden="true"><use href="#i-zoom"/></svg> Vergrössern</span>
+          </button>
+          <h3 class="route-title">Mit dem Auto</h3>
+          <p>Parkieren Sie am besten im <strong>Parkhaus Schinzenhof (Migros)</strong>. Mit einem der beiden Lifte gelangen Sie bequem auf den Dorfplatz oder direkt zum Schinzenhof. <em>Bei beiden Liften ganz nach oben fahren.</em></p>
+          <p>Von beiden Ausgängen sind es nur wenige Meter Richtung evangelische Kirche. Die Hörschmiede liegt <strong>direkt gegenüber der Kirche</strong> und ist gut sichtbar.</p>
+        </article>
 
-      <!-- Anreise mit den öffentlichen Verkehrsmitteln -->
-      <div class="about-block reverse reveal-right">
-        <div class="about-img-wrap directions-img-wrap">
-          <!-- Bild 2: hier ein Foto zur Wegbeschreibung ab Bahnhof einfügen. Datei einfach unter dem unten genannten Pfad ablegen. -->
-          <img class="about-img-small directions-img" loading="lazy" decoding="async"
-               src="img/anfahrt-bahnhof.jpg"
-               alt="Wegbeschreibung vom Bahnhof Horgen zur Hörschmiede Boo"
-               onerror="this.closest('.directions-img-wrap').classList.add('is-empty'); this.remove();" />
-          <div class="directions-img-hint" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            <span>Bild zur Wegbeschreibung einfügen</span>
-            <small>img/anfahrt-bahnhof.jpg</small>
+        <article class="route">
+          <button class="route-img" type="button" data-lightbox="img/anfahrt-bahnhof.jpg" aria-label="Karte zum Fussweg ab Bahnhof vergrössern">
+            <img src="img/anfahrt-bahnhof.jpg" alt="Karte mit Fussweg vom Bahnhof Horgen zur Hörschmiede Boo" width="811" height="829" loading="lazy" decoding="async" />
+            <span class="route-zoom"><svg class="icon" aria-hidden="true"><use href="#i-zoom"/></svg> Vergrössern</span>
+          </button>
+          <h3 class="route-title">Mit Bahn und Bus</h3>
+          <p>Vom <strong>Bahnhof Horgen</strong> sind es rund <strong>5 Gehminuten</strong>.</p>
+          <p>Verlassen Sie den Bahnhof Richtung Seestrasse. Halten Sie sich links, folgen Sie der Seestrasse bis zum Kreisel und überqueren Sie die Strasse. Biegen Sie in die Stockerstrasse, überqueren Sie den Fussgängerstreifen und biegen Sie in die Alte Landstrasse ab. Nach rund 2 Minuten erreichen Sie die Hörschmiede Boo auf der linken Strassenseite.</p>
+        </article>
+
+        <div class="route route--map">
+          <div class="map" id="mapContainer">
+            <!-- Datenschutz: Google Maps erst nach Einwilligung laden -->
+            <div class="map-consent" id="mapConsent">
+              <svg class="icon map-icon" aria-hidden="true"><use href="#i-map"/></svg>
+              <p class="map-consent-title">Karte von Google Maps</p>
+              <p>Beim Laden der Karte werden Daten an Google übertragen. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+              <button class="btn btn--ink" id="mapConsentBtn" type="button">Karte laden</button>
+              <a class="map-ext" href="https://maps.google.com/maps?q=Alte+Landstrasse+14,+8810+Horgen" target="_blank" rel="noopener">Oder direkt in Google Maps öffnen</a>
+            </div>
           </div>
-        </div>
-        <div class="about-content">
-          <h3 class="about-subtitle">Anreise mit den öffentlichen Verkehrsmitteln</h3>
-          <p class="about-text">
-            Vom <span class="highlight">Bahnhof Horgen</span> erreichen Sie uns in rund <span class="highlight">5 Gehminuten</span>.
-          </p>
-          <p class="about-text" style="margin-top: 16px;">
-            Verlassen Sie den Bahnhof in Richtung Seestrasse. Halten Sie sich links und folgen Sie der Seestrasse bis
-            zum Kreisel und überqueren Sie die Strasse. Biegen Sie in die Stockerstrasse, überqueren Sie den
-            Fussgängerüberweg und biegen Sie anschliessend in die Alte Landstrasse ab. Folgen Sie der Alten
-            Landstrasse &ndash; nach rund 2 Minuten erreichen Sie die Hörschmiede Boo auf der linken Strassenseite.
-          </p>
         </div>
       </div>
     </div>
@@ -967,50 +750,46 @@
 
   <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
-    <div class="container-modern">
-      <div class="footer-inner">
-        <div class="footer-logo">
-          <img src="img/FooterUMini.png" alt="Hörschmiede Boo GmbH Logo" loading="lazy" decoding="async" />
-          <span class="footer-logo-text">Hörschmiede Boo</span>
-        </div>
-        <div class="footer-links">
-          <a href="datenschutz.html" target="_blank">Datenschutz</a>
-          <a href="impressum.html" target="_blank">Impressum</a>
-          <a href="faq.html" target="_blank">FAQ</a>
-        </div>
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <img src="img/FooterUMini.png" alt="" width="48" height="48" loading="lazy" decoding="async" />
+        <p class="footer-name">Hörschmiede Boo GmbH</p>
+        <p>Alte Landstrasse 14<br />8810 Horgen</p>
       </div>
-      <div class="footer-bottom">
-        <p class="footer-copyright">&copy; 2026 Hörschmiede Boo GmbH. Alle Rechte vorbehalten.</p>
-        <div class="top-bar-social">
-          <a href="https://www.instagram.com/hoerschmiede_boo/" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=100084035448678" target="_blank" rel="noopener" aria-label="Facebook">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          </a>
+      <div class="footer-col">
+        <p class="footer-head">Kontakt</p>
+        <p><a href="tel:+41445943190">044 594 31 90</a><br /><a href="mailto:info@hoerschmiede-boo.ch">info@hoerschmiede-boo.ch</a></p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-head">Seiten</p>
+        <p><a href="faq.html">Häufige Fragen</a><br /><a href="impressum.html">Impressum</a><br /><a href="datenschutz.html">Datenschutz</a></p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-head">Folgen</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/hoerschmiede_boo/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=100084035448678" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg></a>
         </div>
       </div>
     </div>
+    <div class="wrap footer-bottom">
+      <p>&copy; <span id="year">2026</span> Hörschmiede Boo GmbH. Alle Rechte vorbehalten.</p>
+    </div>
   </footer>
 
-  <!-- Scroll to Top Button -->
-  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Nach oben scrollen">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
-  </button>
-
   <!-- Lightbox für Wegbeschreibungs-Bilder -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vergrössertes Bild" aria-hidden="true">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Schliessen">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+  <dialog class="lightbox" id="lightbox" aria-label="Vergrössertes Bild">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Schliessen">
+      <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
     </button>
-    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
-  </div>
+    <img class="lightbox-img" id="lightboxImg" alt="" />
+  </dialog>
 
   <!-- ============ SCRIPTS ============ -->
   <!-- iubenda Cookie Consent -->
   <script type="text/javascript">
     var _iub = _iub || [];
-    _iub.csConfiguration = {"consentOnContinuedBrowsing":false,"enableTcf":true,"floatingPreferencesButtonDisplay":"bottom-right","invalidateConsentWithoutLog":true,"lang":"de","perPurposeConsent":true,"whitelabel":false,"cookiePolicyId":47220464,"siteId":2814454, "banner":{ "acceptButtonColor":"#C7A658","acceptButtonDisplay":true,"backgroundColor":"#262628","closeButtonDisplay":false,"customizeButtonDisplay":true,"explicitWithdrawal":true,"fontSizeBody":"16px","listPurposes":true,"position":"bottom","rejectButtonDisplay":true }};
+    _iub.csConfiguration = {"consentOnContinuedBrowsing":false,"enableTcf":true,"floatingPreferencesButtonDisplay":"bottom-left","invalidateConsentWithoutLog":true,"lang":"de","perPurposeConsent":true,"whitelabel":false,"cookiePolicyId":47220464,"siteId":2814454, "banner":{ "acceptButtonColor":"#E3A82B","acceptButtonCaptionColor":"#1C1C1A","acceptButtonDisplay":true,"rejectButtonColor":"#E3A82B","rejectButtonCaptionColor":"#1C1C1A","customizeButtonColor":"#3A3B3D","backgroundColor":"#26272A","closeButtonDisplay":false,"customizeButtonDisplay":true,"explicitWithdrawal":true,"fontSizeBody":"16px","listPurposes":true,"position":"bottom","rejectButtonDisplay":true }};
   </script>
   <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/stub-v2.js" async></script>
   <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/safe-tcf-v2.js" async></script>
@@ -1019,392 +798,7 @@
   <!-- Web3Forms Client-Script: rendert das hCaptcha-Widget (data-captcha="true"), serverseitig via Web3Forms geprüft -->
   <script src="https://web3forms.com/client/script.js" async defer></script>
 
-  <script>
-    // ---- Mobile Menu ----
-    const menuToggle = document.getElementById('menuToggle');
-    const mainNav = document.getElementById('mainNav');
-    const navOverlay = document.getElementById('navOverlay');
-
-    menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('active');
-      mainNav.classList.toggle('open');
-      navOverlay.classList.toggle('active');
-      document.body.style.overflow = mainNav.classList.contains('open') ? 'hidden' : '';
-    });
-
-    navOverlay.addEventListener('click', () => {
-      menuToggle.classList.remove('active');
-      mainNav.classList.remove('open');
-      navOverlay.classList.remove('active');
-      document.body.style.overflow = '';
-    });
-
-    // Close menu on nav link click
-    mainNav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        menuToggle.classList.remove('active');
-        mainNav.classList.remove('open');
-        navOverlay.classList.remove('active');
-        document.body.style.overflow = '';
-      });
-    });
-
-    // ---- Sticky Header Shadow ----
-    const header = document.querySelector('.site-header');
-    window.addEventListener('scroll', () => {
-      header.classList.toggle('scrolled', window.scrollY > 20);
-    });
-
-    // ---- Scroll to Top Button ----
-    const scrollTopBtn = document.getElementById('scrollTopBtn');
-    window.addEventListener('scroll', () => {
-      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
-    });
-    scrollTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // ---- Active Navigation Link ----
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = mainNav.querySelectorAll('a[href^="#"]');
-
-    function updateActiveNav() {
-      const scrollPos = window.scrollY + 150;
-      sections.forEach(section => {
-        const top = section.offsetTop;
-        const height = section.offsetHeight;
-        const id = section.getAttribute('id');
-        if (scrollPos >= top && scrollPos < top + height) {
-          navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === '#' + id || 
-                (id === 'hero' && link.getAttribute('href') === '#home')) {
-              link.classList.add('active');
-            }
-          });
-        }
-      });
-    }
-    window.addEventListener('scroll', updateActiveNav);
-
-    // ---- Smooth Scroll for Anchor Links ----
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-
-        // #home should always scroll to the very top
-        if (targetId === '#home') {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-          return;
-        }
-
-        const target = document.querySelector(targetId);
-        if (target) {
-          const headerHeight = header.offsetHeight;
-          const top = target.offsetTop - headerHeight;
-          window.scrollTo({ top, behavior: 'smooth' });
-        }
-      });
-    });
-
-    // ---- Scroll Reveal Animation (Intersection Observer) ----
-    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
-    
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    });
-
-    revealElements.forEach(el => revealObserver.observe(el));
-
-    // ---- Animated Counter for Stats ----
-    const counters = document.querySelectorAll('.stat-number');
-    let countersAnimated = false;
-
-    function animateCounters() {
-      if (countersAnimated) return;
-      countersAnimated = true;
-      counters.forEach(counter => {
-        const target = counter.textContent;
-        const numMatch = target.match(/(\d+)/);
-        if (!numMatch) return;
-        const num = parseInt(numMatch[1]);
-        const prefix = target.substring(0, target.indexOf(numMatch[1]));
-        const suffix = target.substring(target.indexOf(numMatch[1]) + numMatch[1].length);
-        let current = 0;
-        const increment = Math.max(1, Math.floor(num / 40));
-        const duration = 1200;
-        const stepTime = duration / (num / increment);
-        const timer = setInterval(() => {
-          current += increment;
-          if (current >= num) {
-            current = num;
-            clearInterval(timer);
-          }
-          counter.textContent = prefix + current + suffix;
-        }, stepTime);
-      });
-    }
-
-    const statsBar = document.querySelector('.stats-bar');
-    if (statsBar) {
-      const statsObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            animateCounters();
-            statsObserver.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.3 });
-      statsObserver.observe(statsBar);
-    }
-
-    // ---- Contact Form: AJAX Submit + Validation ----
-    (function() {
-      const form = document.getElementById('contactForm');
-      const submitBtn = document.getElementById('formSubmitBtn');
-      const successMsg = document.getElementById('formSuccess');
-      const failMsg = document.getElementById('formFail');
-      const captchaError = document.getElementById('error_captcha');
-      if (!form) return;
-
-      const fields = [
-        { input: document.getElementById('contact_name'),    error: document.getElementById('error_name'),    msg: 'Bitte geben Sie Ihren Namen ein (mind. 2 Zeichen).' },
-        { input: document.getElementById('contact_email'),   error: document.getElementById('error_email'),   msg: 'Bitte geben Sie eine gültige E-Mail-Adresse ein.' },
-        { input: document.getElementById('contact_message'), error: document.getElementById('error_message'), msg: 'Bitte schreiben Sie eine Nachricht (mind. 10 Zeichen).' }
-      ];
-
-      // Live-Validierung bei Eingabe (Fehler entfernen)
-      fields.forEach(f => {
-        f.input.addEventListener('input', function() {
-          if (this.validity.valid) {
-            this.classList.remove('invalid');
-            f.error.classList.remove('visible');
-            f.error.textContent = '';
-          }
-        });
-        // Fehler anzeigen beim Verlassen des Felds
-        f.input.addEventListener('blur', function() {
-          if (this.value.trim() && !this.validity.valid) {
-            this.classList.add('invalid');
-            f.error.classList.add('visible');
-            f.error.textContent = f.msg;
-          }
-        });
-      });
-
-      // hCaptcha-Token aus dem (von hCaptcha eingefügten) versteckten Feld lesen
-      function getCaptchaToken() {
-        const el = form.querySelector('textarea[name="h-captcha-response"]');
-        return el ? el.value.trim() : '';
-      }
-
-      function clearCaptchaError() {
-        if (captchaError) { captchaError.classList.remove('visible'); captchaError.textContent = ''; }
-      }
-
-      function resetCaptcha() {
-        try { if (window.hcaptcha) window.hcaptcha.reset(); } catch (e) {}
-      }
-
-      function validateAll() {
-        let valid = true;
-        fields.forEach(f => {
-          if (!f.input.validity.valid || !f.input.value.trim()) {
-            f.input.classList.add('invalid');
-            f.error.classList.add('visible');
-            f.error.textContent = f.msg;
-            valid = false;
-          } else {
-            f.input.classList.remove('invalid');
-            f.error.classList.remove('visible');
-            f.error.textContent = '';
-          }
-        });
-
-        if (!getCaptchaToken()) {
-          if (captchaError) {
-            captchaError.classList.add('visible');
-            captchaError.textContent = 'Bitte bestätigen Sie, dass Sie kein Roboter sind.';
-          }
-          valid = false;
-        } else {
-          clearCaptchaError();
-        }
-
-        return valid;
-      }
-
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        successMsg.style.display = 'none';
-        failMsg.style.display = 'none';
-
-        if (!validateAll()) {
-          // Zum ersten fehlerhaften Feld scrollen
-          const firstInvalid = form.querySelector('.invalid');
-          if (firstInvalid) firstInvalid.focus();
-          return;
-        }
-
-        // Loading-State
-        submitBtn.disabled = true;
-        submitBtn.querySelector('.btn-icon-send').style.display = 'none';
-        submitBtn.querySelector('.btn-spinner').style.display = '';
-        submitBtn.querySelector('.btn-text').textContent = 'Wird gesendet…';
-
-        const formData = new FormData(form);
-
-        fetch(form.action, {
-          method: 'POST',
-          body: formData,
-          headers: { 'Accept': 'application/json' }
-        })
-        .then(function(response) {
-          return response.json().then(function(data) { return { ok: response.ok, data: data }; });
-        })
-        .then(function(res) {
-          if (res.ok && res.data && res.data.success) {
-            form.style.display = 'none';
-            successMsg.style.display = 'flex';
-          } else {
-            throw new Error((res.data && res.data.message) || 'Server error');
-          }
-        })
-        .catch(function() {
-          failMsg.style.display = 'flex';
-          resetCaptcha();
-        })
-        .finally(function() {
-          submitBtn.disabled = false;
-          submitBtn.querySelector('.btn-icon-send').style.display = '';
-          submitBtn.querySelector('.btn-spinner').style.display = 'none';
-          submitBtn.querySelector('.btn-text').textContent = 'Nachricht senden';
-        });
-      });
-    })();
-
-    // ---- Google Maps: DSGVO Consent ----
-    (function() {
-      const mapContainer = document.getElementById('mapContainer');
-      const mapConsent = document.getElementById('mapConsent');
-      const consentBtn = document.getElementById('mapConsentBtn');
-      if (!mapContainer || !consentBtn) return;
-
-      var mapSrc = 'https://maps.google.com/maps?q=Alte%20Landstrasse%2014%2C%208810%20Horgen&z=17&hl=de&output=embed';
-
-      function loadMap() {
-        mapConsent.remove();
-        var iframe = document.createElement('iframe');
-        iframe.src = mapSrc;
-        iframe.allowFullscreen = true;
-        iframe.loading = 'lazy';
-        iframe.referrerPolicy = 'no-referrer-when-downgrade';
-        iframe.title = 'Standort Hörschmiede Boo GmbH auf Google Maps';
-        mapContainer.appendChild(iframe);
-        try { localStorage.setItem('maps_consent', '1'); } catch(e) {}
-      }
-
-      // Prüfe ob schon eingewilligt wurde
-      try {
-        if (localStorage.getItem('maps_consent') === '1') {
-          loadMap();
-          return;
-        }
-      } catch(e) {}
-
-      consentBtn.addEventListener('click', loadMap);
-    })();
-
-    // ---- Lightbox: Wegbeschreibungs-Bilder vergrössern ----
-    (function() {
-      const lightbox = document.getElementById('lightbox');
-      const lightboxImg = document.getElementById('lightboxImg');
-      const closeBtn = document.getElementById('lightboxClose');
-      if (!lightbox || !lightboxImg) return;
-
-      function openLightbox(src, alt) {
-        lightboxImg.src = src;
-        lightboxImg.alt = alt || '';
-        lightbox.classList.add('open');
-        lightbox.setAttribute('aria-hidden', 'false');
-        document.body.style.overflow = 'hidden';
-      }
-
-      function closeLightbox() {
-        lightbox.classList.remove('open');
-        lightbox.setAttribute('aria-hidden', 'true');
-        document.body.style.overflow = '';
-        lightboxImg.src = '';
-      }
-
-      // Nur tatsächlich vorhandene Wegbeschreibungs-Bilder klickbar machen
-      document.querySelectorAll('.directions-img').forEach(function(img) {
-        img.style.cursor = 'zoom-in';
-        img.setAttribute('role', 'button');
-        img.setAttribute('tabindex', '0');
-        img.addEventListener('click', function() { openLightbox(img.currentSrc || img.src, img.alt); });
-        img.addEventListener('keydown', function(e) {
-          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(img.currentSrc || img.src, img.alt); }
-        });
-      });
-
-      closeBtn.addEventListener('click', closeLightbox);
-      lightbox.addEventListener('click', function(e) { if (e.target === lightbox) closeLightbox(); });
-      document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox(); });
-    })();
-
-    // ---- Testimonials Slider: Dot Navigation ----
-    (function() {
-      const grid = document.getElementById('testimonialsGrid');
-      const dots = document.querySelectorAll('.slider-dot');
-      if (!grid || !dots.length) return;
-
-      // Dot-Klick scrollt zur entsprechenden Karte
-      dots.forEach(function(dot, i) {
-        dot.addEventListener('click', function() {
-          var cards = grid.querySelectorAll('.testimonial-card');
-          if (cards[i]) {
-            cards[i].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-          }
-        });
-      });
-
-      // Aktiven Dot bei Scroll aktualisieren
-      var scrollTimeout;
-      grid.addEventListener('scroll', function() {
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(function() {
-          var cards = grid.querySelectorAll('.testimonial-card');
-          var gridRect = grid.getBoundingClientRect();
-          var center = gridRect.left + gridRect.width / 2;
-          var closestIdx = 0;
-          var closestDist = Infinity;
-          cards.forEach(function(card, i) {
-            var cardRect = card.getBoundingClientRect();
-            var cardCenter = cardRect.left + cardRect.width / 2;
-            var dist = Math.abs(cardCenter - center);
-            if (dist < closestDist) {
-              closestDist = dist;
-              closestIdx = i;
-            }
-          });
-          dots.forEach(function(d, i) {
-            d.classList.toggle('active', i === closestIdx);
-          });
-        }, 50);
-      });
-    })();
-
-  </script>
-
+  <script src="js/site.js" defer></script>
+  <script src="js/home.js" defer></script>
 </body>
 </html>
