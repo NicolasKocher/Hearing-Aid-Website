@@ -599,7 +599,7 @@ html.nav-open .site-header { background: var(--chalk); box-shadow: 0 1px 0 var(-
 @media (max-width: 680px) { .routes { grid-template-columns: 1fr; } .route--map .map { aspect-ratio: 4 / 5; } }
 
 /* --- Lightbox --- */
-.lightbox { border: 0; padding: 0; background: transparent; max-width: min(1100px, 94vw); max-height: 92vh; overflow: visible; }
+.lightbox { margin: auto; border: 0; padding: 0; background: transparent; max-width: min(1100px, 94vw); max-height: 92vh; overflow: visible; }
 .lightbox::backdrop { background: rgba(20,20,18,.88); }
 .lightbox[open] { animation: lb-in .35s var(--ease-out); }
 @keyframes lb-in { from { opacity: 0; transform: scale(.97); } }
